@@ -1,10 +1,11 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/MaterialIcons-Regular.eot);
+  src: url("../fonts/MaterialIcons-Regular.eot");
   /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/MaterialIcons-Regular.woff) format("woff"), url(../fonts/MaterialIcons-Regular.ttf) format("truetype"); }
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("../fonts/MaterialIcons-Regular.woff2") format("woff2"), url("../fonts/MaterialIcons-Regular.woff") format("woff"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype"); }
 
 .material-icons {
   font-family: 'Material Icons';
@@ -28,6 +29,16 @@
   /* Support for IE. */
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga'; }
+
+/*##############################
+    Color scheme
+##############################*/
+/*############################################
+        Must have Mixins
+        http://w3bits.com/sass-mixins/
+############################################*/
+.ridematch .mt-button {
+  text-align: center; }
 
 .form-redesign h4 {
   margin: 1em 0; }
@@ -69,6 +80,20 @@
     width: 100%; }
   .form-redesign .form-group textarea.form-control {
     height: 112px; }
+  .form-redesign .form-group select {
+    appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -khtml-appearance: none;
+    -webkit-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+    padding: 0 24px 0 6px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…JDMTcxLjQ2OCw0Ni43MTEsMTcwLjQ2Miw0NC4yNCwxNjguNDUyLDQyLjEyMXoiLz48L3N2Zz4=");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain; }
 
 .form-redesign .form-inline .form-group {
   display: inline-block;
@@ -96,10 +121,29 @@
   margin-bottom: 1em; }
 
 .form-redesign .mt-button {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  text-align: center; }
 
-.ridematch .card {
-  border: 1px solid #c0c0c0;
-  padding: 15px; }
+.ridematch {
+  margin-top: 1.5rem; }
+  .ridematch .card {
+    border: 1px solid #c0c0c0;
+    padding: 15px; }
+    .ridematch .card h1 {
+      font-size: 16px; }
+      @media only screen and (min-width: 992px) {
+        .ridematch .card h1 {
+          font-size: 30px; } }
+    .ridematch .card .leadin {
+      font-size: 14px; }
+      @media only screen and (min-width: 992px) {
+        .ridematch .card .leadin {
+          font-size: 24px;
+          line-height: 1.3;
+          font-weight: 400; } }
+    .ridematch .card .btn {
+      margin-top: 1em; }
+    .ridematch .card .control-point {
+      color: #ed1b2e; }
 
 /*# sourceMappingURL=../maps/main.css.map */

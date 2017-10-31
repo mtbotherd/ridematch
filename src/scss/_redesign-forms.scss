@@ -50,6 +50,22 @@
         textarea.form-control {
             height: 112px;
         }
+
+        select {
+            appearance: none;
+            -o-appearance: none;
+            -ms-appearance: none;
+            -moz-appearance: none;
+            -khtml-appearance: none;
+            -webkit-appearance: none;
+            text-indent: 0.01px;
+            text-overflow: "";
+            padding: 0 24px 0 6px;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…JDMTcxLjQ2OCw0Ni43MTEsMTcwLjQ2Miw0NC4yNCwxNjguNDUyLDQyLjEyMXoiLz48L3N2Zz4=");
+            background-position: right center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 
     .form-inline {
@@ -91,5 +107,6 @@
 
     .mt-button {
         margin-bottom: 1em;
+        text-align: center;
     }
 }
