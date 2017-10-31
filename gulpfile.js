@@ -26,7 +26,6 @@ gulp.task('browserSync', function() {
 
 // Copy JS to src
 gulp.task('javascript', function() {
-    //return gulp.src('node_modules/jquery/dist/jquery.js')
     return gulp.src([
             'node_modules/bootstrap/js/transition.js',
             'node_modules/bootstrap/js/collapse.js'
@@ -36,7 +35,6 @@ gulp.task('javascript', function() {
 
 // Compile sass to css
 gulp.task('sass', function() {
-    //return gulp.src('src/scss/**/*.scss')
     return gulp.src('src/scss/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
@@ -70,11 +68,11 @@ gulp.task('useref', function() {
 
 // Optimize Media Images
 gulp.task('mediaimages', function() {
-    return gulp.src('src/Data/sites/1/media/**/*.+(png|jpg|gif|svg)')
+    return gulp.src('src/Data/sites/1/skins/**/*.+(png|jpg|gif|svg)')
         .pipe(imagemin({
             interlaced: true
         })) // refer to https://github.com/sindresorhus/gulp-imagemin for optimization options available based on file type.
-        .pipe(gulp.dest('dist/Data/sites/1/media'))
+        .pipe(gulp.dest('dist/Data/sites/1/skins'))
 });
 // Optimize Skin Images
 gulp.task('skinsimages', function() {
