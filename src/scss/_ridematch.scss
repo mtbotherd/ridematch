@@ -1,9 +1,11 @@
 .ridematch {
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
     .card {
+        background-color: $white;
         border: 1px solid $border-color;
-        padding: 15px;
+        padding: 3rem 1.5rem;
 
         h1 {
             font-size: 16px;
@@ -25,7 +27,7 @@
             margin-top: 1em;
         }
 
-        .control-point {
+        .control-point-icon {
             color: $transit-red;
         }
     }

@@ -1,5 +1,30 @@
+body,
+html {
+    height: 100%;
+}
+
+.map-bg {
+    background-image: url("../images/twin-cities-map.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
 .ridematch {
+    a {
+        //text-decoration: underline;
+    }
+
     .mt-button {
         text-align: center;
+    }
+
+    .red {
+        color: $red-text;
+    }
+
+    .margin-bottom {
+        margin-bottom: 1rem;
     }
 }
