@@ -43,6 +43,12 @@ gulp.task('vendorCss', function() {
         .pipe(gulp.dest('src/css'))
 });
 
+// Copy css to dist
+gulp.task('css', function() {
+    return gulp.src('src/css/forms.css')
+        .pipe(gulp.dest('dist/css'))
+});
+
 // Compile sass to css
 gulp.task('sass', function() {
     return gulp.src('src/scss/*.scss')
@@ -69,7 +75,11 @@ gulp.task('watch', function() {
 
 // Optimize CSS and JS
 gulp.task('useref', function() {
-    return gulp.src('src/*.html') // Grabs CSS and JS from HTML document
+    return gulp.src([
+            'src/*.html',
+            '!src/_boilerplate-desktop.html',
+            '!src/_boilerplate-mobile.html'
+        ]) // Grabs CSS and JS from HTML document
         .pipe(useref())
         //.pipe(gulpIf('*.js', uglify())) // Minifies only if it's a js file
         //.pipe(gulpIf('*.css', cssnano())) // Minifies only if it's a css file
@@ -121,7 +131,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
     runSequence(
         'clean:dist',
-        'sass', ['useref', 'mediaimages', 'skinsimages', 'fonts'],
+        'sass', ['useref', 'css', 'mediaimages', 'skinsimages', 'fonts'],
         callback
     )
 });
