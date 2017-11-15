@@ -19,22 +19,42 @@
 <body>
     <form>
         <!-- START OF FRONT END CONTENT -->
-        <div class="map-bg">
-            <div class="utilities">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <i class="material-icons">home</i>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                        <i class="material-icons">email</i>
-                    </div>
-                    <div class="col-xs-4 text-right">
-                        <i class="material-icons">account_circle</i>
-                    </div>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="dashboard.html" title="Return to your Dashboard"><i class="material-icons">home</i></a>
+                </div>
+                <div class="col-xs-4 text-center">
+                    <a href="messages.html" title="Go to your messages"><i class="material-icons">email</i></a>
+                </div>
+                <div class="col-xs-4 text-right">
+                    <a href="my-account.html"><i class="material-icons">account_circle</i></a>
                 </div>
             </div>
+        </nav>
+
+        <div class="map-bg">
             <div class="ridematch">
-                <h1><i class="material-icons">drive_eta</i> My Commutes</h1>
+                <div class="card">
+                    <h1 class="hidden-xs">Dashboard</h1>
+                    <h2><i class="material-icons">drive_eta</i> My Commutes</h2>
+
+                    <div class="well">
+                        <p>
+                            You currently have no commutes.
+                        </p>
+                    </div>
+
+                    <p class="leadin text-center">With Reidematch, you can create single or multiple commutes, depending on your carpooling needs. (ie. work, school, daycare).</p>
+                    <p class="leadin text-center">Let's get started!</p>
+
+                    <p class="text-center">
+                        <a href="add-commute.html" title="Add my profile"><i class="material-icons control-point-icon">control_point</i></a><br />
+                        <a href="add-commute.html" title="Add my profile">Add a commute</a>
+                    </p>
+                </div>
             </div>
         </div>
         <!-- END OF FRONT END CONTENT -->

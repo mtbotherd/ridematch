@@ -7,23 +7,7 @@
     .card {
         background-color: $white;
         border: 1px solid $border-color;
-        padding: 3rem 1.5rem;
-
-        h1 {
-            font-size: 16px;
-            @include screen ('desktop') {
-                font-size: 30px;
-            }
-        }
-
-        .leadin {
-            font-size: 14px;
-            @include screen ('desktop') {
-                font-size: 24px;
-                line-height: 1.3;
-                font-weight: 400;
-            }
-        }
+        padding: 1.5rem;
 
         .btn {
             margin-top: 1em;
@@ -31,6 +15,27 @@
 
         .control-point-icon {
             color: $transit-red;
+        }
+
+        .well {
+            background-color: $light-grey;
+            border: 0;
+            padding: 1rem;
+
+            p {
+                font-size: 1rem;
+                font-weight: 700;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .leadin {
+        font-size: 14px;
+        line-height: 1.3;
+        @include screen ('desktop') {
+            font-size: 24px;
+            font-weight: 400;
         }
     }
 }
