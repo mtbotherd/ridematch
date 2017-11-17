@@ -1,0 +1,53 @@
+.dashboard {
+    h2 {
+        display: inline-block;
+        //margin-bottom: 0;
+    }
+
+    hr {
+        color: $light-grey;
+        background-color: $light-grey;
+    }
+
+    .border-left {
+        @include screen ('desktop') {
+            border-left: 1px solid $light-grey;
+            min-height: 30rem;
+        }
+    }
+
+    .material-icons {
+        @include font-size(14, 10);
+        line-height: 0;
+        @include screen ('desktop') {
+            @include font-size(20, 10);
+        }
+    }
+
+    .tools {
+        display: inline-block;
+        margin-left: 1rem;
+
+        .material-icons {
+            @include screen ('desktop') {
+                @include font-size(12, 10);
+            }
+        }
+
+        .link a {
+            @include font-size(14, 16);
+        }
+    }
+
+    .well {
+        background-color: $light-grey;
+        border: 0;
+        padding: 1rem;
+
+        p {
+            @include font-size(14, 16);
+            font-weight: 700;
+            margin-top: 0;
+        }
+    }
+}

@@ -1,19 +1,29 @@
 body,
 html {
     color: $font-color;
-    font-size: 14px;
+    font-family: $font-stack-lato;
+    @include font-size(10);
     height: 100%;
 }
 
 h1 {
-    font-size: $h1-size;
+    //font-size: $h1-size;
+    @include font-size(16, 10);
+    @include screen ('desktop') {
+        @include font-size(30, 10);
+    }
 }
 
 h2 {
-    font-size: $h2-size;
-    @include screen ('tablet') {
-        font-size: 2.4rem;
+    @include font-size(16, 10);
+    @include screen ('desktop') {
+        @include font-size(24, 10);
     }
+}
+
+hr {
+    color: $light-grey;
+    background-color: $light-grey;
 }
 
 .map-bg {

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Metro Transit</title>
     <link rel='shortcut icon' href='https://www.metrotransit.org/Data/Sites/1/skins/MetroTransitII/favicon.ico' />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- <link rel="stylehseet" type="text/css" href="fonts/font-awesome.min.css" /> -->
     <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=4d8de194-35c6-4f01-987d-58e0eec76d66' />
     <!-- build:css css/main.css -->
@@ -36,24 +36,46 @@
         </nav>
 
         <div class="map-bg">
-            <div class="ridematch">
+            <div class="ridematch dashboard">
                 <div class="card">
-                    <h1 class="hidden-xs">Dashboard</h1>
-                    <h2><i class="material-icons">drive_eta</i> My Commutes</h2>
+                    <h1 class="hidden-xs hidden-sm">Dashboard</h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <i class="material-icons">drive_eta</i>
+                            <h2>My Commutes</h2>
 
-                    <div class="well">
-                        <p>
-                            You currently have no commutes.
-                        </p>
+                            <div class="well">
+                                <p>
+                                    You currently have no commutes.
+                                </p>
+                            </div>
+
+                            <p class="leadin text-center">With Reidematch, you can create single or multiple commutes, depending on your carpooling needs. (ie. work, school, daycare).</p>
+                            <p class="leadin text-center">Let's get started!</p>
+
+                            <p class="text-center">
+                                <a href="add-commute.html" title="Add my profile"><i class="material-icons control-point-icon">control_point</i></a><br />
+                                <a href="add-commute.html" title="Add my profile">Add a commute</a>
+                            </p>
+                            <span class="hidden-md"><hr /></span>
+                        </div>
+                        <div class="col-md-8 border-left">
+                            <i class="material-icons">mail</i>
+                            <h2>Messages</h2>
+                            <div class="well">
+                                <p>
+                                    You currenlt have no messages.
+                                </p>
+                            </div>
+                            <hr />
+                            <i class="material-icons">account_circle</i>
+                            <h2>Profile</h2>
+                            <div class="tools">
+                                <i class="material-icons">create</i>
+                                <span class="link"><a href="#" title="Edit profile">Edit</a></span>
+                            </div>
+                        </div>
                     </div>
-
-                    <p class="leadin text-center">With Reidematch, you can create single or multiple commutes, depending on your carpooling needs. (ie. work, school, daycare).</p>
-                    <p class="leadin text-center">Let's get started!</p>
-
-                    <p class="text-center">
-                        <a href="add-commute.html" title="Add my profile"><i class="material-icons control-point-icon">control_point</i></a><br />
-                        <a href="add-commute.html" title="Add my profile">Add a commute</a>
-                    </p>
                 </div>
             </div>
         </div>
