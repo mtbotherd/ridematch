@@ -12,7 +12,12 @@
     .border-left {
         @include screen ('desktop') {
             border-left: 1px solid $light-grey;
-            min-height: 30rem;
+        }
+    }
+
+    .border-right {
+        @include screen ('desktop') {
+            border-right: 1px solid $light-grey;
         }
     }
 
@@ -25,17 +30,18 @@
     }
 
     .tools {
-        display: inline-block;
-        margin-left: 1rem;
+        @include screen ('desktop') {
+            margin-top: 1rem;
+        }
 
         .material-icons {
             @include screen ('desktop') {
-                @include font-size(12, 10);
+                @include font-size(15, 10);
             }
         }
 
         .link a {
-            @include font-size(14, 16);
+            @include font-size(12, 10);
         }
     }
 
@@ -45,7 +51,7 @@
         padding: 1rem;
 
         p {
-            @include font-size(14, 16);
+            @include font-size(12, 10);
             font-weight: 700;
             margin-top: 0;
         }
