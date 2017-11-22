@@ -1,56 +1,5 @@
 .form-redesign {
-    h4 {
-        margin: 1em 0;
-    }
-
-    p:last-child {
-        margin: 1em 0;
-    }
-
-    .well {
-        background-color: transparent;
-    }
-
-    .required-notice {
-        padding-left: 1em;
-        background: #fff url("data:image/gif;base64,R0lGODlhBwAHAIQUAIwAALALAKwSCawpJ/cuAP4yAP81APQ5CvQ6C/8+Cv8/Cv5RGP9RGfRhMfRiMf9jJ/50NP+GR/+HSPSKXP///////////////////////////////////////////////yH5BAEKAB8ALAAAAAAHAAcAAAUf4CcCojhMkiOIE/QsyAdED6MYZLMkBSEKBwMhUJKVQgA7") no-repeat 0 50%;
-    }
-
-    table td {
-        padding-right: 1em;
-    }
-
-    label {
-        color: #000;
-        font-style: italic;
-        display: inline-block;
-        margin: 0.3em 0;
-        width: auto !important;
-    }
-
-    .required {
-        padding-right: 1em;
-        background: #fff url("data:image/gif;base64,R0lGODlhBwAHAIQUAIwAALALAKwSCawpJ/cuAP4yAP81APQ5CvQ6C/8+Cv8/Cv5RGP9RGfRhMfRiMf9jJ/50NP+GR/+HSPSKXP///////////////////////////////////////////////yH5BAEKAB8ALAAAAAAHAAcAAAUf4CcCojhMkiOIE/QsyAdED6MYZLMkBSEKBwMhUJKVQgA7") no-repeat 100% 50%;
-    }
-
     .form-group {
-        display: block;
-        clear: both;
-        margin-bottom: 1em;
-
-        .form-control {
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            display: block;
-            height: 24px;
-            padding: 0 6px;
-            width: 100%;
-        }
-
-        textarea.form-control {
-            height: 112px;
-        }
-
         select {
             appearance: none;
             -o-appearance: none;
@@ -67,50 +16,106 @@
             background-size: contain;
         }
     }
+}
+/* Ridematch specific form styles */
+.ridematch {
+    .form-redesign {
+        .section {
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
 
-    .form-inline {
-        .form-group {
-            display: inline-block;
-            margin-bottom: 1em;
-            vertical-align: middle;
-
-            .input-group {
-                white-space: nowrap;
-                position: relative;
-                display: table;
-                border-collapse: separate;
-
-                input {
-                    border-top-right-radius: 0;
-                    border-bottom-right-radius: 0;
-                    display: inline-block;
-                }
-
-                .input-group-addon {
-                    background-color: #ccc;
-                    border: 1px solid #ccc;
-                    cursor: pointer;
-                    padding: 0 6px;
-                }
-            }
-
-            .checkbox-list td {
-                padding-right: 1em;
+        label {
+            @include screen ('desktop') {
+                @include font-size(14, 10);
             }
         }
-    }
 
-    .checkbox-group,
-    .radio-group {
-        margin-bottom: 1em;
-    }
+        .mt-backbutton {
+            text-align: center;
+        }
 
-    .mt-button {
-        margin-bottom: 1em;
-        text-align: center;
-    }
+        .input-group {
+            .input-group-addon {
+                @include font-size(18, 10);
+                font-weight: 700;
+                background-color: $white;
+                padding: 0 0.6rem;
 
-    .mt-backbutton {
-        text-align: center;
+                &.start {
+                    color: $transit-blue;
+                }
+
+                &.destination {
+                    color: $transit-red;
+                }
+            }
+
+            input {
+                @include font-size(18, 10);
+                border-left: none;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                box-shadow: none;
+                font-weight: 700;
+
+                &::placeholder {
+                    color: $grey;
+                }
+            }
+        }
+
+        .time-picker {
+            width: 100%;
+
+            input {
+                @include font-size(12, 10);
+                border-left: 1px solid #ccc;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+
+                &::placeholder {
+                    @include font-size(12, 10);
+                }
+            }
+        }
+
+        .checkbox {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+
+            .input-group-addon {
+                border: 0;
+            }
+        }
+
+        .select-days {
+            margin-bottom: 1rem;
+
+            label {
+                display: block;
+            }
+
+            .days {
+                list-style-type: none;
+                padding-left: 0;
+
+                li {
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    @include font-size(12, 10);
+                    line-height: 1;
+                    width: 3rem;
+                    height: 3rem;
+                    margin-right: 0.5rem;
+                    padding: 0.8rem 1rem;
+
+                    &.active {
+                        background-color: #cfdeed;
+                    }
+                }
+            }
+        }
     }
 }

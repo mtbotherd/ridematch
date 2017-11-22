@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metro Transit</title>
+    <link rel='shortcut icon' href='https://www.metrotransit.org/Data/Sites/1/skins/MetroTransitII/favicon.ico' />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- <link rel="stylehseet" type="text/css" href="fonts/font-awesome.min.css" /> -->
+    <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=a08f3548-7c94-41fd-bc28-fd9ff242571d' />
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/forms.css" /> -->
+</head>
+
+<body>
+    <form>
+        <!-- START OF FRONT END CONTENT -->
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a class="active" href="#my-commutes" title="Return to your Dashboard" role="button"><i class="material-icons">drive_eta</i><span class="sr-only">My Commutes</span></a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <a href="#my-messages" title="Go to your messages" role="button"><i class="material-icons">email</i><span class="sr-only">My Messages</span></a>
+                    </div>
+                    <div class="col-xs-4 text-right">
+                        <a href="#my-profile" role="button"><i class="material-icons">account_circle</i><span class="sr-only">My Profile</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="ridematch dashboard">
+            <div class="card">
+                <div class="mt-form form-redesign">
+                    <h2>Add Commute</h2>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label for="commute_name" class="required">Commute Name</label>
+                                <input type="text" class="form-control" id="commute_name" placeholder="Ie., work, school" />
+                            </div>
+                        </div>
+                    </div>
+                    <i class="material-icons">place</i>
+                    <h2>Location</h2>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label for="start_location" class="required">Start</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon start" id="starting_point">A</span>
+                                    <input type="text" class="form-control" id="start_location" placeholder="Start" aria-describedby="starting_point" />
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="use_home_address" value="" />
+                                    <label>Use my home address</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label for="destination_location" class="required">Destination</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon destination" id="destination_point">B</span>
+                                    <input type="text" class="form-control" id="destination_location" placeholder="Destination" aria-describedby="starting_point" />
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="use_work_address" value="" />
+                                    <label>Use my work address</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="material-icons">access_time</i>
+                    <h2>Schedule</h2>
+                    <div class="form-inline row">
+                        <div class="col-md-3 col-lg-2">
+                            <div class="form-group">
+                                <label for="start_time" class="required">I start (work, school, etc) at</label><br />
+                                <div class="time-picker input-group">
+                                    <input type="text" id="start_time" class="form-control" data-format="HH:mm" placeholder="HH:MM" required />
+                                    <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-lg-10">
+                            <div class="form-group">
+                                <label for="end_time" class="required">and end at</label><br />
+                                <div class="time-picker input-group">
+                                    <input type="text" id="end_time" class="form-control" data-format="HH:mm" placeholder="HH:MM" required />
+                                    <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-days">
+                        <label for="days">on these days</label>
+                        <ul class="days">
+                            <li id="sunday">S</li>
+                            <li id="monday" class="active">M</li>
+                            <li id="tuesday" class="active">T</li>
+                            <li id="wednesday" class="active">W</li>
+                            <li id="thursday" class="active">T</li>
+                            <li id="friday" class="active">F</li>
+                            <li id="saturday">S</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF FRONT END CONTENT -->
+    </form>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/fed.js"></script>
+</body>
+
+</html>
