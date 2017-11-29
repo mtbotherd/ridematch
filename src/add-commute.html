@@ -18,9 +18,8 @@
 
 <body>
     <form>
-        <!-- START OF FRONT END CONTENT -->
 
-        <!-- Navigation -->
+        <!-- Navigation - For mobile only -->
         <nav class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
             <div class="container-fluid">
 
@@ -38,10 +37,11 @@
             </div>
         </nav>
 
-        <div class="ridematch dashboard">
+        <!-- START OF FRONT END CONTENT -->
+        <div class="ridematch content commutes">
             <div class="mt-form form-redesign">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-6  col-md-4">
                         <h1>Add Commute</h1>
                         <div class="section">
                             <div class="form-group">
@@ -118,46 +118,47 @@
                                     <input type="number" id="range" class="form-control" min="1" max="25" placeholder="5" />
                                 </div>
                             </div>
-
-                            <div class="section">
-                                <h2>Preferences</h2>
-                                <div class="checkbox">
-                                    <i class="material-icons">smoking_rooms</i>
-                                    <input type="checkbox" />
-                                    <label>I'm a smoker</label>
-                                </div>
-                                <div class="checkbox">
-                                    <i class="material-icons">directions_car</i>
-                                    <input type="checkbox" />
-                                    <label>I'm a smoker</label>
-                                </div>
-                                <div class="checkbox">
-                                    <i class="material-icons">work</i>
-                                    <input type="checkbox" />
-                                    <label>I'm a smoker</label>
-                                </div>
-                                <div class="checkbox">
-                                    <i class="material-icons">group</i>
-                                    <input type="checkbox" />
-                                    <label>I'm a smoker</label>
-                                </div>
-                                <div class="checkbox">
-                                    <i class="material-icons">smoke_free</i>
-                                    <input type="checkbox" />
-                                    <label>I'm a smoker</label>
-                                </div>
-                            </div>
-                            <input type="submit" class="mt-button btn btn-primary btn-block" vlaue="Find Matched" />
                         </div>
+                        <div class="section">
+                            <h2>Preferences</h2>
+                            <div class="checkbox">
+                                <i class="material-icons">smoking_rooms</i>
+                                <input type="checkbox" />
+                                <label>I'm a smoker</label>
+                            </div>
+                            <div class="checkbox">
+                                <i class="material-icons">directions_car</i>
+                                <input type="checkbox" />
+                                <label>I cannot drive</label>
+                            </div>
+                            <div class="checkbox">
+                                <i class="material-icons">work</i>
+                                <input type="checkbox" />
+                                <label>Match only with co-workers</label>
+                            </div>
+                            <div class="checkbox">
+                                <i class="material-icons">group</i>
+                                <input type="checkbox" />
+                                <label>Match only with same gender</label>
+                            </div>
+                            <div class="checkbox">
+                                <i class="material-icons">smoke_free</i>
+                                <input type="checkbox" />
+                                <label>Match only with non-smokers</label>
+                            </div>
+                        </div>
+                        <a class="mt-button btn btn-primary btn-block" href="dashboard.html" role="link">Add</a>
+                        <!-- <input type="submit" class="mt-button btn btn-primary btn-block" value="Find Matched" /> -->
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 visible-md visible-lg">
                         <div class="map-bg" style="min-height: 785px;">
 
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- END OF FRONT END CONTENT -->
+        </div>
+        <!-- END OF FRONT END CONTENT -->
     </form>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>

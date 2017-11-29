@@ -5,10 +5,36 @@
     @import "./redesign-forms.scss";
     padding: 1.5rem;
 
+    a i.material-icons {
+        color: $font-color;
+    }
+
     .card {
         background-color: $white;
         border: 1px solid $border-color;
         padding: 1.5rem;
+
+        .material-icons {
+            @include font-size(16, 10);
+            width: 1.6rem;
+            height: 1.6rem;
+            position: relative;
+            top: 0.2rem;
+            @include screen ('desktop') {
+                @include font-size(20, 10);
+                margin-right: 0.5rem;
+                width: 1.8rem;
+                height: 1.8rem;
+                top: 0.3rem;
+            }
+        }
+
+        h2 {
+            @include font-size(16, 10);
+            @include screen ('desktop') {
+                @include font-size(18, 10);
+            }
+        }
 
         .btn {
             margin-top: 1em;
@@ -26,13 +52,5 @@
         @include screen ('desktop') {
             @include font-size(24, 10);
         }
-    }
-}
-
-.dashboard {
-    position: relative;
-    top: 5rem;
-    @include screen ('desktop') {
-        top: 0;
     }
 }
