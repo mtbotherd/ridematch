@@ -6,6 +6,10 @@ html {
     height: 100%;
 }
 
+body {
+    background-color: $medium-grey;
+}
+
 .navbar-default {
     background-color: $white;
     margin-bottom: 0;
@@ -49,11 +53,17 @@ hr {
 }
 
 .map-bg {
-    background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
+    position: relative;
+    top: 4.7rem;
+    padding: 1.5rem;
+    @include screen ('desktop') {
+        background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        top: 0;
+    }
 }
 
 .navigation {

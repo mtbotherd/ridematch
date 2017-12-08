@@ -3,8 +3,7 @@
 ##############################*/
 .ridematch {
     @import "./redesign-forms.scss";
-    padding: 1.5rem;
-
+    //padding: 1.5rem;
     a i.material-icons {
         color: $font-color;
     }
@@ -42,6 +41,10 @@
 
         .control-point-icon {
             color: $transit-red;
+            @include font-size(24, 10);
+            width: 2.4rem;
+            height: 2.4rem;
+            top: 1rem;
         }
     }
 

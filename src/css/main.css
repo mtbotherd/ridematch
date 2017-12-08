@@ -49,6 +49,9 @@ html {
   font-size: 62.5%;
   height: 100%; }
 
+body {
+  background-color: #d6d6d6; }
+
 .navbar-default {
   background-color: #ffffff;
   margin-bottom: 0;
@@ -88,11 +91,17 @@ hr {
   background-color: #ebebeb; }
 
 .map-bg {
-  background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%; }
+  position: relative;
+  top: 4.7rem;
+  padding: 1.5rem; }
+  @media only screen and (min-width: 992px) {
+    .map-bg {
+      background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      top: 0; } }
 
 .navigation {
   background-color: #ffffff; }
@@ -226,8 +235,7 @@ hr {
     Ridematch specific styles
 ##############################*/
 .ridematch {
-  /* Ridematch specific form styles */
-  padding: 1.5rem; }
+  /* Ridematch specific form styles */ }
   .ridematch .form-redesign .form-group select {
     appearance: none;
     -o-appearance: none;
@@ -354,7 +362,12 @@ hr {
     .ridematch .card .btn {
       margin-top: 1em; }
     .ridematch .card .control-point-icon {
-      color: #ed1b2e; }
+      color: #ed1b2e;
+      font-size: 24;
+      font-size: 2.4rem;
+      width: 2.4rem;
+      height: 2.4rem;
+      top: 1rem; }
   .ridematch .leadin {
     font-size: 14;
     font-size: 1.4rem;
@@ -364,13 +377,6 @@ hr {
       .ridematch .leadin {
         font-size: 24;
         font-size: 2.4rem; } }
-
-.content {
-  position: relative;
-  top: 5rem; }
-  @media only screen and (min-width: 992px) {
-    .content {
-      top: 0; } }
 
 .dashboard h2 {
   display: inline-block; }
