@@ -38,38 +38,33 @@
         </nav>
 
         <!-- START OF FRONT END CONTENT -->
-        <div class="ridematch content commutes">
+        <div class="ridematch dashboard commutes bg-reset">
             <div class="mt-form form-redesign">
                 <div class="row">
-                    <div class="col-sm-6  col-md-4">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <h1>Add Commute</h1>
                         <div class="section">
+                            <h2 class="required">Commute Name</h2>
                             <div class="form-group">
-                                <label for="commute_name" class="required">Commute Name</label>
+                                <label for="commute_name" class="sr-only">Commute Name</label>
                                 <input type="text" class="form-control" id="commute_name" placeholder="Ie., work, school" />
                             </div>
                         </div>
 
                         <div class="section">
-                            <i class="material-icons">place</i>
-                            <h2>Location</h2>
+                            <i class="material-icons place">place</i>
+                            <h2 class="required">Location</h2>
                             <div class="form-group">
-                                <label for="start_location" class="required">Start</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon start" id="starting_point">A</span>
-                                    <input type="text" class="form-control" id="start_location" placeholder="Start" aria-describedby="starting_point" />
-                                </div>
+                                <label for="start_location" class="sr-only">Start</label>
+                                <input type="text" class="form-control" id="start_location" placeholder="Start" aria-describedby="starting_point" />
                                 <div class="checkbox">
                                     <input type="checkbox" id="use_home_address" value="" />
                                     <label>Use my home address</label>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="destination_location" class="required">Destination</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon destination" id="destination_point">B</span>
-                                    <input type="text" class="form-control" id="destination_location" placeholder="Destination" aria-describedby="starting_point" />
-                                </div>
+                                <label for="destination_location" class="sr-only">Destination</label>
+                                <input type="text" class="form-control" id="destination_location" placeholder="Destination" aria-describedby="starting_point" />
                                 <div class="checkbox">
                                     <input type="checkbox" id="use_work_address" value="" />
                                     <label>Use my work address</label>
@@ -78,13 +73,13 @@
                         </div>
 
                         <div class="section">
-                            <i class="material-icons">access_time</i>
-                            <h2>Schedule</h2>
+                            <i class="material-icons schedule">access_time</i>
+                            <h2 class="required">Schedule</h2>
                             <div class="form-inline">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="start_time" class="required">I start (work, school, etc) at</label><br />
+                                            <label for="start_time">I start (work, school, etc) at</label><br />
                                             <div class="time-picker input-group">
                                                 <input type="text" id="start_time" class="form-control" data-format="HH:mm" placeholder="HH:MM" required />
                                                 <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
@@ -93,7 +88,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="end_time" class="required">and end at</label><br />
+                                            <label for="end_time">and end at</label><br />
                                             <div class="time-picker input-group">
                                                 <input type="text" id="end_time" class="form-control" data-format="HH:mm" placeholder="HH:MM" required />
                                                 <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
@@ -149,11 +144,12 @@
                         </div>
                         <a class="mt-button btn btn-primary btn-block" href="dashboard.html" role="link">Add</a>
                         <!-- <input type="submit" class="mt-button btn btn-primary btn-block" value="Find Matched" /> -->
+                        <p>
+                            &nbsp;
+                        </p>
                     </div>
-                    <div class="col-md-8 visible-md visible-lg">
-                        <div class="map-bg" style="min-height: 785px;">
-
-                        </div>
+                    <div class="col-md-8 col-lg-9 visible-md visible-lg">
+                        <div class="map-bg"></div>
                     </div>
                 </div>
             </div>

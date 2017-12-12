@@ -1,13 +1,10 @@
 body,
 html {
+    background-color: $medium-grey;
     color: $font-color;
     font-family: $font-stack-lato;
     font-size: 62.5%;
     height: 100%;
-}
-
-body {
-    background-color: $medium-grey;
 }
 
 .navbar-default {
@@ -53,18 +50,32 @@ hr {
 }
 
 .map-bg {
-    position: relative;
-    top: 4.7rem;
+    background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 82.2rem;
+}
+
+.card {
+    background-color: $white;
+    border: 1px solid $grey;
     padding: 1.5rem;
-    //padding-bottom: 0;
+}
+
+.card-mobile {
     @include screen ('desktop') {
-        background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100%;
-        //padding-bottom: 1.5rem;
-        top: 0;
+        background: none !important;
+        border: 0 !important;
+        padding: 0;
+    }
+}
+
+.card-desktop {
+    @include screen ('max-tablet') {
+        background: none !important;
+        border: 0 !important;
+        padding: 0;
     }
 }
 
@@ -73,19 +84,5 @@ hr {
 
     i {
         padding: 1.5rem;
-    }
-}
-
-.ridematch {
-    .mt-button {
-        text-align: center;
-    }
-
-    .red {
-        color: $red-text;
-    }
-
-    .margin-bottom {
-        margin-bottom: 1rem;
     }
 }

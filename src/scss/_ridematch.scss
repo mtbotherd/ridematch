@@ -2,50 +2,84 @@
     Ridematch specific styles
 ##############################*/
 .ridematch {
-    @import "./redesign-forms.scss";
-    //padding: 1.5rem;
+    background-color: $white;
+    height: 100%;
+    padding: 1.5rem;
+    @include screen ('desktop') {
+        background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        top: 0;
+    }
+
+    .mt-button {
+        text-align: center;
+    }
+
+    .red {
+        color: $red-text;
+    }
+
+    .margin-bottom {
+        margin-bottom: 1rem;
+    }
+
+    .material-icons {
+        width: 1.4rem;
+        height: 1.4rem;
+        position: relative;
+        top: 0.2rem;
+    }
+
     a i.material-icons {
         color: $font-color;
     }
 
-    .card {
-        background-color: $white;
-        border: 1px solid $border-color;
-        padding: 1.5rem;
-        //margin-bottom: 1.5rem;
+    .control-point-icon {
+        color: $transit-red !important;
+        font-size: 2.4rem;
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    @include screen ('desktop') {
+        .card {
+            background-color: $white;
+            border: 1px solid $border-color;
+            padding: 1.5rem;
 
-        .material-icons {
-            @include font-size(16, 10);
-            width: 1.6rem;
-            height: 1.6rem;
-            position: relative;
-            top: 0.2rem;
-            @include screen ('desktop') {
-                @include font-size(20, 10);
-                margin-right: 0.5rem;
-                width: 1.8rem;
-                height: 1.8rem;
-                top: 0.3rem;
+            .material-icons {
+                @include font-size(16, 10);
+                width: 1.6rem;
+                height: 1.6rem;
+                top: 0.2rem;
+                @include screen ('desktop') {
+                    @include font-size(20, 10);
+                    margin-right: 0.5rem;
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    top: 0.3rem;
+                }
             }
-        }
 
-        h2 {
-            @include font-size(16, 10);
-            @include screen ('desktop') {
-                @include font-size(18, 10);
+            h2 {
+                @include font-size(16, 10);
+                @include screen ('desktop') {
+                    @include font-size(18, 10);
+                }
             }
-        }
 
-        .btn {
-            margin-top: 1em;
-        }
+            .btn {
+                margin-top: 1em;
+            }
 
-        .control-point-icon {
-            color: $transit-red;
-            @include font-size(24, 10);
-            width: 2.4rem;
-            height: 2.4rem;
-            top: 1rem;
+            .control-point-icon {
+                @include font-size(24, 10);
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-bottom: 0.5rem;
+            }
         }
     }
 

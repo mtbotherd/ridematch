@@ -1,0 +1,9 @@
+.bg-reset {
+    background-image: none;
+    background-color: $white !important;
+    height: 100%;
+    @include screen ('desktop') {
+        height: auto;
+        min-height: 82.2rem !important;
+    }
+}

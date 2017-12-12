@@ -6,7 +6,7 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
-    // Toggle clas for days of week
+    // Toggle class for days of week
     $('.days li').click(function() {
         $(this).toggleClass('active');
     });
