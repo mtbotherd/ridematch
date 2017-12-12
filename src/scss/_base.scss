@@ -56,12 +56,14 @@ hr {
     position: relative;
     top: 4.7rem;
     padding: 1.5rem;
+    //padding-bottom: 0;
     @include screen ('desktop') {
         background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         height: 100%;
+        //padding-bottom: 1.5rem;
         top: 0;
     }
 }
