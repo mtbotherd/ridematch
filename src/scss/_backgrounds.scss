@@ -1,0 +1,25 @@
+// Default background
+.reset-bg {
+    padding: 1.5rem;
+}
+
+// White bg on mobile, map bg on desktop.
+.map-bg,
+.map-bg-grey {
+    background-image: none;
+    height: 100%;
+    @include screen ('desktop') {
+        background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        padding: 1.5rem 0;
+        top: 0;
+    }
+}
+
+// Grey bg on mobile, map bg on desktop.
+.map-bg-grey {
+    background-color: $medium-grey;
+}

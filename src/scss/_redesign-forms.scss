@@ -26,9 +26,14 @@
         }
 
         label {
+            @include font-size(10, 10);
             @include screen ('desktop') {
                 @include font-size(14, 10);
             }
+        }
+
+        .required-notice {
+            @include font-size (10, 10);
         }
 
         .mt-backbutton {

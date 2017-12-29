@@ -44,7 +44,6 @@
 ############################################*/
 body,
 html {
-  background-color: #d6d6d6;
   color: #606060;
   font-family: "Lato", sans-serif !important;
   font-size: 62.5%;
@@ -76,6 +75,10 @@ h2 {
       font-size: 24;
       font-size: 2.4rem; } }
 
+p {
+  font-size: 10;
+  font-size: 1rem; }
+
 a {
   font-size: 12;
   font-size: 1.2rem; }
@@ -88,23 +91,18 @@ hr {
   color: #ebebeb;
   background-color: #ebebeb; }
 
-.map-bg {
-  background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 82.2rem; }
+small {
+  font-size: 8;
+  font-size: 0.8rem; }
+  @media only screen and (min-width: 992px) {
+    small {
+      font-size: 12;
+      font-size: 1.2rem; } }
 
 .card {
   background-color: #ffffff;
   border: 1px solid #c0c0c0;
   padding: 1.5rem; }
-
-@media only screen and (min-width: 992px) {
-  .card-mobile {
-    background: none !important;
-    border: 0 !important;
-    padding: 0; } }
 
 @media only screen and (max-width: 991px) {
   .card-desktop {
@@ -120,7 +118,7 @@ hr {
 .green {
   color: #008244; }
 
-.dark-green {
+.lime-green {
   color: #a5cf4c; }
 
 .orange {
@@ -146,10 +144,17 @@ hr {
   margin-top: 0;
   margin-bottom: 2rem; }
 
-@media only screen and (min-width: 992px) {
-  .ridematch .form-redesign label {
-    font-size: 14;
-    font-size: 1.4rem; } }
+.ridematch .form-redesign label {
+  font-size: 10;
+  font-size: 1rem; }
+  @media only screen and (min-width: 992px) {
+    .ridematch .form-redesign label {
+      font-size: 14;
+      font-size: 1.4rem; } }
+
+.ridematch .form-redesign .required-notice {
+  font-size: 10;
+  font-size: 1rem; }
 
 .ridematch .form-redesign .mt-backbutton {
   text-align: center; }
@@ -235,21 +240,32 @@ hr {
   .modal-body p {
     font-size: 1.6rem; } }
 
-/*##############################
-    Ridematch specific styles
-##############################*/
-.ridematch {
-  background-color: #ffffff;
-  height: 100%;
+.reset-bg {
   padding: 1.5rem; }
+
+.map-bg,
+.map-bg-grey {
+  background-image: none;
+  height: 100%; }
   @media only screen and (min-width: 992px) {
-    .ridematch {
+    .map-bg,
+    .map-bg-grey {
       background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       height: 100%;
+      padding: 1.5rem 0;
       top: 0; } }
+
+.map-bg-grey {
+  background-color: #d6d6d6; }
+
+/*##############################
+    Ridematch specific styles
+##############################*/
+.ridematch {
+  padding: 0; }
   .ridematch .mt-button {
     text-align: center; }
   .ridematch .red {
@@ -264,10 +280,13 @@ hr {
   .ridematch a i.material-icons {
     color: #606060; }
   .ridematch .control-point-icon {
-    color: #ed1b2e !important;
+    font-size: 24;
     font-size: 2.4rem;
+    color: #ed1b2e !important;
+    display: block;
     width: 2.4rem;
-    height: 2.4rem; }
+    height: 2.4rem;
+    margin: 0 auto 1rem auto; }
   @media only screen and (min-width: 992px) {
     .ridematch .card {
       background-color: #ffffff;
@@ -297,13 +316,7 @@ hr {
         font-size: 1.8rem; } }
   @media only screen and (min-width: 992px) {
       .ridematch .card .btn {
-        margin-top: 1em; }
-      .ridematch .card .control-point-icon {
-        font-size: 24;
-        font-size: 2.4rem;
-        width: 2.4rem;
-        height: 2.4rem;
-        margin-bottom: 0.5rem; } }
+        margin-top: 1em; } }
   .ridematch .leadin {
     font-size: 14;
     font-size: 1.4rem;
@@ -319,6 +332,7 @@ hr {
   top: 4.7rem; }
   @media only screen and (min-width: 992px) {
     .dashboard {
+      padding: 1.5rem;
       top: 0; } }
   .dashboard h2 {
     display: inline-block; }
@@ -331,12 +345,11 @@ hr {
   @media only screen and (min-width: 992px) {
     .dashboard .border-right {
       border-right: 1px solid #ebebeb; } }
-  .dashboard .material-icons {
+  .dashboard .header.material-icons {
     font-size: 14;
-    font-size: 1.4rem;
-    line-height: 0; }
+    font-size: 1.4rem; }
     @media only screen and (min-width: 992px) {
-      .dashboard .material-icons {
+      .dashboard .header.material-icons {
         font-size: 20;
         font-size: 2rem; } }
   @media only screen and (min-width: 992px) {
@@ -358,9 +371,28 @@ hr {
       font-size: 1.2rem;
       font-weight: 700;
       margin-top: 0; }
+  .dashboard .card {
+    padding: 1.5rem; }
+  .dashboard .card-mobile {
+    margin-bottom: 1.5rem; }
+    @media only screen and (min-width: 992px) {
+      .dashboard .card-mobile {
+        margin-bottom: 0; } }
+
+.commutes .card {
+  margin-bottom: 1.5rem; }
 
 .commutes h2 {
   display: inline-block; }
+
+.commutes .number-results {
+  font-size: 12;
+  font-size: 1.2rem; }
+  @media only screen and (min-width: 992px) {
+    .commutes .number-results {
+      font-size: 24;
+      font-size: 2.4rem;
+      line-height: 1em; } }
 
 .commutes .material-icons {
   font-size: 13;
@@ -377,16 +409,10 @@ hr {
       height: 2rem;
       margin-right: 0.3rem; } }
 
+.commutes .preferences p .indent {
+  margin-left: 12px; }
+
 .commutes .checkbox .material-icons {
   top: 0.3rem; }
-
-.bg-reset {
-  background-image: none;
-  background-color: #ffffff !important;
-  height: 100%; }
-  @media only screen and (min-width: 992px) {
-    .bg-reset {
-      height: auto;
-      min-height: 82.2rem !important; } }
 
 /*# sourceMappingURL=../maps/main.css.map */

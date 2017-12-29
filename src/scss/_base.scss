@@ -1,6 +1,5 @@
 body,
 html {
-    background-color: $medium-grey;
     color: $font-color;
     font-family: $font-stack-lato;
     font-size: 62.5%;
@@ -36,6 +35,10 @@ h2 {
     }
 }
 
+p {
+    @include font-size(10, 10);
+}
+
 a {
     @include font-size(12, 10);
 }
@@ -49,13 +52,20 @@ hr {
     background-color: $light-grey;
 }
 
-.map-bg {
-    background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 82.2rem;
+small {
+    @include font-size(8, 10);
+    @include screen ('desktop') {
+        @include font-size(12, 10);
+    }
 }
+
+// .map-bg {
+//     background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     min-height: 82.2rem;
+// }
 
 .card {
     background-color: $white;
@@ -63,14 +73,14 @@ hr {
     padding: 1.5rem;
 }
 
-.card-mobile {
-    @include screen ('desktop') {
-        background: none !important;
-        border: 0 !important;
-        padding: 0;
-    }
-}
-
+// .card-mobile {
+//     @include screen ('desktop') {
+//         background: none !important;
+//         border: 0 !important;
+//         padding: 0;
+//     }
+// }
+//
 .card-desktop {
     @include screen ('max-tablet') {
         background: none !important;
