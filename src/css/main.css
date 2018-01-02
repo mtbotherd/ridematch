@@ -379,8 +379,43 @@ small {
       .dashboard .card-mobile {
         margin-bottom: 0; } }
 
-.commutes .card {
+.commutes .card .card {
   margin-bottom: 1.5rem; }
+  .commutes .card .card:nth-child(2) {
+    border-top: 5px solid #008244; }
+    .commutes .card .card:nth-child(2) .account-circle {
+      color: #008244; }
+  .commutes .card .card:nth-child(3) {
+    border-top: 5px solid #f68b1f; }
+    .commutes .card .card:nth-child(3) .account-circle {
+      color: #f68b1f; }
+  .commutes .card .card:nth-child(4) {
+    border-top: 5px solid #a5cf4c; }
+    .commutes .card .card:nth-child(4) .account-circle {
+      color: #a5cf4c; }
+  .commutes .card .card .result-point {
+    font-size: 10;
+    font-size: 1rem;
+    margin-right: .5rem;
+    text-transform: uppercase; }
+  .commutes .card .card .ab {
+    font-size: 12;
+    font-size: 1.2rem;
+    font-weight: 700; }
+  .commutes .card .card .startend {
+    color: #aaa; }
+
+@media only screen and (min-width: 992px) {
+  .commutes .card {
+    border: none;
+    margin-bottom: 1.5rem;
+    padding: 0; }
+    .commutes .card .card {
+      border: 1px solid #d6d6d6;
+      padding: 1.5rem; } }
+
+.commutes .map-bg {
+  min-height: 81.645rem; }
 
 .commutes h2 {
   display: inline-block; }
@@ -412,7 +447,9 @@ small {
 .commutes .preferences p .indent {
   margin-left: 12px; }
 
-.commutes .checkbox .material-icons {
-  top: 0.3rem; }
+@media only screen and (min-width: 992px) {
+  .commutes .checkbox .material-icons {
+    line-height: 0;
+    top: 0.3rem; } }
 
 /*# sourceMappingURL=../maps/main.css.map */
