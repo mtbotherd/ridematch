@@ -1,5 +1,4 @@
 .dashboard {
-    //padding: 0;
     position: relative;
     top: 4.7rem;
     @include screen ('desktop') {
@@ -25,13 +24,6 @@
     .border-right {
         @include screen ('desktop') {
             border-right: 1px solid $light-grey;
-        }
-    }
-
-    .header.material-icons {
-        @include font-size(14, 10);
-        @include screen ('desktop') {
-            @include font-size(20, 10);
         }
     }
 
@@ -63,9 +55,9 @@
         }
     }
 
-    .card {
-        padding: 1.5rem;
-    }
+    // .card {
+    //     padding: 1.5rem;
+    // }
 
     .card-mobile {
         margin-bottom: 1.5rem;

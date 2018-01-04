@@ -2,7 +2,7 @@
     Ridematch specific styles
 ##############################*/
 .ridematch {
-    padding: 0;
+    //padding: 1.5rem;
 
     .mt-button {
         text-align: center;
@@ -17,8 +17,9 @@
     }
 
     .material-icons {
-        width: 1.4rem;
-        height: 1.4rem;
+        @include font-size (12, 10);
+        width: 1.2rem;
+        height: 1.2rem;
         position: relative;
         top: 0.2rem;
     }
@@ -31,9 +32,9 @@
         @include font-size(24, 10);
         color: $transit-red !important;
         display: block;
-        width: 2.4rem;
-        height: 2.4rem;
-        margin: 0 auto 1rem auto;
+        width: 2.4rem !important;
+        height: 2.4rem !important;
+        margin: 0 auto 1rem auto !important;
     }
     @include screen ('desktop') {
         .card {
@@ -42,17 +43,11 @@
             padding: 1.5rem;
 
             .material-icons {
-                @include font-size(16, 10);
-                width: 1.6rem;
-                height: 1.6rem;
-                top: 0.2rem;
-                @include screen ('desktop') {
-                    @include font-size(20, 10);
-                    margin-right: 0.5rem;
-                    width: 1.8rem;
-                    height: 1.8rem;
-                    top: 0.3rem;
-                }
+                @include font-size(20, 10);
+                margin-right: 0.5rem;
+                width: 2rem;
+                height: 2rem;
+                top: 0.3rem;
             }
 
             h2 {
