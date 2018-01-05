@@ -55,10 +55,6 @@
         }
     }
 
-    // .card {
-    //     padding: 1.5rem;
-    // }
-
     .card-mobile {
         margin-bottom: 1.5rem;
         @include screen ('desktop') {
