@@ -219,10 +219,10 @@ small {
   margin-bottom: 1rem; }
   .ridematch .form-redesign .select-days label {
     display: block; }
-  .ridematch .form-redesign .select-days .days {
+  .ridematch .form-redesign .select-days ul {
     list-style-type: none;
     padding-left: 0; }
-    .ridematch .form-redesign .select-days .days li {
+    .ridematch .form-redesign .select-days ul li {
       display: inline-block;
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -233,25 +233,21 @@ small {
       height: 3rem;
       margin-right: 0.5rem;
       padding: 0.8rem 1rem; }
-      .ridematch .form-redesign .select-days .days li.active {
+      .ridematch .form-redesign .select-days ul li.active {
         background-color: #cfdeed; }
 
 @media only screen and (min-width: 992px) {
   .modal-body p {
     font-size: 1.6rem; } }
 
-.map-bg,
+/*** Backgrounds ***/
 .grey-bg,
-.reset-bg {
-  padding: 1.5rem; }
-
-.map-bg,
-.grey-bg {
+.map-bg {
   background-image: none;
   height: 100%; }
   @media only screen and (min-width: 992px) {
-    .map-bg,
-    .grey-bg {
+    .grey-bg,
+    .map-bg {
       background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
       background-size: cover;
       background-position: center;
@@ -260,8 +256,8 @@ small {
       padding: 1.5rem 0;
       top: 0; } }
 
-.grey-bg {
-  background-color: #d6d6d6; }
+.reset-bg {
+  padding: 1.5rem; }
 
 /*##############################
     Ridematch specific styles
@@ -325,6 +321,9 @@ small {
       font-size: 24;
       font-size: 2.4rem; } }
 
+/************************************
+    Ridematch - Dashboard
+/***********************************/
 .dashboard {
   padding: 1.5rem;
   position: relative;
@@ -375,6 +374,9 @@ small {
       margin-bottom: -99999px;
       padding-bottom: 99999px; } }
 
+/************************************
+    Ridematch - Commutes
+/***********************************/
 @media only screen and (min-width: 992px) {
   .commutes .card {
     border: none;
@@ -406,8 +408,15 @@ small {
     line-height: 0;
     top: 0.3rem; } }
 
+/************************************
+    Ridematch - Commute Results
+/***********************************/
 .commute-results .card .card {
   margin-bottom: 1.5rem; }
+  .commute-results .card .card .number-results {
+    font-size: 18;
+    font-size: 1.8rem;
+    line-height: 1.3; }
   .commute-results .card .card:nth-child(2) {
     border-top: 5px solid #008244; }
     .commute-results .card .card:nth-child(2) .account-circle {

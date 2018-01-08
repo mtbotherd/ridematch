@@ -18,6 +18,22 @@
 
 <body>
     <form>
+
+        <!-- Ridematch Messages Modal -->
+        <div class="modal fade" id="addEmployer" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h1 class="modal-title">Employer Submitted</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>Your employer has been submitted for review.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
             <div class="container-fluid">
@@ -44,10 +60,10 @@
                             <div class="card">
                                 <h1>Commute: Work</h1>
                                 <div class="row">
-                                    <div class="col-xs-7">
+                                    <div class="col-xs-6">
                                         <span class="number-results">3 of 7 results</span>
                                     </div>
-                                    <div class="col-xs-5 text-right">
+                                    <div class="col-xs-6 text-right">
                                         <a href="add-commute.html">Revise search <i class="material-icons">create</i></a>
                                     </div>
                                 </div>
@@ -106,7 +122,7 @@
                                 </div>
                                 <p>Adds 1.1 miles to your commute</p>
                                 <div class="select-days">
-                                    <ul class="days">
+                                    <ul>
                                         <li id="sunday">S</li>
                                         <li id="monday" class="active">M</li>
                                         <li id="tuesday" class="active">T</li>

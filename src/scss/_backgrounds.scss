@@ -1,12 +1,7 @@
-.map-bg,
-.grey-bg,
-.reset-bg {
-    padding: 1.5rem;
-}
-
+/*** Backgrounds ***/
 // White bg on mobile, map bg on desktop.
-.map-bg,
-.grey-bg {
+.grey-bg,
+.map-bg {
     background-image: none;
     height: 100%;
     @include screen ('desktop') {
@@ -19,11 +14,8 @@
         top: 0;
     }
 }
-
 // Default background
-.reset-bg {}
 
-// Grey bg on mobile, map bg on desktop.
-.grey-bg {
-    background-color: $medium-grey;
+.reset-bg {
+    padding: 1.5rem;
 }
