@@ -59,28 +59,12 @@ small {
     }
 }
 
-// .map-bg {
-//     background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     min-height: 82.2rem;
-// }
-
 .card {
     background-color: $white;
     border: 1px solid $grey;
     padding: 1.5rem;
 }
 
-// .card-mobile {
-//     @include screen ('desktop') {
-//         background: none !important;
-//         border: 0 !important;
-//         padding: 0;
-//     }
-// }
-//
 .card-desktop {
     @include screen ('max-tablet') {
         background: none !important;

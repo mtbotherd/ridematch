@@ -5,10 +5,6 @@
     padding: 1.5rem;
     position: relative;
     top: 4.7rem;
-    @include screen ('desktop') {
-        padding: 1.5rem;
-        top: 0;
-    }
 
     h2 {
         display: inline-block;
@@ -17,34 +13,6 @@
     hr {
         color: $light-grey;
         background-color: $light-grey;
-    }
-
-    .border-left {
-        @include screen ('desktop') {
-            border-left: 1px solid $light-grey;
-        }
-    }
-
-    .border-right {
-        @include screen ('desktop') {
-            border-right: 1px solid $light-grey;
-        }
-    }
-
-    .tools {
-        @include screen ('desktop') {
-            margin-top: 1rem;
-        }
-
-        .material-icons {
-            @include screen ('desktop') {
-                @include font-size(15, 10);
-            }
-        }
-
-        .link a {
-            @include font-size(12, 10);
-        }
     }
 
     .well {
@@ -61,19 +29,37 @@
 
     .card-mobile {
         margin-bottom: 1.5rem;
-        @include screen ('desktop') {
-            margin-bottom: 0;
-        }
     }
-    // Use to make columns equal hieght.
     @include screen ('desktop') {
-        .row.match-cols {
-            overflow: hidden;
+        padding: 1.5rem;
+        top: 0;
+
+        .border-left {
+            border-left: 1px solid $light-grey;
         }
 
-        .row.match-cols [class*="col-"] {
-            margin-bottom: -99999px;
-            padding-bottom: 99999px;
+        .border-right {
+            border-right: 1px solid $light-grey;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .card-mobile {
+            margin-bottom: 0;
+        }
+
+        .tools {
+            margin-top: 1rem;
+
+            .material-icons {
+                @include font-size(15, 10);
+            }
+
+            .link a {
+                @include font-size(12, 10);
+            }
         }
     }
 }

@@ -299,7 +299,6 @@ small {
     .ridematch .card .material-icons {
       font-size: 20;
       font-size: 2rem;
-      margin-right: 0.5rem;
       width: 2rem;
       height: 2rem;
       top: 0.3rem; }
@@ -328,31 +327,11 @@ small {
   padding: 1.5rem;
   position: relative;
   top: 4.7rem; }
-  @media only screen and (min-width: 992px) {
-    .dashboard {
-      padding: 1.5rem;
-      top: 0; } }
   .dashboard h2 {
     display: inline-block; }
   .dashboard hr {
     color: #ebebeb;
     background-color: #ebebeb; }
-  @media only screen and (min-width: 992px) {
-    .dashboard .border-left {
-      border-left: 1px solid #ebebeb; } }
-  @media only screen and (min-width: 992px) {
-    .dashboard .border-right {
-      border-right: 1px solid #ebebeb; } }
-  @media only screen and (min-width: 992px) {
-    .dashboard .tools {
-      margin-top: 1rem; } }
-  @media only screen and (min-width: 992px) {
-    .dashboard .tools .material-icons {
-      font-size: 15;
-      font-size: 1.5rem; } }
-  .dashboard .tools .link a {
-    font-size: 12;
-    font-size: 1.2rem; }
   .dashboard .well {
     background-color: #ebebeb;
     border: 0;
@@ -364,15 +343,26 @@ small {
       margin-top: 0; }
   .dashboard .card-mobile {
     margin-bottom: 1.5rem; }
-    @media only screen and (min-width: 992px) {
-      .dashboard .card-mobile {
-        margin-bottom: 0; } }
   @media only screen and (min-width: 992px) {
-    .dashboard .row.match-cols {
-      overflow: hidden; }
-    .dashboard .row.match-cols [class*="col-"] {
-      margin-bottom: -99999px;
-      padding-bottom: 99999px; } }
+    .dashboard {
+      padding: 1.5rem;
+      top: 0; }
+      .dashboard .border-left {
+        border-left: 1px solid #ebebeb; }
+      .dashboard .border-right {
+        border-right: 1px solid #ebebeb; }
+      .dashboard .card {
+        border: none; }
+      .dashboard .card-mobile {
+        margin-bottom: 0; }
+      .dashboard .tools {
+        margin-top: 1rem; }
+        .dashboard .tools .material-icons {
+          font-size: 15;
+          font-size: 1.5rem; }
+        .dashboard .tools .link a {
+          font-size: 12;
+          font-size: 1.2rem; } }
 
 /************************************
     Ridematch - Commutes
