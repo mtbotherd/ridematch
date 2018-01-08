@@ -315,10 +315,6 @@ small {
         font-size: 18;
         font-size: 1.8rem; } }
 
-@media only screen and (min-width: 992px) {
-    .ridematch .card .btn {
-      margin-top: 1em; } }
-
 .ridematch .leadin {
   font-size: 14;
   font-size: 1.4rem;
@@ -330,6 +326,7 @@ small {
       font-size: 2.4rem; } }
 
 .dashboard {
+  padding: 1.5rem;
   position: relative;
   top: 4.7rem; }
   @media only screen and (min-width: 992px) {
@@ -371,32 +368,12 @@ small {
     @media only screen and (min-width: 992px) {
       .dashboard .card-mobile {
         margin-bottom: 0; } }
-
-.commutes .card .card {
-  margin-bottom: 1.5rem; }
-  .commutes .card .card:nth-child(2) {
-    border-top: 5px solid #008244; }
-    .commutes .card .card:nth-child(2) .account-circle {
-      color: #008244; }
-  .commutes .card .card:nth-child(3) {
-    border-top: 5px solid #f68b1f; }
-    .commutes .card .card:nth-child(3) .account-circle {
-      color: #f68b1f; }
-  .commutes .card .card:nth-child(4) {
-    border-top: 5px solid #a5cf4c; }
-    .commutes .card .card:nth-child(4) .account-circle {
-      color: #a5cf4c; }
-  .commutes .card .card .result-point {
-    font-size: 10;
-    font-size: 1rem;
-    margin-right: .5rem;
-    text-transform: uppercase; }
-  .commutes .card .card .ab {
-    font-size: 12;
-    font-size: 1.2rem;
-    font-weight: 700; }
-  .commutes .card .card .startend {
-    color: #aaa; }
+  @media only screen and (min-width: 992px) {
+    .dashboard .row.match-cols {
+      overflow: hidden; }
+    .dashboard .row.match-cols [class*="col-"] {
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; } }
 
 @media only screen and (min-width: 992px) {
   .commutes .card {
@@ -405,10 +382,9 @@ small {
     padding: 0; }
     .commutes .card .card {
       border: 1px solid #d6d6d6;
-      padding: 1.5rem; } }
-
-.commutes .map-bg {
-  min-height: 81.645rem; }
+      padding: 1.5rem; }
+    .commutes .card .map-bg {
+      height: 82.5rem; } }
 
 .commutes h2 {
   display: inline-block; }
@@ -429,5 +405,44 @@ small {
   .commutes .checkbox .material-icons {
     line-height: 0;
     top: 0.3rem; } }
+
+.commute-results .card .card {
+  margin-bottom: 1.5rem; }
+  .commute-results .card .card:nth-child(2) {
+    border-top: 5px solid #008244; }
+    .commute-results .card .card:nth-child(2) .account-circle {
+      color: #008244; }
+  .commute-results .card .card:nth-child(3) {
+    border-top: 5px solid #f68b1f; }
+    .commute-results .card .card:nth-child(3) .account-circle {
+      color: #f68b1f; }
+  .commute-results .card .card:nth-child(4) {
+    border-top: 5px solid #a5cf4c; }
+    .commute-results .card .card:nth-child(4) .account-circle {
+      color: #a5cf4c; }
+  .commute-results .card .card .result-point {
+    font-size: 10;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    text-transform: uppercase; }
+  .commute-results .card .card .ab {
+    font-size: 12;
+    font-size: 1.2rem;
+    font-weight: 700; }
+  .commute-results .card .card .startend {
+    color: #aaa; }
+
+@media only screen and (min-width: 992px) {
+  .commute-results .card {
+    border: none;
+    margin-bottom: 1.5rem;
+    padding: 0; }
+    .commute-results .card .card {
+      border: 1px solid #d6d6d6;
+      padding: 1.5rem; } }
+
+@media only screen and (min-width: 992px) {
+  .commute-results .map-bg {
+    height: 106rem; } }
 
 /*# sourceMappingURL=../maps/main.css.map */

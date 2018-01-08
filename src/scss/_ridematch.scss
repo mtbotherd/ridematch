@@ -3,7 +3,6 @@
 ##############################*/
 .ridematch {
     //padding: 1.5rem;
-
     .mt-button {
         text-align: center;
     }
@@ -56,10 +55,9 @@
                     @include font-size(18, 10);
                 }
             }
-
-            .btn {
-                margin-top: 1em;
-            }
+            // .btn {
+            //     margin-top: 1em;
+            // }
         }
     }
 

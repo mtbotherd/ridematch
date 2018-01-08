@@ -1,44 +1,5 @@
 .commutes {
     .card {
-        .card {
-            margin-bottom: 1.5rem;
-
-            &:nth-child(2) {
-                border-top: 5px solid $green;
-                .account-circle {
-                    color: $green;
-                }
-            }
-
-            &:nth-child(3) {
-                border-top: 5px solid $orange;
-                .account-circle {
-                    color: $orange;
-                }
-            }
-
-            &:nth-child(4) {
-                border-top: 5px solid $lime-green;
-                .account-circle {
-                    color: $lime-green;
-                }
-            }
-
-            .result-point {
-                @include font-size(10, 10);
-                margin-right: .5rem;
-                text-transform: uppercase;
-            }
-
-            .ab {
-                @include font-size(12, 10);
-                font-weight: 700;
-            }
-
-            .startend {
-                color: #aaa;
-            }
-        }
         @include screen ('desktop') {
             border: none;
             margin-bottom: 1.5rem;
@@ -48,11 +9,11 @@
                 border: 1px solid $medium-grey;
                 padding: 1.5rem;
             }
-        }
-    }
 
-    .map-bg {
-        min-height: 81.645rem;
+            .map-bg {
+                height: 82.5rem;
+            }
+        }
     }
 
     h2 {
