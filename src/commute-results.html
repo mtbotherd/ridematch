@@ -9,7 +9,7 @@
     <link rel='shortcut icon' href='https://www.metrotransit.org/Data/Sites/1/skins/MetroTransitII/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- <link rel="stylehseet" type="text/css" href="fonts/font-awesome.min.css" /> -->
-    <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=47b00d5b-2a7b-420f-a3f8-b9f44610c86f' />
+    <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=6539b04f-5f49-420e-adb1-b102744f779c' />
     <!-- build:css css/main.css -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- endbuild -->
@@ -20,15 +20,31 @@
     <form>
 
         <!-- Ridematch Messages Modal -->
-        <div class="modal fade" id="addEmployer" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
+        <div class="modal fade" id="newMessage" tabindex="-1" role="dialog">
+            <div class="modal-dialog ridematch" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h1 class="modal-title">Employer Submitted</h1>
+                        <h1 class="modal-title">Ridematch Message</h1>
                     </div>
-                    <div class="modal-body">
-                        <p>Your employer has been submitted for review.</p>
+                    <div class="modal-body form-redesign">
+                        <div class="mt-form form-redesign">
+                            <h2>Subject</h2>
+                            <div class="form-group">
+                                <label class="sr-only">Subject</label>
+                                <input type="text" class="form-control" placeholder="Metro Tranist - Ridematch" />
+                            </div>
+                            <h2>Message</h2>
+                            <div class="form-group">
+                                <label class="sr-only">Message</label>
+                                <textarea class="form-control" rows="5" placeholder="You are listed as a potential carpool match for me on Metro Transit and I was wondering if you are interested in carpooling? If you would like, I can send you more information about myself, just let me know. Thanks, I look forward to hearing from you."></textarea>
+                            </div>
+                            <p style="display: none;">Thank you, your rideshare match email has been sent. You will receive any responses directly to the email address you have associated with your account.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="mt-button btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" id="sendMessage" class="mt-button btn btn-primary">Send</button>
                     </div>
                 </div>
             </div>
@@ -133,7 +149,7 @@
                                     </ul>
                                 </div>
                                 <p>9:00 AM &amp; 5:00 PM</p>
-                                <p class="text-right"><a href="" title="contact"><i class="material-icons">email</i> Contact</a></p>
+                                <p class="text-right"><a href="#newMessage" data-toggle="modal" title="contact"><i class="material-icons">email</i> Contact</a></p>
                             </div>
                             <div class="card">
                                 <i class="material-icons account-circle">person</i>
@@ -174,7 +190,7 @@
                                     </ul>
                                 </div>
                                 <p>9:00 AM &amp; 5:00 PM</p>
-                                <p class="text-right"><a href="" title="contact"><i class="material-icons">email</i> Contact</a></p>
+                                <p class="text-right"><a href="#newMessage" data-toggle="modal" title="contact"><i class="material-icons">email</i> Contact</a></p>
                             </div>
                             <div class="card">
                                 <i class="material-icons account-circle">person</i>
@@ -215,7 +231,7 @@
                                     </ul>
                                 </div>
                                 <p>9:00 AM &amp; 5:00 PM</p>
-                                <p class="text-right"><a href="" title="contact"><i class="material-icons">email</i> Contact</a></p>
+                                <p class="text-right"><a href="#newMessage" data-toggle="modal" title="contact"><i class="material-icons">email</i> Contact</a></p>
                             </div>
                             <a href="" class="mt-button btn btn-primary btn-block">Next 3 results</a>
                             <a href="" class="mt-backbutton btn btn-primary btn-block">Back</a>

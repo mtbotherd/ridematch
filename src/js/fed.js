@@ -11,4 +11,11 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
+    // Ridematch message sent confirmation
+    $('#sendMessage').click(function() {
+        $('.modal-body h2, .modal-body .form-group, .modal-footer').hide();
+        $('.modal-body p').show();
+        return;
+    });
+
 });
