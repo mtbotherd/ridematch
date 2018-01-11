@@ -1,92 +1,118 @@
 body,
 html {
-    color: $font-color;
-    font-family: $font-stack-lato;
     font-size: 62.5%;
     height: 100%;
 }
 
-.navbar-default {
-    background-color: $white;
-    margin-bottom: 0;
-    min-height: 2rem;
-    padding: 1rem 0;
+/*##############################
+  Ridematch base styles
+##############################*/
 
-    a {
-        color: $grey;
-    }
+.ridematch {
+    color: $font-color;
+    font-family: $font-stack-lato;
 
-    a.active {
-        color: $transit-blue;
-    }
-}
-
-h1 {
-    @include font-size(16, 10);
-}
-
-h2 {
-    @include font-size(12, 10);
-}
-
-p {
-    @include font-size(10, 10);
-}
-
-a {
-    @include font-size(12, 10);
-
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-.btn {
-    @include font-size(13, 10);
-}
-
-hr {
-    color: $light-grey;
-    background-color: $light-grey;
-}
-
-small {
-    @include font-size(8, 10);
-}
-
-.card {
-    background-color: $white;
-    border: 1px solid $grey;
-    padding: 1.5rem;
-}
-
-.navigation {
-    background-color: $white;
-
-    i {
-        padding: 1.5rem;
-    }
-}
-
-// Media queries
-@include screen ('desktop') {
     h1 {
-        @include font-size(30, 10);
+        @include font-size(16, 10);
     }
 
     h2 {
-        @include font-size(24, 10);
+        @include font-size(12, 10);
+    }
+
+    p {
+        @include font-size(10, 10);
+    }
+
+    a {
+        @include font-size(12, 10);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .btn {
+        @include font-size(13, 10);
+    }
+
+    hr {
+        color: $light-grey;
+        background-color: $light-grey;
     }
 
     small {
-        @include font-size(12, 10);
+        @include font-size(8, 10);
     }
-}
 
-@include screen ('max-tablet') {
-    .card-desktop {
-        background: none !important;
-        border: 0 !important;
-        padding: 0;
+    .card {
+        background-color: $white;
+        border: 1px solid $grey;
+        padding: 1.5rem;
+    }
+
+    .navigation {
+        background-color: $white;
+
+        i {
+            padding: 1.5rem;
+        }
+    }
+
+    .mt-button {
+        text-align: center;
+    }
+
+    .red {
+        color: $red-text;
+    }
+
+    .margin-bottom {
+        margin-bottom: 1rem;
+    }
+
+    .material-icons {
+        @include font-size (12, 10);
+        width: 1.2rem;
+        height: 1.2rem;
+        position: relative;
+        top: 0.2rem;
+    }
+
+    a i.material-icons {
+        color: $font-color;
+    }
+
+    // Media queries
+    @include screen ('desktop') {
+        h1 {
+            @include font-size(30, 10);
+        }
+
+        h2 {
+            @include font-size(24, 10);
+        }
+
+        small {
+            @include font-size(12, 10);
+        }
+
+        .material-icons {
+            @include font-size(24, 10);
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        .leadin {
+            @include font-size(24, 10);
+        }
+    }
+
+    @include screen ('max-tablet') {
+        // .card-desktop {
+        //     background: none !important;
+        //     border: 0 !important;
+        //     padding: 0;
+        // }
     }
 }

@@ -2,8 +2,23 @@
     Ridematch - Commutes
 /***********************************/
 .commutes {
-    .card {
-        @include screen ('desktop') {
+
+    h2 {
+        display: inline-block;
+    }
+
+    .number-results {
+        @include font-size(12, 10);
+    }
+
+    .preferences p {
+        .indent {
+            margin-left: 12px;
+        }
+    }
+
+    @include screen ('desktop') {
+        .card {
             border: none;
             margin-bottom: 1.5rem;
             padding: 0;
@@ -14,35 +29,18 @@
             }
 
             .map-bg {
-                height: 82.5rem;
+                height: 80.265rem;
             }
         }
-    }
 
-    h2 {
-        display: inline-block;
-    }
-
-    .number-results {
-        @include font-size(12, 10);
-        @include screen ('desktop') {
+        .number-results {
             @include font-size(24, 10);
             line-height: 1em;
         }
-    }
 
-    .preferences p {
-        .indent {
-            margin-left: 12px;
-        }
-    }
-
-    .checkbox {
-        @include screen ('desktop') {
-            .material-icons {
-                line-height: 0;
-                top: 0.3rem;
-            }
+        .checkbox .material-icons {
+            line-height: 0;
+            top: 0.3rem;
         }
     }
 }

@@ -2,17 +2,32 @@
     Ridematch - Dashboard
 /***********************************/
 .dashboard {
-    padding: 1.5rem;
     position: relative;
-    top: 4.7rem;
+    top: 4.8rem;
 
     h2 {
+        @include font-size(16, 10);
         display: inline-block;
+
+        .material-icons {
+            @include font-size(16, 10);
+            width: 1.6rem;
+            height: 1.6rem;
+        }
     }
 
     hr {
         color: $light-grey;
         background-color: $light-grey;
+    }
+
+    .card {
+        border: none;
+
+        .card {
+            border: 1px solid $medium-grey;
+            margin-bottom: 2rem;
+        }
     }
 
     .well {
@@ -26,13 +41,13 @@
             margin-top: 0;
         }
     }
-
-    .card-mobile {
-        margin-bottom: 1.5rem;
-    }
     @include screen ('desktop') {
-        padding: 1.5rem;
         top: 0;
+
+        .card .card {
+            border: none;
+            padding-top: 0;
+        }
 
         .border-left {
             border-left: 1px solid $light-grey;
@@ -42,15 +57,7 @@
             border-right: 1px solid $light-grey;
         }
 
-        .card {
-            border: none;
-        }
-
-        .card-mobile {
-            margin-bottom: 0;
-        }
-
-        .tools {
+        .toos {
             margin-top: 1rem;
 
             .material-icons {

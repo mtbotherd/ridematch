@@ -1,32 +1,7 @@
 /*##############################
-    Ridematch specific styles
+  Ridematch specific styles
 ##############################*/
 .ridematch {
-    //padding: 1.5rem;
-    .mt-button {
-        text-align: center;
-    }
-
-    .red {
-        color: $red-text;
-    }
-
-    .margin-bottom {
-        margin-bottom: 1rem;
-    }
-
-    .material-icons {
-        @include font-size (12, 10);
-        width: 1.2rem;
-        height: 1.2rem;
-        position: relative;
-        top: 0.2rem;
-    }
-
-    a i.material-icons {
-        color: $font-color;
-    }
-
     .control-point-icon {
         @include font-size(24, 10);
         color: $transit-red !important;
@@ -43,26 +18,11 @@
     }
 
     @include screen ('desktop') {
-        .material-icons {
-            @include font-size(24, 10);
-            width: 2.4rem;
-            height: 2.4rem;
-        }
-
+        padding: 1.5rem;
         .material-icons.create {
             @include font-size(12, 10);
             width: 1.2rem;
             height: 1.2rem;
-        }
-
-        .card {
-            background-color: $white;
-            border: 1px solid $border-color;
-            padding: 1.5rem;
-        }
-
-        .leadin {
-            @include font-size(24, 10);
         }
     }
 }

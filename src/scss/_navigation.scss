@@ -1,0 +1,25 @@
+/*##############################
+  Ridematch nav styles
+##############################*/
+.ridematch {
+    .navbar-default {
+        background-color: $white !important;
+        margin-bottom: 0;
+        min-height: 2rem;
+        padding: 1.5rem 0;
+
+        a {
+            color: $grey;
+        }
+
+        a.active {
+            color: $transit-blue;
+        }
+
+        .material-icons {
+            @include font-size(16, 10);
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+}

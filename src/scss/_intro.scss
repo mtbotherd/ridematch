@@ -1,0 +1,16 @@
+/*##############################
+  Ridematch intro page styles
+##############################*/
+
+.intro {
+    .card {
+        border: 0;
+        padding: 1.5rem;
+    }
+
+    @include screen ('desktop') {
+        .card {
+            border: 1px solid $medium-grey;
+        }
+    }
+}

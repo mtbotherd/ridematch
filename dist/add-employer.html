@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Metro Transit</title>
+    <title>Ridematch Add Employer | Metro Transit</title>
     <link rel='shortcut icon' href='https://www.metrotransit.org/Data/Sites/1/skins/MetroTransitII/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- <link rel="stylehseet" type="text/css" href="fonts/font-awesome.min.css" /> -->
-    <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=4d8de194-35c6-4f01-987d-58e0eec76d66' />
+    <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=6539b04f-5f49-420e-adb1-b102744f779c' />
     <link rel="stylesheet" href="css/main.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/forms.css" /> -->
 </head>
@@ -19,54 +19,53 @@
         <!-- START OF FRONT END CONTENT -->
 
         <!-- Employer Added Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal fade" id="addEmployer" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Employer Submitted</h4>
+                        <h1 class="modal-title">Employer Submitted</h1>
                     </div>
                     <div class="modal-body">
                         <p>Your employer has been submitted for review.</p>
                     </div>
-                    <!-- <div class="modal-footer">
-                        <button type="button" class="mt-button btn btn-default" data-dismiss="modal">Close</button>
-                    </div> -->
                 </div>
             </div>
         </div>
 
         <!-- Add Employer -->
-        <div class="ridematch">
-            <div class="mt-form form-redesign">
-                <h1>Add Employer</h1>
-                <div class="text-right">
-                    <span class="required-notice"> = Required</span>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="form-group">
-                            <label for="firstName" class="required">Employer Name</label>
-                            <input type="text" class="form-control" id="fistName" placeholder="First name" required />
+        <div class="reset-bg">
+            <div class="ridematch">
+                <div class="mt-form form-redesign">
+                    <h1>Add Employer</h1>
+                    <div class="text-right">
+                        <span class="required-notice"> = Required</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label for="firstName" class="required">Employer Name</label>
+                                <input type="text" class="form-control" id="fistName" placeholder="First name" required />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="form-group">
-                            <label for="homeAddress" class="required">Employer Adress</label>
-                            <input type="text" class="form-control" id="homeAddress" placeholder="Address" required />
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="form-group">
+                                <label for="homeAddress" class="required">Employer Address</label>
+                                <input type="text" class="form-control" id="homeAddress" placeholder="Address" required />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 col-md-3 col-lg-2 margin-bottom">
-                        <a class="mt-backbutton btn btn-primary btn-block" href="/add-my-profile.html" title="Go back">Go Back</a>
-                    </div>
-                    <div class="col-sm-3 col-md-3 col-lg-2 margin-bottom">
-                        <!-- <input type="submit" id="submit" name="submit" value="Submit" class="mt-button btn btn-primary btn-block" /> -->
-                        <input type="submit" id="submit" name="submit" value="Submit" class="mt-button btn btn-primary btn-block" data-toggle="modal" data-target="#myModal" />
-                        <!-- <button class="mt-button btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#myModal">Submit</button> -->
+                    <div class="row">
+                        <div class="col-sm-3 col-md-3 col-lg-2 margin-bottom">
+                            <a class="mt-backbutton btn btn-primary btn-block" href="my-profile.html" title="Go back">Go Back</a>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-lg-2 margin-bottom">
+                            <!-- <input type="submit" id="submit" name="submit" value="Submit" class="mt-button btn btn-primary btn-block" /> -->
+                            <input type="submit" id="submit" name="submit" value="Submit" class="mt-button btn btn-primary btn-block" data-toggle="modal" data-target="#addEmployer" />
+                            <!-- <button class="mt-button btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#myModal">Submit</button> -->
+                        </div>
                     </div>
                 </div>
             </div>
