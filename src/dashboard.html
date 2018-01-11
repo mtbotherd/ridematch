@@ -27,13 +27,13 @@
 
                     <div class="row">
                         <div class="col-xs-4">
-                            <a class="active" href="#my-commutes" title="Return to your Dashboard" role="button"><i class="material-icons">drive_eta</i><span class="sr-only">My Commutes</span></a>
+                            <a class="active" href="#commutes" title="Return to your Dashboard" role="button"><i class="material-icons">drive_eta</i><span class="sr-only">My Commutes</span></a>
                         </div>
                         <div class="col-xs-4 text-center">
-                            <a href="#my-messages" title="Go to your messages" role="button"><i class="material-icons">email</i><span class="sr-only">My Messages</span></a>
+                            <a href="#messages" title="Go to your messages" role="button"><i class="material-icons">email</i><span class="sr-only">My Messages</span></a>
                         </div>
                         <div class="col-xs-4 text-right">
-                            <a href="#my-profile" role="button"><i class="material-icons">account_circle</i><span class="sr-only">My Profile</span></a>
+                            <a href="#profile" role="button"><i class="material-icons">account_circle</i><span class="sr-only">My Profile</span></a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                     <h1 class="hidden-xs hidden-sm">Dashboard</h1>
                     <div class="row">
                         <div class="col-md-4 border-right">
-                            <div class="card">
+                            <div id="commutes" class="card">
                                 <!-- <i class="header material-icons">drive_eta</i> -->
                                 <h2><i class="material-icons">drive_eta</i> My Commutes</h2>
                                 <div class="well">
@@ -62,20 +62,17 @@
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <div class="card">
+                            <div id="messages" class="card">
                                 <h2><i class="material-icons">mail</i> Messages</h2>
                                 <div class="well">
                                     <p>You currenlt have no messages.</p>
                                 </div>
                             </div>
                             <hr class="visible-md visible-lg" />
-                            <div class="card card-mobile">
+                            <div id="profile" class="card">
                                 <h2><i class="material-icons">account_circle</i> Profile</h2>
                                 <a href="#" title="Edit profile" role="link">
-                                        <i class="material-icons create">create</i> Edit</a>
-                                <p>
-                                    &nbsp;
-                                </p>
+                                        Edit <i class="material-icons create">create</i></a>
                             </div>
                         </div>
                     </div>

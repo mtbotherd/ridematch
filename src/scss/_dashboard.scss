@@ -6,14 +6,8 @@
     top: 4.8rem;
 
     h2 {
-        @include font-size(16, 10);
         display: inline-block;
-
-        .material-icons {
-            @include font-size(16, 10);
-            width: 1.6rem;
-            height: 1.6rem;
-        }
+        margin-right: 2rem;
     }
 
     hr {
@@ -55,18 +49,6 @@
 
         .border-right {
             border-right: 1px solid $light-grey;
-        }
-
-        .toos {
-            margin-top: 1rem;
-
-            .material-icons {
-                @include font-size(15, 10);
-            }
-
-            .link a {
-                @include font-size(12, 10);
-            }
         }
     }
 }

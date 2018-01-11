@@ -3,11 +3,9 @@ html {
     font-size: 62.5%;
     height: 100%;
 }
-
 /*##############################
   Ridematch base styles
 ##############################*/
-
 .ridematch {
     color: $font-color;
     font-family: $font-stack-lato;
@@ -59,7 +57,7 @@ html {
         }
     }
 
-    .mt-button {
+    .btn {
         text-align: center;
     }
 
@@ -69,6 +67,12 @@ html {
 
     .margin-bottom {
         margin-bottom: 1rem;
+    }
+
+    .leadin {
+        @include font-size(14, 10);
+        font-weight: 300;
+        line-height: 1.3;
     }
 
     .material-icons {
@@ -83,6 +87,9 @@ html {
         color: $font-color;
     }
 
+    a.active i.material-icons {
+        color: $transit-blue;
+    }
     // Media queries
     @include screen ('desktop') {
         h1 {
@@ -106,13 +113,5 @@ html {
         .leadin {
             @include font-size(24, 10);
         }
-    }
-
-    @include screen ('max-tablet') {
-        // .card-desktop {
-        //     background: none !important;
-        //     border: 0 !important;
-        //     padding: 0;
-        // }
     }
 }

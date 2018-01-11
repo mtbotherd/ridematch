@@ -6,9 +6,6 @@
     .modal-body p {
         @include font-size(10, 10);
         line-height: 1.3;
-        @include screen ('desktop') {
-            font-size: 1.6rem;
-        }
 
         &:last-child {
             margin: 1em 0;
@@ -17,5 +14,10 @@
 
     .modal-footer {
         border-top: none;
+    }
+    @include screen ('desktop') {
+        .modal-body p {
+            font-size: 1.6rem;
+        }
     }
 }

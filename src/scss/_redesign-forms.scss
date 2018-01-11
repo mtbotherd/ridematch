@@ -40,6 +40,10 @@
             text-align: center;
         }
 
+        .mt-button:last {
+            margin-bottom: 0;
+        }
+
         .input-group {
             .input-group-addon {
                 @include font-size(18, 10);

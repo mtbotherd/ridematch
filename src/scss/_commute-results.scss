@@ -16,6 +16,9 @@
 
                 .account-circle {
                     color: $green;
+                    @include font-size(16, 10);
+                    width: 1.6rem;
+                    height: 1.6rem;
                 }
             }
 
@@ -24,6 +27,9 @@
 
                 .account-circle {
                     color: $orange;
+                    @include font-size(16, 10);
+                    width: 1.6rem;
+                    height: 1.6rem;
                 }
             }
 
@@ -32,6 +38,9 @@
 
                 .account-circle {
                     color: $lime-green;
+                    @include font-size(16, 10);
+                    width: 1.6rem;
+                    height: 1.6rem;
                 }
             }
 
@@ -50,7 +59,31 @@
                 color: #aaa;
             }
         }
-        @include screen ('desktop') {
+
+        .preferences {
+            .preference-option {
+                margin-left: 2.1rem;
+            }
+
+            .selected {
+                margin-left: 0;
+
+                .material-icons {
+                    margin-right: 0.3rem;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    @include screen ('desktop') {
+        .map-bg {
+            height: 106rem;
+        }
+
+        .card {
             border: none;
             margin-bottom: 1.5rem;
             padding: 0;
@@ -58,12 +91,47 @@
             .card {
                 border: 1px solid $medium-grey;
                 padding: 1.5rem;
+
+                &:nth-child(2) {
+                    .account-circle {
+                        @include font-size(24, 10);
+                        width: 2.4rem;
+                        height: 2.4rem;
+                    }
+                }
+
+                &:nth-child(3) {
+                    .account-circle {
+                        @include font-size(24, 10);
+                        width: 2.4rem;
+                        height: 2.4rem;
+                    }
+                }
+
+                &:nth-child(4) {
+                    .account-circle {
+                        @include font-size(24, 10);
+                        width: 2.4rem;
+                        height: 2.4rem;
+                    }
+                }
+            }
+
+            .card a {
+                @include font-size(14, 10);
+
+                .material-icons {
+                    @include font-size(14, 10);
+                    width: 1.4rem;
+                    height: 1.4rem;
+                }
             }
         }
-    }
-    @include screen ('desktop') {
-        .map-bg {
-            height: 106rem;
+
+        .preferences {
+            .material-icons {
+                top: 0.5rem;
+            }
         }
     }
 }

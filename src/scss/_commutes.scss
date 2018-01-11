@@ -2,7 +2,6 @@
     Ridematch - Commutes
 /***********************************/
 .commutes {
-
     h2 {
         display: inline-block;
     }
@@ -11,12 +10,19 @@
         @include font-size(12, 10);
     }
 
-    .preferences p {
-        .indent {
-            margin-left: 12px;
+    .preferences {
+        .material-icons {
+            @include font-size(16, 10);
+            top: 0.5rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            line-height: 0;
         }
     }
 
+    .btn {
+        margin-bottom: 1rem;
+    }
     @include screen ('desktop') {
         .card {
             border: none;
@@ -38,9 +44,10 @@
             line-height: 1em;
         }
 
-        .checkbox .material-icons {
-            line-height: 0;
-            top: 0.3rem;
+        .preferences {
+            .material-icons {
+                top: 0;
+            }
         }
     }
 }

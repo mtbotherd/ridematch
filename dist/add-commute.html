@@ -17,143 +17,146 @@
 <body>
     <form>
 
-        <!-- Navigation - For mobile only -->
-        <nav class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
-            <div class="container-fluid">
+        <!-- START OF FRONT END CONTENT -->
+        <div class="ridematch">
 
-                <div class="row">
-                    <div class="col-xs-4">
-                        <a class="active" href="#my-commutes" title="Return to your Dashboard" role="button"><i class="material-icons">drive_eta</i><span class="sr-only">My Commutes</span></a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                        <a href="#my-messages" title="Go to your messages" role="button"><i class="material-icons">email</i><span class="sr-only">My Messages</span></a>
-                    </div>
-                    <div class="col-xs-4 text-right">
-                        <a href="#my-profile" role="button"><i class="material-icons">account_circle</i><span class="sr-only">My Profile</span></a>
+            <!-- Navigation - For mobile only -->
+            <nav class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <a class="active" href="#commutes" title="Return to your Dashboard" role="button"><i class="material-icons">drive_eta</i><span class="sr-only">My Commutes</span></a>
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <a href="#messages" title="Go to your messages" role="button"><i class="material-icons">email</i><span class="sr-only">My Messages</span></a>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <a href="#profile" role="button"><i class="material-icons">account_circle</i><span class="sr-only">My Profile</span></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- START OF FRONT END CONTENT -->
-        <!-- <div class="map-bg-grey"> -->
-        <div class="ridematch dashboard commutes">
-            <div class="mt-form form-redesign">
-                <div class="card card-desktop">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-3">
-                            <div class="card">
-                                <h1>Add Commute</h1>
-                                <div class="section">
-                                    <h2 class="required">Commute Name</h2>
-                                    <div class="form-group">
-                                        <label for="commute_name" class="sr-only">Commute Name</label>
-                                        <input type="text" class="form-control" id="commute_name" placeholder="Ie., work, school" />
-                                    </div>
-                                </div>
-
-                                <div class="section">
-                                    <i class="material-icons place">place</i>
-                                    <h2 class="required">Location</h2>
-                                    <div class="form-group">
-                                        <label for="start_location" class="sr-only">Start</label>
-                                        <input type="text" class="form-control" id="start_location" placeholder="Start" aria-describedby="starting_point" />
-                                        <div class="checkbox">
-                                            <input type="checkbox" id="use_home_address" value="" />
-                                            <label>Use my home address</label>
+            <div class="ridematch dashboard commutes">
+                <div class="mt-form form-redesign">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-3">
+                                <div class="card">
+                                    <h1 class="hidden-xs hidden-sm">Add Commute</h1>
+                                    <div class="section">
+                                        <h2 class="required">Commute Name</h2>
+                                        <div class="form-group">
+                                            <label for="commute_name" class="sr-only">Commute Name</label>
+                                            <input type="text" class="form-control" id="commute_name" placeholder="Ie., work, school" />
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="destination_location" class="sr-only">Destination</label>
-                                        <input type="text" class="form-control" id="destination_location" placeholder="Destination" aria-describedby="starting_point" />
-                                        <div class="checkbox">
-                                            <input type="checkbox" id="use_work_address" value="" />
-                                            <label>Use my work address</label>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="section">
-                                    <i class="material-icons schedule">access_time</i>
-                                    <h2 class="required">Schedule</h2>
-                                    <div class="form-inline">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="start_time">I start (work, school, etc) at</label><br />
-                                                    <div class="time-picker input-group">
-                                                        <input type="text" id="start_time" class="form-control" data-format="HH:mm" placeholder="HH:MM" required />
-                                                        <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                                                    </div>
-                                                </div>
+                                    <div class="section">
+                                        <h2 class="required"><i class="material-icons place">place</i> Location</h2>
+                                        <div class="form-group">
+                                            <label for="start_location" class="sr-only">Start</label>
+                                            <input type="text" class="form-control" id="start_location" placeholder="Start" aria-describedby="starting_point" />
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="use_home_address" value="" />
+                                                <label>Use my home address</label>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="end_time">and end at</label><br />
-                                                    <div class="time-picker input-group">
-                                                        <input type="text" id="end_time" class="form-control" data-format="HH:mm" placeholder="HH:MM" required />
-                                                        <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="select-days">
-                                            <label for="days">on these days</label>
-                                            <ul class="days">
-                                                <li id="sunday">S</li>
-                                                <li id="monday" class="active">M</li>
-                                                <li id="tuesday" class="active">T</li>
-                                                <li id="wednesday" class="active">W</li>
-                                                <li id="thursday" class="active">T</li>
-                                                <li id="friday" class="active">F</li>
-                                                <li id="saturday">S</li>
-                                            </ul>
                                         </div>
                                         <div class="form-group">
-                                            <label for="range">I'm willing to add (# miles) to my commute</label>
-                                            <input type="number" id="range" class="form-control" min="1" max="25" placeholder="5" />
+                                            <label for="destination_location" class="sr-only">Destination</label>
+                                            <input type="text" class="form-control" id="destination_location" placeholder="Destination" aria-describedby="starting_point" />
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="use_work_address" value="" />
+                                                <label>Use my work address</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="section">
+                                        <h2 class="required"><i class="material-icons schedule">access_time</i> Schedule</h2>
+                                        <div class="form-inline">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="start_time">I start (work, school, etc) at</label><br />
+                                                        <div class="time-picker input-group">
+                                                            <input type="text" id="start_time" class="form-control" data-format="HH:mm" placeholder="HH:MM" required />
+                                                            <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="end_time">and end at</label><br />
+                                                        <div class="time-picker input-group">
+                                                            <input type="text" id="end_time" class="form-control" data-format="HH:mm" placeholder="HH:MM" required />
+                                                            <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="select-days">
+                                                <label for="days">on these days</label>
+                                                <ul class="days">
+                                                    <li id="sunday">S</li>
+                                                    <li id="monday" class="active">M</li>
+                                                    <li id="tuesday" class="active">T</li>
+                                                    <li id="wednesday" class="active">W</li>
+                                                    <li id="thursday" class="active">T</li>
+                                                    <li id="friday" class="active">F</li>
+                                                    <li id="saturday">S</li>
+                                                </ul>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="range">I'm willing to add (# miles) to my commute</label>
+                                                <input type="number" id="range" class="form-control" min="1" max="25" placeholder="5" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section preferences">
+                                        <h2>Preferences</h2>
+                                        <div class="checkbox">
+                                            <i class="material-icons">smoking_rooms</i>
+                                            <input type="checkbox" />
+                                            <label>I'm a smoker</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <i class="material-icons">directions_car</i>
+                                            <input type="checkbox" />
+                                            <label>I cannot drive</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <i class="material-icons">work</i>
+                                            <input type="checkbox" />
+                                            <label>Match only with co-workers</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <i class="material-icons">group</i>
+                                            <input type="checkbox" />
+                                            <label>Match only with same gender</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <i class="material-icons">smoke_free</i>
+                                            <input type="checkbox" />
+                                            <label>Match only with non-smokers</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-2">
+                                            <a class="mt-button btn btn-primary btn-block" href="commute-results.html" role="link">Find matches</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="section">
-                                    <h2>Preferences</h2>
-                                    <div class="checkbox">
-                                        <i class="material-icons">smoking_rooms</i>
-                                        <input type="checkbox" />
-                                        <label>I'm a smoker</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <i class="material-icons">directions_car</i>
-                                        <input type="checkbox" />
-                                        <label>I cannot drive</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <i class="material-icons">work</i>
-                                        <input type="checkbox" />
-                                        <label>Match only with co-workers</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <i class="material-icons">group</i>
-                                        <input type="checkbox" />
-                                        <label>Match only with same gender</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <i class="material-icons">smoke_free</i>
-                                        <input type="checkbox" />
-                                        <label>Match only with non-smokers</label>
-                                    </div>
-                                </div>
-                                <a class="mt-button btn btn-primary btn-block" href="commute-results.html" role="link">Find matches</a>
                             </div>
-                        </div>
-                        <div class="col-md-8 col-lg-9 visible-md visible-lg">
-                            <div class="map-bg"></div>
+                            <div class="col-md-8 col-lg-9 visible-md visible-lg">
+                                <div class="map-bg"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- </div> -->
         <!-- END OF FRONT END CONTENT -->
     </form>
 
