@@ -2,6 +2,7 @@
   Ridematch specific styles
 ##############################*/
 .ridematch {
+
     .control-point-icon {
         @include font-size(24, 10);
         color: $transit-red !important;

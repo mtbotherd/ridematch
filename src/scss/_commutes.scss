@@ -1,52 +1,54 @@
 /************************************
     Ridematch - Commutes
 /***********************************/
-.commutes {
-    h2 {
-        display: inline-block;
-    }
-
-    .number-results {
-        @include font-size(12, 10);
-    }
-
-    .preferences {
-        .material-icons {
-            @include font-size(16, 10);
-            top: 0.5rem;
-            width: 1.6rem;
-            height: 1.6rem;
-            line-height: 0;
-        }
-    }
-
-    .btn {
-        margin-bottom: 1rem;
-    }
-    @include screen ('desktop') {
-        .card {
-            border: none;
-            margin-bottom: 1.5rem;
-            padding: 0;
-
-            .card {
-                border: 1px solid $medium-grey;
-                padding: 1.5rem;
-            }
-
-            .map-bg {
-                height: 80.265rem;
-            }
+.ridematch {
+    .commutes {
+        h2 {
+            display: inline-block;
         }
 
         .number-results {
-            @include font-size(24, 10);
-            line-height: 1em;
+            @include font-size(12, 10);
         }
 
         .preferences {
             .material-icons {
-                top: 0;
+                @include font-size(16, 10);
+                top: 0.5rem;
+                width: 1.6rem;
+                height: 1.6rem;
+                line-height: 0;
+            }
+        }
+
+        .btn {
+            margin-bottom: 1rem;
+        }
+        @include screen ('desktop') {
+            .card {
+                border: none;
+                margin-bottom: 1.5rem;
+                padding: 0;
+
+                .card {
+                    border: 1px solid $medium-grey;
+                    padding: 1.5rem;
+                }
+
+                .map-bg {
+                    height: 80.265rem;
+                }
+            }
+
+            .number-results {
+                @include font-size(24, 10);
+                line-height: 1em;
+            }
+
+            .preferences {
+                .material-icons {
+                    top: 0;
+                }
             }
         }
     }

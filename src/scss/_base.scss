@@ -1,6 +1,5 @@
 body,
 html {
-    font-size: 62.5%;
     height: 100%;
 }
 /*##############################
@@ -9,6 +8,7 @@ html {
 .ridematch {
     color: $font-color;
     font-family: $font-stack-lato;
+    font-size: 62.5%;
 
     h1 {
         @include font-size(16, 10);

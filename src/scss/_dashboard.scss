@@ -1,54 +1,56 @@
 /************************************
     Ridematch - Dashboard
 /***********************************/
-.dashboard {
-    position: relative;
-    top: 4.8rem;
+.ridematch {
+    .dashboard {
+        position: relative;
+        top: 4.8rem;
 
-    h2 {
-        display: inline-block;
-        margin-right: 2rem;
-    }
+        h2 {
+            display: inline-block;
+            margin-right: 2rem;
+        }
 
-    hr {
-        color: $light-grey;
-        background-color: $light-grey;
-    }
-
-    .card {
-        border: none;
+        hr {
+            color: $light-grey;
+            background-color: $light-grey;
+        }
 
         .card {
-            border: 1px solid $medium-grey;
-            margin-bottom: 2rem;
-        }
-    }
-
-    .well {
-        background-color: $light-grey;
-        border: 0;
-        padding: 1rem;
-
-        p {
-            @include font-size(12, 10);
-            font-weight: 700;
-            margin-top: 0;
-        }
-    }
-    @include screen ('desktop') {
-        top: 0;
-
-        .card .card {
             border: none;
-            padding-top: 0;
+
+            .card {
+                border: 1px solid $medium-grey;
+                margin-bottom: 2rem;
+            }
         }
 
-        .border-left {
-            border-left: 1px solid $light-grey;
-        }
+        .well {
+            background-color: $light-grey;
+            border: 0;
+            padding: 1rem;
 
-        .border-right {
-            border-right: 1px solid $light-grey;
+            p {
+                @include font-size(12, 10);
+                font-weight: 700;
+                margin-top: 0;
+            }
+        }
+        @include screen ('desktop') {
+            top: 0;
+
+            .card .card {
+                border: none;
+                padding-top: 0;
+            }
+
+            .border-left {
+                border-left: 1px solid $light-grey;
+            }
+
+            .border-right {
+                border-right: 1px solid $light-grey;
+            }
         }
     }
 }

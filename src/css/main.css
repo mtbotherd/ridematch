@@ -29,15 +29,6 @@
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga'; }
 
-/*##############################
-    Font
-##############################*/
-/*##############################
-    Color scheme
-##############################*/
-/*##############################
-    Font sizes
-##############################*/
 /*############################################
         Must have Mixins
         http://w3bits.com/sass-mixins/
@@ -63,7 +54,6 @@
 
 body,
 html {
-  font-size: 62.5%;
   height: 100%; }
 
 /*##############################
@@ -71,7 +61,8 @@ html {
 ##############################*/
 .ridematch {
   color: #606060;
-  font-family: "Lato", sans-serif !important; }
+  font-family: "Lato", sans-serif !important;
+  font-size: 62.5%; }
   .ridematch h1 {
     font-size: 16;
     font-size: 1.6rem; }
@@ -165,6 +156,9 @@ html {
       width: 1.2rem;
       height: 1.2rem; } }
 
+/*##############################
+  Ridematch modal styles
+##############################*/
 .ridematch .modal-header {
   border-bottom: none; }
 
@@ -203,15 +197,18 @@ html {
 /*##############################
   Ridematch intro page styles
 ##############################*/
-.intro .card {
+.ridematch .intro .card {
   border: 0;
   padding: 1.5rem; }
 
 @media only screen and (min-width: 992px) {
-  .intro .card {
+  .ridematch .intro .card {
     border: 1px solid #d6d6d6; } }
 
-.form-redesign .form-group select {
+/*##############################
+  Ridematch form styles
+##############################*/
+.ridematch .form-redesign .form-group select {
   appearance: none;
   -o-appearance: none;
   -ms-appearance: none;
@@ -226,7 +223,6 @@ html {
   background-repeat: no-repeat;
   background-size: contain; }
 
-/* Ridematch specific form styles */
 .ridematch .form-redesign .section {
   margin-top: 0;
   margin-bottom: 2rem; }
@@ -329,51 +325,51 @@ html {
 /************************************
     Ridematch - Dashboard
 /***********************************/
-.dashboard {
+.ridematch .dashboard {
   position: relative;
   top: 4.8rem; }
-  .dashboard h2 {
+  .ridematch .dashboard h2 {
     display: inline-block;
     margin-right: 2rem; }
-  .dashboard hr {
+  .ridematch .dashboard hr {
     color: #ebebeb;
     background-color: #ebebeb; }
-  .dashboard .card {
+  .ridematch .dashboard .card {
     border: none; }
-    .dashboard .card .card {
+    .ridematch .dashboard .card .card {
       border: 1px solid #d6d6d6;
       margin-bottom: 2rem; }
-  .dashboard .well {
+  .ridematch .dashboard .well {
     background-color: #ebebeb;
     border: 0;
     padding: 1rem; }
-    .dashboard .well p {
+    .ridematch .dashboard .well p {
       font-size: 12;
       font-size: 1.2rem;
       font-weight: 700;
       margin-top: 0; }
   @media only screen and (min-width: 992px) {
-    .dashboard {
+    .ridematch .dashboard {
       top: 0; }
-      .dashboard .card .card {
+      .ridematch .dashboard .card .card {
         border: none;
         padding-top: 0; }
-      .dashboard .border-left {
+      .ridematch .dashboard .border-left {
         border-left: 1px solid #ebebeb; }
-      .dashboard .border-right {
+      .ridematch .dashboard .border-right {
         border-right: 1px solid #ebebeb; } }
 
 /************************************
     Ridematch - Commutes
 /***********************************/
-.commutes h2 {
+.ridematch .commutes h2 {
   display: inline-block; }
 
-.commutes .number-results {
+.ridematch .commutes .number-results {
   font-size: 12;
   font-size: 1.2rem; }
 
-.commutes .preferences .material-icons {
+.ridematch .commutes .preferences .material-icons {
   font-size: 16;
   font-size: 1.6rem;
   top: 0.5rem;
@@ -381,115 +377,115 @@ html {
   height: 1.6rem;
   line-height: 0; }
 
-.commutes .btn {
+.ridematch .commutes .btn {
   margin-bottom: 1rem; }
 
 @media only screen and (min-width: 992px) {
-  .commutes .card {
+  .ridematch .commutes .card {
     border: none;
     margin-bottom: 1.5rem;
     padding: 0; }
-    .commutes .card .card {
+    .ridematch .commutes .card .card {
       border: 1px solid #d6d6d6;
       padding: 1.5rem; }
-    .commutes .card .map-bg {
+    .ridematch .commutes .card .map-bg {
       height: 80.265rem; }
-  .commutes .number-results {
+  .ridematch .commutes .number-results {
     font-size: 24;
     font-size: 2.4rem;
     line-height: 1em; }
-  .commutes .preferences .material-icons {
+  .ridematch .commutes .preferences .material-icons {
     top: 0; } }
 
 /************************************
     Ridematch - Commute Results
 /***********************************/
-.commute-results .card .card {
+.ridematch .commute-results .card .card {
   margin-bottom: 1.5rem; }
-  .commute-results .card .card .number-results {
+  .ridematch .commute-results .card .card .number-results {
     font-size: 18;
     font-size: 1.8rem;
     line-height: 1.3; }
-  .commute-results .card .card:nth-child(2) {
+  .ridematch .commute-results .card .card:nth-child(2) {
     border-top: 5px solid #008244; }
-    .commute-results .card .card:nth-child(2) .account-circle {
+    .ridematch .commute-results .card .card:nth-child(2) .account-circle {
       color: #008244;
       font-size: 16;
       font-size: 1.6rem;
       width: 1.6rem;
       height: 1.6rem; }
-  .commute-results .card .card:nth-child(3) {
+  .ridematch .commute-results .card .card:nth-child(3) {
     border-top: 5px solid #f68b1f; }
-    .commute-results .card .card:nth-child(3) .account-circle {
+    .ridematch .commute-results .card .card:nth-child(3) .account-circle {
       color: #f68b1f;
       font-size: 16;
       font-size: 1.6rem;
       width: 1.6rem;
       height: 1.6rem; }
-  .commute-results .card .card:nth-child(4) {
+  .ridematch .commute-results .card .card:nth-child(4) {
     border-top: 5px solid #a5cf4c; }
-    .commute-results .card .card:nth-child(4) .account-circle {
+    .ridematch .commute-results .card .card:nth-child(4) .account-circle {
       color: #a5cf4c;
       font-size: 16;
       font-size: 1.6rem;
       width: 1.6rem;
       height: 1.6rem; }
-  .commute-results .card .card .result-point {
+  .ridematch .commute-results .card .card .result-point {
     font-size: 10;
     font-size: 1rem;
     margin-right: 0.5rem;
     text-transform: uppercase; }
-  .commute-results .card .card .ab {
+  .ridematch .commute-results .card .card .ab {
     font-size: 12;
     font-size: 1.2rem;
     font-weight: 700; }
-  .commute-results .card .card .startend {
+  .ridematch .commute-results .card .card .startend {
     color: #aaa; }
 
-.commute-results .card .preferences .preference-option {
+.ridematch .commute-results .card .preferences .preference-option {
   margin-left: 2.1rem; }
 
-.commute-results .card .preferences .selected {
+.ridematch .commute-results .card .preferences .selected {
   margin-left: 0; }
-  .commute-results .card .preferences .selected .material-icons {
+  .ridematch .commute-results .card .preferences .selected .material-icons {
     margin-right: 0.3rem; }
-    .commute-results .card .preferences .selected .material-icons:last-child {
+    .ridematch .commute-results .card .preferences .selected .material-icons:last-child {
       margin-right: 0; }
 
 @media only screen and (min-width: 992px) {
-  .commute-results .map-bg {
+  .ridematch .commute-results .map-bg {
     height: 106rem; }
-  .commute-results .card {
+  .ridematch .commute-results .card {
     border: none;
     margin-bottom: 1.5rem;
     padding: 0; }
-    .commute-results .card .card {
+    .ridematch .commute-results .card .card {
       border: 1px solid #d6d6d6;
       padding: 1.5rem; }
-      .commute-results .card .card:nth-child(2) .account-circle {
+      .ridematch .commute-results .card .card:nth-child(2) .account-circle {
         font-size: 24;
         font-size: 2.4rem;
         width: 2.4rem;
         height: 2.4rem; }
-      .commute-results .card .card:nth-child(3) .account-circle {
+      .ridematch .commute-results .card .card:nth-child(3) .account-circle {
         font-size: 24;
         font-size: 2.4rem;
         width: 2.4rem;
         height: 2.4rem; }
-      .commute-results .card .card:nth-child(4) .account-circle {
+      .ridematch .commute-results .card .card:nth-child(4) .account-circle {
         font-size: 24;
         font-size: 2.4rem;
         width: 2.4rem;
         height: 2.4rem; }
-    .commute-results .card .card a {
+    .ridematch .commute-results .card .card a {
       font-size: 14;
       font-size: 1.4rem; }
-      .commute-results .card .card a .material-icons {
+      .ridematch .commute-results .card .card a .material-icons {
         font-size: 14;
         font-size: 1.4rem;
         width: 1.4rem;
         height: 1.4rem; }
-  .commute-results .preferences .material-icons {
+  .ridematch .commute-results .preferences .material-icons {
     top: 0.5rem; } }
 
 /*# sourceMappingURL=../maps/main.css.map */
