@@ -23,7 +23,7 @@ html {
     }
 
     a {
-        @include font-size(12, 10);
+        @include font-size(10, 10);
 
         &:hover {
             text-decoration: none;
@@ -31,7 +31,7 @@ html {
     }
 
     .btn {
-        @include font-size(13, 10);
+        @include font-size(10, 10);
     }
 
     hr {
@@ -97,7 +97,11 @@ html {
         }
 
         h2 {
-            @include font-size(24, 10);
+            @include font-size(20, 10);
+        }
+
+        a {
+            @include font-size(12, 10);
         }
 
         small {
@@ -105,9 +109,9 @@ html {
         }
 
         .material-icons {
-            @include font-size(24, 10);
-            width: 2.4rem;
-            height: 2.4rem;
+            @include font-size(20, 10);
+            width: 2rem;
+            height: 2rem;
         }
 
         .leadin {

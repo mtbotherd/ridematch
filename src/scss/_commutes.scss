@@ -13,10 +13,10 @@
 
         .preferences {
             .material-icons {
-                @include font-size(16, 10);
-                top: 0.5rem;
-                width: 1.6rem;
-                height: 1.6rem;
+                @include font-size(14, 10);
+                top: 0.3rem;
+                width: 1.4rem;
+                height: 1.4rem;
                 line-height: 0;
             }
         }
@@ -43,12 +43,6 @@
             .number-results {
                 @include font-size(24, 10);
                 line-height: 1em;
-            }
-
-            .preferences {
-                .material-icons {
-                    top: 0;
-                }
             }
         }
     }

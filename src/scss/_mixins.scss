@@ -40,33 +40,28 @@
 }
 // Media queries
 @mixin screen($size) {
-    $lg-desktop: "(min-width: 1400px)";
-    $desktop: "(min-width: 992px)";
-    $lg-tablet: "(min-width: 768px) and (max-width: 991px)";
+    //$lg-desktop: "(min-width: 1400px)";
+    $desktop: "(min-width: 980px)";
+    $lg-tablet: "(min-width: 768px) and (max-width: 979px)";
     $max-tablet: "(max-width: 991px)";
     $tablet: "(min-width: 768px)";
     @if $size == tablet {
         @media only screen and #{$tablet} {
             @content;
         }
-    } @else
+    } @else 
     if $size == max-tablet {
         @media only screen and #{$max-tablet} {
             @content;
         }
-    } @else
+    } @else 
     if $size == lg-tablet {
         @media only screen and #{$lg-tablet} {
             @content;
         }
-    } @else
+    } @else 
     if $size == desktop {
         @media only screen and #{$desktop} {
-            @content;
-        }
-    } @else
-    if $size == lg-desktop {
-        @media only screen and #{$lg-desktop} {
             @content;
         }
     } @else {

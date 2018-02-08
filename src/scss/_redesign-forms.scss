@@ -4,6 +4,10 @@
 .ridematch {
     .form-redesign {
         .form-group {
+            .form-control {
+                padding: 0 0.6rem;
+            }
+
             select {
                 appearance: none;
                 -o-appearance: none;
@@ -20,6 +24,7 @@
                 background-size: contain;
             }
         }
+
         .section {
             margin-top: 0;
             margin-bottom: 2rem;
@@ -27,9 +32,7 @@
 
         label {
             @include font-size(10, 10);
-            @include screen ('desktop') {
-                @include font-size(14, 10);
-            }
+            margin: 0;
         }
 
         .required-notice {
@@ -46,7 +49,7 @@
 
         .input-group {
             .input-group-addon {
-                @include font-size(18, 10);
+                @include font-size(12, 10);
                 font-weight: 700;
                 background-color: $white;
                 padding: 0 0.6rem;
@@ -90,7 +93,7 @@
         }
 
         .checkbox {
-            margin-top: 0;
+            margin-top: 0.5rem !important;
             margin-bottom: 0.5rem;
 
             .input-group-addon {
@@ -115,10 +118,11 @@
                     border-radius: 4px;
                     @include font-size(12, 10);
                     line-height: 1;
-                    width: 3rem;
-                    height: 3rem;
-                    margin-right: 0.5rem;
-                    padding: 0.8rem 1rem;
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: 0.4rem;
+                    text-align: center;
+                    padding: 0.3rem;
 
                     &.active {
                         background-color: #cfdeed;
