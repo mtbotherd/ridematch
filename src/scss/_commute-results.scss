@@ -44,21 +44,20 @@
                         height: 1.6rem;
                     }
                 }
-
-                .result-point {
-                    @include font-size(10, 10);
-                    margin-right: 0.5rem;
-                    text-transform: uppercase;
-                }
-
-                .ab {
-                    @include font-size(12, 10);
-                    font-weight: 700;
-                }
-
-                .startend {
-                    color: #aaa;
-                }
+                // .result-point {
+                //     @include font-size(10, 10);
+                //     margin-right: 0.5rem;
+                //     text-transform: uppercase;
+                // }
+                //
+                // .ab {
+                //     @include font-size(12, 10);
+                //     font-weight: 700;
+                // }
+                //
+                // .startend {
+                //     color: #aaa;
+                // }
             }
 
             .preferences {

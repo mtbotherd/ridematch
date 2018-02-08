@@ -37,7 +37,7 @@
 .map-bg {
   background-image: none;
   height: 100%; }
-  @media only screen and (min-width: 980px) {
+  @media only screen and (min-width: 992px) {
     .map-bg {
       background-image: url("/Data/sites/1/skins/MetroTransitII/images/twin-cities-map.png");
       background-size: cover;
@@ -48,7 +48,7 @@
 
 .reset-bg {
   padding: 1.5rem; }
-  @media only screen and (min-width: 980px) {
+  @media only screen and (min-width: 992px) {
     .reset-bg {
       padding: 0; } }
 
@@ -116,7 +116,7 @@ html {
     color: #606060; }
   .ridematch a.active i.material-icons {
     color: #0053a0; }
-  @media only screen and (min-width: 980px) {
+  @media only screen and (min-width: 992px) {
     .ridematch h1 {
       font-size: 30;
       font-size: 3rem; }
@@ -150,7 +150,7 @@ html {
   height: 2.4rem !important;
   margin: 0 auto 1rem auto !important; }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 992px) {
   .ridematch {
     padding: 1.5rem; }
     .ridematch .material-icons.create {
@@ -175,7 +175,7 @@ html {
 .ridematch .modal-footer {
   border-top: none; }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 992px) {
   .ridematch .modal-body p {
     font-size: 1.6rem; } }
 
@@ -204,7 +204,7 @@ html {
   border: 0;
   padding: 1.5rem; }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 992px) {
   .intro .card {
     border: 1px solid #d6d6d6; } }
 
@@ -352,7 +352,26 @@ html {
       font-size: 1rem;
       font-weight: 700;
       margin-top: 0; }
-  @media only screen and (min-width: 980px) {
+  .ridematch .dashboard .vspace {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .ridematch .dashboard .result-point {
+    font-size: 10;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    text-transform: uppercase; }
+  .ridematch .dashboard .ab {
+    font-size: 12;
+    font-size: 1.2rem;
+    font-weight: 700; }
+  .ridematch .dashboard .startend {
+    color: #aaa; }
+  .ridematch .dashboard .active-commute label {
+    font-style: normal;
+    padding-left: 0; }
+  .ridematch .dashboard .active-commute input {
+    margin: 0 0.3rem; }
+  @media only screen and (min-width: 992px) {
     .ridematch .dashboard {
       top: 0; }
       .ridematch .dashboard .card .card {
@@ -384,7 +403,7 @@ html {
 .ridematch .commutes .btn {
   margin-bottom: 1rem; }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 992px) {
   .ridematch .commutes .card {
     border: none;
     margin-bottom: 1.5rem;
@@ -432,17 +451,6 @@ html {
       font-size: 1.6rem;
       width: 1.6rem;
       height: 1.6rem; }
-  .ridematch .commute-results .card .card .result-point {
-    font-size: 10;
-    font-size: 1rem;
-    margin-right: 0.5rem;
-    text-transform: uppercase; }
-  .ridematch .commute-results .card .card .ab {
-    font-size: 12;
-    font-size: 1.2rem;
-    font-weight: 700; }
-  .ridematch .commute-results .card .card .startend {
-    color: #aaa; }
 
 .ridematch .commute-results .card .preferences .preference-option {
   font-size: 10;
@@ -462,7 +470,7 @@ html {
     .ridematch .commute-results .card .preferences .selected .material-icons:last-child {
       margin-right: 0; }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 992px) {
   .ridematch .commute-results .map-bg {
     height: 106rem; }
   .ridematch .commute-results .card {

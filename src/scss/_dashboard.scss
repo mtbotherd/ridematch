@@ -36,6 +36,37 @@
                 margin-top: 0;
             }
         }
+
+        .vspace {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .result-point {
+            @include font-size(10, 10);
+            margin-right: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .ab {
+            @include font-size(12, 10);
+            font-weight: 700;
+        }
+
+        .startend {
+            color: #aaa;
+        }
+
+        .active-commute {
+            label {
+                font-style: normal;
+                padding-left: 0;
+            }
+
+            input {
+                margin: 0 0.3rem;
+            }
+        }
         @include screen ('desktop') {
             top: 0;
 
