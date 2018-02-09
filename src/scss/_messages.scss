@@ -1,0 +1,32 @@
+/************************************
+    Ridematch - Messages
+/***********************************/
+.messages {
+    .panel-group .panel {
+        border-radius: 0;
+    }
+
+    .panel-heading {
+        padding: 0.5rem;
+
+        a {
+            display: block;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .accordion-toggle:after {
+            font-family: 'FontAwesome';
+            float: left;
+            content: "\f077";
+        }
+
+        .accordion-toggle.collapsed:after {
+            content: "\f078";
+        }
+    }
+
+    .panel-title {
+        margin: 0;
+    }
+}

@@ -24,11 +24,17 @@
         .btn {
             margin-bottom: 1rem;
         }
+
+        .commute-name {
+            @include font-size(10, 10);
+            font-weight: 400;
+            margin-top: 0.5rem;
+        }
         @include screen ('desktop') {
             .card {
                 border: none;
                 margin-bottom: 1.5rem;
-                padding: 0;
+                padding: 1.5rem;
 
                 .card {
                     border: 1px solid $medium-grey;
@@ -38,6 +44,11 @@
                 .map-bg {
                     height: 80.265rem;
                 }
+            }
+
+            .commute-name {
+                @include font-size(18, 10);
+                margin-top: 0;
             }
 
             .number-results {

@@ -45,14 +45,13 @@
                         <h1 class="hidden-xs hidden-sm">Dashboard</h1>
                         <div class="row">
                             <div class="col-md-4 border-right">
-                                <div id="commutes" class="card">
-                                    <!-- <i class="header material-icons">drive_eta</i> -->
-                                    <h2><i class="material-icons">drive_eta</i> My Commutes</h2>
+                                <h2><i class="material-icons">drive_eta</i> My Commutes</h2>
+                                <div id="commutes" class="card active-commute">
                                     <div class="row">
                                         <div class="col-xs-6">
-                                            <span class="number-results">Work</span>
+                                            <h3 class="commute-name">Work</h3>
                                         </div>
-                                        <div class="col-xs-6 text-right active-commute">
+                                        <div class="col-xs-6 text-right">
                                             <i class="material-icons">info</i>
                                             <label>Active</label>
                                             <input type="checkbox" checked="checked" />
@@ -96,38 +95,57 @@
                                             <li id="saturday">S</li>
                                         </ul>
                                     </div>
-                                    <p>9:00 AM &amp; 5:00 PM</p>
+                                    <p>Times: 9:00 AM &amp; 5:00 PM</p>
                                     <div class="vspace">
-                                        <span></span>
+                                        <div class="tools">
+                                            <span><i class="material-icons">group</i> <a href="" title="Find matches" role="link">Find Matches</a></span>
+                                            <span><i class="material-icons">create</i> <a href="" title="Edit match" role="link">Edit</a></span>
+                                            <span><i class="material-icons">clear</i> <a href="" title="Delete match" role="link">Delete</a></span>
+                                        </div>
+                                        <p><small><em>Last updated 2/7/2018</em></small></p>
                                     </div>
-
-                                    <hr />
-
-                                    <p class="text-center">
-                                        <a href="add-commute.html" title="Add my profile" role="link">
-                                        <i class="material-icons control-point-icon">control_point</i>
-                                        Add a commute</a>
-                                    </p>
                                 </div>
+
+                                <p class="text-center">
+                                    <a href="add-commute.html" title="Add my profile" role="link">
+                                    <i class="material-icons control-point-icon">control_point</i>
+                                    Add a commute</a>
+                                </p>
                             </div>
-                            <div class="col-md-8">
-                                <div id="messages" class="card">
-                                    <h2><i class="material-icons">mail</i> Messages</h2>
 
-                                </div>
-                                <hr class="visible-md visible-lg" />
-                                <div id="profile" class="card">
+                            <div class="col-md-8">
+                                <div class="messages">
+                                    <h2><i class="material-icons">mail</i> Messages</h2>
+                                    <div id="messages" class="card">
+                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="mapleGrove">
+                                                    <h4 class="panel-title">
+                                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#maplegrove-locaiton" aria-expanded="false" aria-controls="maplegrove-locaiton">&nbsp;Jane</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="maplegrove-locaiton" class="panel-collapse collapse" role="tabpanel" aria-labelledby="mapleGrove">
+                                                    <div class="panel-body">
+                                                        <p class="text-center"> Transit Station, 12350 Main St. N.</p>
+                                                        <p class="text-center">
+                                                            <img class="img-responsive" src="./images/SuperBowl_PRMap_MapleGrove.png" alt="Map of Maple Grove Transit Station" />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="visible-md visible-lg" />
                                     <h2><i class="material-icons">account_circle</i> Profile</h2>
                                     <a href="#" title="Edit profile" role="link">
-                                        Edit <i class="material-icons create">create</i></a>
+                                    Edit <i class="material-icons create">create</i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- END OF FRONT END CONTENT -->
+            <!-- END OF FRONT END CONTENT -->
     </form>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
