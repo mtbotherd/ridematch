@@ -2,31 +2,69 @@
     Ridematch - Messages
 /***********************************/
 .messages {
-    .panel-group .panel {
-        border-radius: 0;
-    }
-
-    .panel-heading {
-        padding: 0.5rem;
-
-        a {
-            display: block;
-            padding: 0;
-            text-decoration: none;
+    .panel-group {
+        .panel {
+            border-radius: 0;
         }
 
-        .accordion-toggle:after {
-            font-family: 'FontAwesome';
-            float: left;
-            content: "\f077";
+        .panel-default > .panel-heading {
+            position: relative;
+            padding: 0.5rem;
+
+            .material-icons,
+            .timestamp,
+            h4 {
+                display: inline-block;
+            }
+
+            .delete-icon {
+                position: absolute;
+                top: 0.5rem;
+                right: 0.5rem;
+            }
+
+            .panel-title {
+                @include font-size(12, 10);
+                margin: 0;
+
+                a {
+                    padding-right: 12rem;
+                    text-decoration: none;
+                }
+
+                .accordion-toggle:after {
+                    content: url("https://www.metrotransit.org/Images/Icons/MinusSmall.gif");
+                    float: left;
+                    margin-right: 0.5rem;
+                    margin-top: 0.2rem;
+                }
+
+                .accordion-toggle.collapsed:after {
+                    content: url("data:image/gif;base64,R0lGODlhCwALALMAAKfB4vn7/RJWssjY7Tlyv3if08bW7JOy3NLf8DJtvAxSsP///wAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAALAAsAAAQ6cC1TiCDFyAXSQQFyJMCUDJs0JNSxKdtRIe+GWMGi7PsSXDQJTHIruISxzCm1WGk6n9CoJKFYMJpFBAA7");
+                }
+            }
+
+            .panel-title span {
+                color: #000;
+            }
+
+            .timestamp {
+                //margin-right: 0.5rem;
+                @include font-size(8, 10);
+                position: absolute;
+                top: 0.5rem;
+                right: 2.5rem;
+                text-align: right;
+            }
         }
 
-        .accordion-toggle.collapsed:after {
-            content: "\f078";
+        .new {
+            background-color: #c0c0c0;
         }
-    }
 
-    .panel-title {
-        margin: 0;
+        .panel-heading {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
     }
 }

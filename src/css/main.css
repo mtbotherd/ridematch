@@ -533,20 +533,46 @@ html {
 .messages .panel-group .panel {
   border-radius: 0; }
 
-.messages .panel-heading {
+.messages .panel-group .panel-default > .panel-heading {
+  position: relative;
   padding: 0.5rem; }
-  .messages .panel-heading a {
-    display: block;
-    padding: 0;
-    text-decoration: none; }
-  .messages .panel-heading .accordion-toggle:after {
-    font-family: 'FontAwesome';
-    float: left;
-    content: "\f077"; }
-  .messages .panel-heading .accordion-toggle.collapsed:after {
-    content: "\f078"; }
+  .messages .panel-group .panel-default > .panel-heading .material-icons,
+  .messages .panel-group .panel-default > .panel-heading .timestamp,
+  .messages .panel-group .panel-default > .panel-heading h4 {
+    display: inline-block; }
+  .messages .panel-group .panel-default > .panel-heading .delete-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem; }
+  .messages .panel-group .panel-default > .panel-heading .panel-title {
+    font-size: 12;
+    font-size: 1.2rem;
+    margin: 0; }
+    .messages .panel-group .panel-default > .panel-heading .panel-title a {
+      padding-right: 12rem;
+      text-decoration: none; }
+    .messages .panel-group .panel-default > .panel-heading .panel-title .accordion-toggle:after {
+      content: url("https://www.metrotransit.org/Images/Icons/MinusSmall.gif");
+      float: left;
+      margin-right: 0.5rem;
+      margin-top: 0.2rem; }
+    .messages .panel-group .panel-default > .panel-heading .panel-title .accordion-toggle.collapsed:after {
+      content: url("data:image/gif;base64,R0lGODlhCwALALMAAKfB4vn7/RJWssjY7Tlyv3if08bW7JOy3NLf8DJtvAxSsP///wAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAALAAsAAAQ6cC1TiCDFyAXSQQFyJMCUDJs0JNSxKdtRIe+GWMGi7PsSXDQJTHIruISxzCm1WGk6n9CoJKFYMJpFBAA7"); }
+  .messages .panel-group .panel-default > .panel-heading .panel-title span {
+    color: #000; }
+  .messages .panel-group .panel-default > .panel-heading .timestamp {
+    font-size: 8;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 2.5rem;
+    text-align: right; }
 
-.messages .panel-title {
-  margin: 0; }
+.messages .panel-group .new {
+  background-color: #c0c0c0; }
+
+.messages .panel-group .panel-heading {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
 
 /*# sourceMappingURL=../maps/main.css.map */
