@@ -42,19 +42,32 @@
             margin-bottom: 1rem;
         }
 
+        .commute-points {
+            display: table;
+        }
+
         .result-point {
+            display: table-row;
             @include font-size(9, 10);
             margin-right: 0.5rem;
             text-transform: uppercase;
-        }
 
-        .ab {
-            @include font-size(12, 10);
-            font-weight: 700;
-        }
+            div {
+                display: table-cell;
+            }
 
-        .startend {
-            color: #aaa;
+            .ab {
+                @include font-size(12, 10);
+                font-weight: 700;
+                width: 27px;
+                margin-right: 1rem;
+            }
+
+            .startend {
+                color: #aaa;
+                width: 51px;
+                margin-right: 1rem;
+            }
         }
 
         .active-commute {
@@ -85,6 +98,16 @@
         }
         @include screen ('desktop') {
             top: 0;
+
+            h2 {
+                @include font-size(24, 10);
+
+                .material-icons {
+                    @include font-size(24, 10);
+                    width: 2.4rem;
+                    height: 2.4rem;
+                }
+            }
 
             .card .card {
                 border: none;

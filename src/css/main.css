@@ -137,6 +137,9 @@ html {
     .ridematch .leadin {
       font-size: 24;
       font-size: 2.4rem; } }
+  @media only screen and (min-width: 1400px) {
+    .ridematch h2 .material-icons {
+      top: 0.3rem; } }
 
 /*##############################
   Ridematch specific styles
@@ -355,17 +358,26 @@ html {
   .ridematch .dashboard .vspace {
     margin-top: 1rem;
     margin-bottom: 1rem; }
+  .ridematch .dashboard .commute-points {
+    display: table; }
   .ridematch .dashboard .result-point {
+    display: table-row;
     font-size: 9;
     font-size: 0.9rem;
     margin-right: 0.5rem;
     text-transform: uppercase; }
-  .ridematch .dashboard .ab {
-    font-size: 12;
-    font-size: 1.2rem;
-    font-weight: 700; }
-  .ridematch .dashboard .startend {
-    color: #aaa; }
+    .ridematch .dashboard .result-point div {
+      display: table-cell; }
+    .ridematch .dashboard .result-point .ab {
+      font-size: 12;
+      font-size: 1.2rem;
+      font-weight: 700;
+      width: 27px;
+      margin-right: 1rem; }
+    .ridematch .dashboard .result-point .startend {
+      color: #aaa;
+      width: 51px;
+      margin-right: 1rem; }
   .ridematch .dashboard .active-commute label {
     font-style: normal;
     padding-left: 0; }
@@ -383,6 +395,14 @@ html {
   @media only screen and (min-width: 992px) {
     .ridematch .dashboard {
       top: 0; }
+      .ridematch .dashboard h2 {
+        font-size: 24;
+        font-size: 2.4rem; }
+        .ridematch .dashboard h2 .material-icons {
+          font-size: 24;
+          font-size: 2.4rem;
+          width: 2.4rem;
+          height: 2.4rem; }
       .ridematch .dashboard .card .card {
         border: none;
         padding-top: 0; }
@@ -574,5 +594,13 @@ html {
 .messages .panel-group .panel-heading {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
+
+@media only screen and (min-width: 992px) {
+  .messages .panel-group .panel-title a {
+    padding-right: 25rem !important; } }
+
+@media only screen and (min-width: 1400px) {
+  .messages .panel-group .panel-title a {
+    padding-right: 53rem !important; } }
 
 /*# sourceMappingURL=../maps/main.css.map */

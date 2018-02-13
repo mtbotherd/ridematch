@@ -66,5 +66,25 @@
             border-top-left-radius: 0;
             border-top-right-radius: 0;
         }
+
+        @include screen('desktop') {
+
+            .panel-title {
+
+                a {
+                    padding-right: 25rem !important;
+                }
+            }
+        }
+
+        @include screen('lg-desktop') {
+
+            .panel-title {
+
+                a {
+                    padding-right: 53rem !important;
+                }
+            }
+        }
     }
 }

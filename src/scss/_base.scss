@@ -118,4 +118,11 @@ html {
             @include font-size(24, 10);
         }
     }
+
+    @include screen('lg-desktop') {
+
+        h2 .material-icons {
+            top: 0.3rem;
+        }
+    }
 }
