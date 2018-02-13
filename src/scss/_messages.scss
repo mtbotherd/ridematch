@@ -27,6 +27,7 @@
                 position: absolute;
                 top: 0.5rem;
                 right: 0.5rem;
+                cursor: pointer;
             }
 
             .panel-title {
@@ -39,14 +40,17 @@
                 }
 
                 .accordion-toggle:after {
-                    content: url("https://www.metrotransit.org/Images/Icons/MinusSmall.gif");
+                    font-family: "Material Icons";
+                    //content: url("https://www.metrotransit.org/Images/Icons/MinusSmall.gif");
+                    content: "\E15D";
                     float: left;
                     margin-right: 0.5rem;
                     margin-top: 0.2rem;
                 }
 
                 .accordion-toggle.collapsed:after {
-                    content: url("data:image/gif;base64,R0lGODlhCwALALMAAKfB4vn7/RJWssjY7Tlyv3if08bW7JOy3NLf8DJtvAxSsP///wAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAALAAsAAAQ6cC1TiCDFyAXSQQFyJMCUDJs0JNSxKdtRIe+GWMGi7PsSXDQJTHIruISxzCm1WGk6n9CoJKFYMJpFBAA7");
+                    //content: url("data:image/gif;base64,R0lGODlhCwALALMAAKfB4vn7/RJWssjY7Tlyv3if08bW7JOy3NLf8DJtvAxSsP///wAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAALAAsAAAQ6cC1TiCDFyAXSQQFyJMCUDJs0JNSxKdtRIe+GWMGi7PsSXDQJTHIruISxzCm1WGk6n9CoJKFYMJpFBAA7");
+                    content: "\E148";
                 }
             }
 
@@ -78,6 +82,10 @@
             @include font-size(8, 10);
             padding: .5rem;
 
+            .reply-icon {
+                cursor: pointer;
+            }
+
             .message {
 
                 p {
@@ -94,6 +102,13 @@
 
                 a {
                     padding-right: 25rem !important;
+                }
+            }
+
+            .panel-body {
+
+                .message h5 {
+                    @include font-size(18, 10);
                 }
             }
         }

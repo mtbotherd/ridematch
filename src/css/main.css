@@ -445,9 +445,6 @@ html {
     border: none;
     margin-bottom: 1.5rem;
     padding: 1.5rem; }
-    .ridematch .commutes .card .card {
-      border: 1px solid #d6d6d6;
-      padding: 1.5rem; }
     .ridematch .commutes .card .map-bg {
       height: 80.265rem; }
   .ridematch .commutes .commute-name {
@@ -568,7 +565,8 @@ html {
   .messages .panel-group .panel-default > .panel-heading .delete-icon {
     position: absolute;
     top: 0.5rem;
-    right: 0.5rem; }
+    right: 0.5rem;
+    cursor: pointer; }
   .messages .panel-group .panel-default > .panel-heading .panel-title {
     font-size: 12;
     font-size: 1.2rem;
@@ -577,12 +575,13 @@ html {
       padding-right: 12rem;
       text-decoration: none; }
     .messages .panel-group .panel-default > .panel-heading .panel-title .accordion-toggle:after {
-      content: url("https://www.metrotransit.org/Images/Icons/MinusSmall.gif");
+      font-family: "Material Icons";
+      content: "\E15D";
       float: left;
       margin-right: 0.5rem;
       margin-top: 0.2rem; }
     .messages .panel-group .panel-default > .panel-heading .panel-title .accordion-toggle.collapsed:after {
-      content: url("data:image/gif;base64,R0lGODlhCwALALMAAKfB4vn7/RJWssjY7Tlyv3if08bW7JOy3NLf8DJtvAxSsP///wAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAALAAsAAAQ6cC1TiCDFyAXSQQFyJMCUDJs0JNSxKdtRIe+GWMGi7PsSXDQJTHIruISxzCm1WGk6n9CoJKFYMJpFBAA7"); }
+      content: "\E148"; }
   .messages .panel-group .panel-default > .panel-heading .panel-title span {
     color: #000; }
   .messages .panel-group .panel-default > .panel-heading .timestamp {
@@ -605,6 +604,8 @@ html {
   font-size: 8;
   font-size: 0.8rem;
   padding: .5rem; }
+  .messages .panel-group .panel-body .reply-icon {
+    cursor: pointer; }
   .messages .panel-group .panel-body .message p {
     font-size: 8;
     font-size: 0.8rem;
@@ -612,7 +613,10 @@ html {
 
 @media only screen and (min-width: 992px) {
   .messages .panel-group .panel-title a {
-    padding-right: 25rem !important; } }
+    padding-right: 25rem !important; }
+  .messages .panel-group .panel-body .message h5 {
+    font-size: 18;
+    font-size: 1.8rem; } }
 
 @media only screen and (min-width: 1400px) {
   .messages .panel-group .panel-title a {
