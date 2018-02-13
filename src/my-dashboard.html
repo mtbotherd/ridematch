@@ -31,7 +31,43 @@
                         <p>Are you sure you want to delete this message?</p>
                     </div>
                     <div class="modal-footer">
-                        <input type="submit" class="mt-button btn btn-primary" />
+                        <button type="button" class="mt-backbutton btn btn-primary" data-dismiss="modal">Cancel</button>
+                        <input type="submit" class="mt-button btn btn-primary" value="Delete" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reply to message Modal -->
+        <div class="modal fade" id="replyMessage" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h1 class="modal-title">Reply to Jane</h1>
+                    </div>
+                    <div class="modal-body">
+                        <label class="sr-only">Reply message</label>
+                        <textarea class="form-control" rows="3" placeholder="Enter response"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="mt-backbutton btn btn-primary" data-dismiss="modal">Cancel</button>
+                        <input type="submit" class="mt-button btn btn-primary" value="Send" data-toggle="modal" data-target="#messageSent" data-dismiss="modal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Sent Modal -->
+        <div class="modal fade" id="messageSent" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h1 class="modal-title">Message Sent</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>Your message has been sent.</p>
                     </div>
                 </div>
             </div>
@@ -135,38 +171,80 @@
                                                     </h4>
                                                     <div class="timestamp">10:34 am</div>
                                                     <i class="material-icons delete-icon" data-toggle="modal" data-target="#deleteMessage">delete_forever</i>
+                                                    <p>Metro Transit Ridematch</p>
                                                 </div>
                                                 <div id="message-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="message-1">
                                                     <div class="panel-body">
-                                                        <p>Message text here...</p>
+                                                        <div class="material-icons pull-right" data-toggle="modal" data-target="#replyMessage">reply</div>
+                                                        <div class="clearfix"></div>
+                                                        <div class="message">
+                                                            <!-- <p>
+                                                                <strong>From:</strong> Jane<br />
+                                                                <strong>Date:</strong> Friday, September 1, 2017 at 11:13 PM<br />
+                                                                <strong>To:</strong> Hayley<br />
+                                                                <strong>Subject:</strong> Metro-Ridematch
+                                                            </p> -->
+                                                            <h5>
+                                                                <div class="material-icons">person</div>
+                                                                Jane
+                                                            </h5>
+                                                            <p>Message text goes here.</p>
+                                                            <p>Name of sender</p>
+                                                        </div>
+                                                        <hr />
+                                                        <div class="message">
+                                                            <h5>
+                                                                <div class="material-icons">person</div>
+                                                                Hayley
+                                                            </h5>
+                                                            <p>Aug 30, 1:13 PM</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="panel panel-default">
-                                                <div class="panel-heading new" role="tab" id="ridematchMessage">
+                                                <div class="panel-heading" role="tab" id="ridematchMessage">
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#message-2" aria-expanded="false" aria-controls="message-2"> <span>Susan</span></a>
                                                     </h4>
                                                     <div class="timestamp">9:34 am</div>
                                                     <i class="material-icons delete-icon" data-toggle="modal" data-target="#deleteMessage">delete_forever</i>
+                                                    <p>Subject</p>
                                                 </div>
                                                 <div id="message-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="message-2">
                                                     <div class="panel-body">
-                                                        <p>Message text here...</p>
+                                                        <div class="material-icons pull-right">reply</div>
+                                                        <div class="clearfix"></div>
+                                                        <div class="message">
+                                                            <h5>
+                                                                <div class="material-icons">person</div>
+                                                                Name
+                                                            </h5>
+                                                            <p>Message text here...</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="panel panel-default">
-                                                <div class="panel-heading new" role="tab" id="ridematchMessage">
+                                                <div class="panel-heading" role="tab" id="ridematchMessage">
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#message-3" aria-expanded="false" aria-controls="message-3"> <span>Jeff</span></a>
                                                     </h4>
                                                     <div class="timestamp">Tue</div>
                                                     <i class="material-icons delete-icon" data-toggle="modal" data-target="#deleteMessage">delete_forever</i>
+                                                    <p>Subject</p>
                                                 </div>
                                                 <div id="message-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="message">
                                                     <div class="panel-body">
-                                                        <p>Message text here...</p>
+                                                        <div class="material-icons pull-right">reply</div>
+                                                        <div class="clearfix"></div>
+                                                        <div class="message">
+                                                            <h5>
+                                                                <div class="material-icons">person</div>
+                                                                Name
+                                                            </h5>
+                                                            <p>Message text here...</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

@@ -8,8 +8,14 @@
         }
 
         .panel-default > .panel-heading {
+            background-color: #f7f6f6;
             position: relative;
             padding: 0.5rem;
+
+            p {
+                @include font-size(8, 10);
+                margin: 0 0 0 1.3rem !important;
+            }
 
             .material-icons,
             .timestamp,
@@ -59,12 +65,27 @@
         }
 
         .new {
-            background-color: #c0c0c0;
+            background-color: #c0c0c0 !important;
         }
 
         .panel-heading {
             border-top-left-radius: 0;
             border-top-right-radius: 0;
+        }
+
+        .panel-body {
+            background-color: #f7f6f6;
+            @include font-size(8, 10);
+            padding: .5rem;
+
+            .message {
+
+                p {
+                    @include font-size(8, 10);
+                    //margin-top: 0;
+                    margin-left: 1.3rem;
+                }
+            }
         }
 
         @include screen('desktop') {

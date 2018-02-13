@@ -554,8 +554,13 @@ html {
   border-radius: 0; }
 
 .messages .panel-group .panel-default > .panel-heading {
+  background-color: #f7f6f6;
   position: relative;
   padding: 0.5rem; }
+  .messages .panel-group .panel-default > .panel-heading p {
+    font-size: 8;
+    font-size: 0.8rem;
+    margin: 0 0 0 1.3rem !important; }
   .messages .panel-group .panel-default > .panel-heading .material-icons,
   .messages .panel-group .panel-default > .panel-heading .timestamp,
   .messages .panel-group .panel-default > .panel-heading h4 {
@@ -589,11 +594,21 @@ html {
     text-align: right; }
 
 .messages .panel-group .new {
-  background-color: #c0c0c0; }
+  background-color: #c0c0c0 !important; }
 
 .messages .panel-group .panel-heading {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
+
+.messages .panel-group .panel-body {
+  background-color: #f7f6f6;
+  font-size: 8;
+  font-size: 0.8rem;
+  padding: .5rem; }
+  .messages .panel-group .panel-body .message p {
+    font-size: 8;
+    font-size: 0.8rem;
+    margin-left: 1.3rem; }
 
 @media only screen and (min-width: 992px) {
   .messages .panel-group .panel-title a {
