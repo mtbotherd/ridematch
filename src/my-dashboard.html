@@ -19,6 +19,25 @@
     <form>
         <!-- START OF FRONT END CONTENT -->
 
+        <!-- Delete Commute confirmation Modal -->
+        <div class="modal fade" id="deleteCommute" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h1 class="modal-title">Delete Commute</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete this commute? This action cannot be undone.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="mt-backbutton btn btn-primary" data-dismiss="modal">Cancel</button>
+                        <input type="submit" class="mt-button btn btn-primary" value="Delete" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Delete message confirmation Modal -->
         <div class="modal fade" id="deleteMessage" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -143,9 +162,9 @@
                                         <p>Times: 9:00 AM &amp; 5:00 PM</p>
                                         <div class="vspace">
                                             <div class="tools">
-                                                <span><i class="material-icons">group</i> <a href="" title="Find matches" role="link">Find Matches</a></span>
-                                                <span><i class="material-icons">create</i> <a href="" title="Edit match" role="link">Edit</a></span>
-                                                <span><i class="material-icons">clear</i> <a href="" title="Delete match" role="link">Delete</a></span>
+                                                <span><i class="material-icons">group</i> <a href="commute-results.html" title="Find matches" role="link">Find Matches</a></span>
+                                                <span><i class="material-icons">create</i> <a href="add-commute.html" title="Edit match" role="link">Edit</a></span>
+                                                <span><i class="material-icons">clear</i> <a href="#" title="Delete commute" role="link" data-toggle="modal" data-target="#deleteCommute">Delete</a></span>
                                             </div>
                                             <p><small><em>Last updated 2/7/2018</em></small></p>
                                         </div>
@@ -253,7 +272,7 @@
                                     <hr class="visible-md visible-lg" />
                                     <div id="profile" class="card">
                                         <h2><i class="material-icons">account_circle</i> Profile</h2>
-                                        <a href="#" title="Edit profile" role="link">
+                                        <a href="my-profile.html" title="Edit profile" role="link">
                                         Edit <i class="material-icons create">create</i></a>
                                     </div>
                                 </div>
