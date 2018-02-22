@@ -8,12 +8,12 @@
         }
 
         .number-results {
-            @include font-size(12, 10);
+            @include font-size(1.2);
         }
 
         .preferences {
             .material-icons {
-                @include font-size(14, 10);
+                @include font-size(1.4);
                 top: 0.3rem;
                 width: 1.4rem;
                 height: 1.4rem;
@@ -26,7 +26,7 @@
         }
 
         .commute-name {
-            @include font-size(10, 10);
+            @include font-size(1);
             font-weight: 400;
             margin-top: 0.5rem;
         }
@@ -34,11 +34,11 @@
             .card {
                 border: none;
                 margin-bottom: 1.5rem;
-                padding: 1.5rem;
+                padding: 0;
 
                 .card {
-                    //border: 1px solid $medium-grey;
-                    //padding: 1.5rem;
+                    border: 1px solid $medium-grey;
+                    padding: 1.5rem;
                 }
 
                 .map-bg {
@@ -47,12 +47,12 @@
             }
 
             .commute-name {
-                @include font-size(18, 10);
+                @include font-size(1.8);
                 margin-top: 0;
             }
 
             .number-results {
-                @include font-size(24, 10);
+                @include font-size(2.4);
                 line-height: 1em;
             }
         }

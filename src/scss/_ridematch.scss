@@ -2,9 +2,8 @@
   Ridematch specific styles
 ##############################*/
 .ridematch {
-
     .control-point-icon {
-        @include font-size(24, 10);
+        font-size: 2.4rem !important;
         color: $transit-red !important;
         display: block;
         width: 2.4rem !important;
@@ -15,7 +14,7 @@
         padding: 1.5rem;
 
         .material-icons.create {
-            @include font-size(12, 10);
+            @include font-size(1.2);
             width: 1.2rem;
             height: 1.2rem;
         }

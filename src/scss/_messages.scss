@@ -7,13 +7,17 @@
             border-radius: 0;
         }
 
+        .panel-default {
+            background-color: $white;
+        }
+
         .panel-default > .panel-heading {
-            background-color: #f7f6f6;
+            background-color: $white;
             position: relative;
             padding: 0.5rem;
 
             p {
-                @include font-size(8, 10);
+                @include font-size(0.8);
                 margin: 0 0 0 1.3rem !important;
             }
 
@@ -24,6 +28,10 @@
             }
 
             .delete-icon {
+                color: $dark-grey;
+                @include font-size(1.2);
+                width: 1.2rem;
+                height: 1.2rem;
                 position: absolute;
                 top: 0.5rem;
                 right: 0.5rem;
@@ -31,7 +39,7 @@
             }
 
             .panel-title {
-                @include font-size(12, 10);
+                @include font-size(1.2);
                 margin: 0;
 
                 a {
@@ -41,7 +49,6 @@
 
                 .accordion-toggle:after {
                     font-family: "Material Icons";
-                    //content: url("https://www.metrotransit.org/Images/Icons/MinusSmall.gif");
                     content: "\E15D";
                     float: left;
                     margin-right: 0.5rem;
@@ -49,18 +56,17 @@
                 }
 
                 .accordion-toggle.collapsed:after {
-                    //content: url("data:image/gif;base64,R0lGODlhCwALALMAAKfB4vn7/RJWssjY7Tlyv3if08bW7JOy3NLf8DJtvAxSsP///wAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAALAAsAAAQ6cC1TiCDFyAXSQQFyJMCUDJs0JNSxKdtRIe+GWMGi7PsSXDQJTHIruISxzCm1WGk6n9CoJKFYMJpFBAA7");
                     content: "\E148";
                 }
             }
 
             .panel-title span {
                 color: #000;
+                @include font-size(1.2);
             }
 
             .timestamp {
-                //margin-right: 0.5rem;
-                @include font-size(8, 10);
+                @include font-size(0.8);
                 position: absolute;
                 top: 0.5rem;
                 right: 2.5rem;
@@ -68,8 +74,8 @@
             }
         }
 
-        .new {
-            background-color: #c0c0c0 !important;
+        .panel-heading.new {
+            background-color: $medium-grey;
         }
 
         .panel-heading {
@@ -79,44 +85,55 @@
 
         .panel-body {
             background-color: #f7f6f6;
-            @include font-size(8, 10);
-            padding: .5rem;
+            @include font-size(0.8);
+            padding: 0.5rem;
 
             .reply-icon {
                 cursor: pointer;
+                @include font-size(1.2);
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+
+            .response {
+                p {
+                    @include font-size(0.8);
+                    margin-left: 0;
+                }
             }
 
             .message {
+                h5 {
+                    @include font-size(1.2);
+
+                    .material-icons {
+                        @include font-size(1.2);
+                        width: 1.2rem;
+                        height: 1.2rem;
+                    }
+                }
 
                 p {
-                    @include font-size(8, 10);
-                    //margin-top: 0;
+                    @include font-size(0.8);
                     margin-left: 1.3rem;
                 }
             }
         }
-
         @include screen('desktop') {
-
             .panel-title {
-
                 a {
                     padding-right: 25rem !important;
                 }
             }
 
             .panel-body {
-
                 .message h5 {
-                    @include font-size(18, 10);
+                    @include font-size(1.8);
                 }
             }
         }
-
         @include screen('lg-desktop') {
-
             .panel-title {
-
                 a {
                     padding-right: 53rem !important;
                 }

@@ -63,28 +63,28 @@ html {
   color: #606060;
   font-family: "Lato", sans-serif !important;
   font-size: 62.5%; }
-  .ridematch h1 {
-    font-size: 16;
-    font-size: 1.6rem; }
   .ridematch h2 {
-    font-size: 12;
-    font-size: 1.2rem; }
+    font-size: 16px;
+    font-size: 1.6rem; }
+  .ridematch h3 {
+    font-size: 10px;
+    font-size: 1rem; }
   .ridematch p {
-    font-size: 10;
+    font-size: 10px;
     font-size: 1rem; }
   .ridematch a {
-    font-size: 10;
+    font-size: 10px;
     font-size: 1rem; }
     .ridematch a:hover {
       text-decoration: none; }
   .ridematch .btn {
-    font-size: 10;
+    font-size: 10px;
     font-size: 1rem; }
   .ridematch hr {
     color: #ebebeb;
     background-color: #ebebeb; }
   .ridematch small {
-    font-size: 8;
+    font-size: 8px;
     font-size: 0.8rem; }
   .ridematch .card {
     background-color: #ffffff;
@@ -101,41 +101,47 @@ html {
   .ridematch .margin-bottom {
     margin-bottom: 1rem; }
   .ridematch .leadin {
-    font-size: 14;
+    font-size: 14px;
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.3; }
   .ridematch .material-icons {
-    font-size: 12;
-    font-size: 1.2rem;
-    width: 1.2rem;
-    height: 1.2rem;
+    font-size: 16px;
+    font-size: 1.6rem;
+    width: 1.6rem;
+    height: 1.6rem;
     position: relative;
     top: 0.2rem; }
   .ridematch a i.material-icons {
-    color: #606060; }
+    color: #606060;
+    font-size: 16px;
+    font-size: 1.6rem;
+    width: 1.6rem;
+    height: 1.6rem; }
   .ridematch a.active i.material-icons {
     color: #0053a0; }
   @media only screen and (min-width: 992px) {
     .ridematch h1 {
-      font-size: 30;
+      font-size: 30px;
       font-size: 3rem; }
     .ridematch h2 {
-      font-size: 20;
-      font-size: 2rem; }
+      font-size: 24px;
+      font-size: 2.4rem; }
     .ridematch a {
-      font-size: 12;
+      font-size: 12px;
       font-size: 1.2rem; }
     .ridematch small {
-      font-size: 12;
-      font-size: 1.2rem; }
+      font-size: 8px;
+      font-size: 0.8rem; }
+    .ridematch .btn {
+      text-align: left; }
     .ridematch .material-icons {
-      font-size: 20;
+      font-size: 20px;
       font-size: 2rem;
       width: 2rem;
       height: 2rem; }
     .ridematch .leadin {
-      font-size: 24;
+      font-size: 24px;
       font-size: 2.4rem; } }
   @media only screen and (min-width: 1400px) {
     .ridematch h2 .material-icons {
@@ -145,8 +151,7 @@ html {
   Ridematch specific styles
 ##############################*/
 .ridematch .control-point-icon {
-  font-size: 24;
-  font-size: 2.4rem;
+  font-size: 2.4rem !important;
   color: #ed1b2e !important;
   display: block;
   width: 2.4rem !important;
@@ -157,7 +162,7 @@ html {
   .ridematch {
     padding: 1.5rem; }
     .ridematch .material-icons.create {
-      font-size: 12;
+      font-size: 12px;
       font-size: 1.2rem;
       width: 1.2rem;
       height: 1.2rem; } }
@@ -165,11 +170,12 @@ html {
 /*##############################
   Ridematch modal styles
 ##############################*/
-.ridematch .modal-header {
-  border-bottom: none; }
+.ridematch .modal-header h1 {
+  font-size: 12px;
+  font-size: 1.2rem; }
 
 .ridematch .modal-body p {
-  font-size: 10;
+  font-size: 10px;
   font-size: 1rem;
   line-height: 1.3; }
   .ridematch .modal-body p:last-child {
@@ -179,8 +185,11 @@ html {
   border-top: none; }
 
 @media only screen and (min-width: 992px) {
+  .ridematch .modal-header h1 {
+    font-size: 18px;
+    font-size: 1.8rem; }
   .ridematch .modal-body p {
-    font-size: 1.6rem; } }
+    font-size: 1.2rem; } }
 
 /*##############################
   Ridematch nav styles
@@ -195,7 +204,7 @@ html {
   .ridematch .navbar-default a.active {
     color: #0053a0; }
   .ridematch .navbar-default .material-icons {
-    font-size: 16;
+    font-size: 16px;
     font-size: 1.6rem;
     width: 1.6rem;
     height: 1.6rem; }
@@ -237,12 +246,12 @@ html {
   margin-bottom: 2rem; }
 
 .ridematch .form-redesign label {
-  font-size: 10;
+  font-size: 10px;
   font-size: 1rem;
   margin: 0; }
 
 .ridematch .form-redesign .required-notice {
-  font-size: 10;
+  font-size: 10px;
   font-size: 1rem; }
 
 .ridematch .form-redesign .mt-backbutton {
@@ -252,7 +261,7 @@ html {
   margin-bottom: 0; }
 
 .ridematch .form-redesign .input-group .input-group-addon {
-  font-size: 12;
+  font-size: 12px;
   font-size: 1.2rem;
   font-weight: 700;
   background-color: #ffffff;
@@ -263,7 +272,7 @@ html {
     color: #ed1b2e; }
 
 .ridematch .form-redesign .input-group input {
-  font-size: 18;
+  font-size: 18px;
   font-size: 1.8rem;
   border-left: none;
   border-top-left-radius: 0;
@@ -283,22 +292,22 @@ html {
 .ridematch .form-redesign .time-picker {
   width: 100%; }
   .ridematch .form-redesign .time-picker input {
-    font-size: 12;
+    font-size: 12px;
     font-size: 1.2rem;
     border-left: 1px solid #ccc;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px; }
     .ridematch .form-redesign .time-picker input::-webkit-input-placeholder {
-      font-size: 12;
+      font-size: 12px;
       font-size: 1.2rem; }
     .ridematch .form-redesign .time-picker input:-ms-input-placeholder {
-      font-size: 12;
+      font-size: 12px;
       font-size: 1.2rem; }
     .ridematch .form-redesign .time-picker input::-ms-input-placeholder {
-      font-size: 12;
+      font-size: 12px;
       font-size: 1.2rem; }
     .ridematch .form-redesign .time-picker input::placeholder {
-      font-size: 12;
+      font-size: 12px;
       font-size: 1.2rem; }
 
 .ridematch .form-redesign .checkbox {
@@ -318,7 +327,7 @@ html {
       display: inline-block;
       border: 1px solid #ccc;
       border-radius: 4px;
-      font-size: 12;
+      font-size: 12px;
       font-size: 1.2rem;
       line-height: 1;
       width: 2rem;
@@ -351,61 +360,67 @@ html {
     border: 0;
     padding: 1rem; }
     .ridematch .dashboard .well p {
-      font-size: 10;
+      font-size: 10px;
       font-size: 1rem;
       font-weight: 700;
       margin-top: 0; }
   .ridematch .dashboard .vspace {
     margin-top: 1rem;
     margin-bottom: 1rem; }
+  .ridematch .dashboard .commute-name {
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 2; }
   .ridematch .dashboard .commute-points {
     display: table; }
   .ridematch .dashboard .result-point {
-    display: table-row;
-    font-size: 9;
+    font-size: 9px;
     font-size: 0.9rem;
     margin-right: 0.5rem;
     text-transform: uppercase; }
-    .ridematch .dashboard .result-point div {
-      display: table-cell; }
-    .ridematch .dashboard .result-point .ab {
-      font-size: 12;
-      font-size: 1.2rem;
-      font-weight: 700;
-      width: 27px;
-      margin-right: 1rem; }
-    .ridematch .dashboard .result-point .startend {
-      color: #aaa;
-      width: 51px;
-      margin-right: 1rem; }
+  .ridematch .dashboard .ab {
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 27px;
+    margin-right: 1rem; }
+  .ridematch .dashboard .startend {
+    color: #aaa;
+    width: 51px;
+    margin-right: 1rem; }
+  .ridematch .dashboard .active-commute .material-icons {
+    font-size: 12px;
+    font-size: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem; }
   .ridematch .dashboard .active-commute label {
     font-style: normal;
     padding-left: 0; }
   .ridematch .dashboard .active-commute input {
     margin: 0 0.3rem; }
-  .ridematch .dashboard .active-commute .material-icons {
-    font-size: 12;
+  .ridematch .dashboard .tools span {
+    margin-right: 3rem; }
+    .ridematch .dashboard .tools span:last-child {
+      margin-right: 0; }
+  .ridematch .dashboard .profile .create {
+    font-size: 12px;
     font-size: 1.2rem;
     width: 1.2rem;
     height: 1.2rem; }
-  .ridematch .dashboard .tools span {
-    margin-right: 3.5rem; }
-    .ridematch .dashboard .tools span:last-child {
-      margin-right: 0; }
   @media only screen and (min-width: 992px) {
     .ridematch .dashboard {
       top: 0; }
       .ridematch .dashboard h2 {
-        font-size: 24;
+        font-size: 24px;
         font-size: 2.4rem; }
         .ridematch .dashboard h2 .material-icons {
-          font-size: 24;
+          font-size: 24px;
           font-size: 2.4rem;
           width: 2.4rem;
           height: 2.4rem; }
       .ridematch .dashboard .card .card {
         border: none;
-        padding-top: 0; }
+        padding: 0; }
       .ridematch .dashboard .border-left {
         border-left: 1px solid #ebebeb; }
       .ridematch .dashboard .border-right {
@@ -420,11 +435,11 @@ html {
   display: inline-block; }
 
 .ridematch .commutes .number-results {
-  font-size: 12;
+  font-size: 12px;
   font-size: 1.2rem; }
 
 .ridematch .commutes .preferences .material-icons {
-  font-size: 14;
+  font-size: 14px;
   font-size: 1.4rem;
   top: 0.3rem;
   width: 1.4rem;
@@ -435,7 +450,7 @@ html {
   margin-bottom: 1rem; }
 
 .ridematch .commutes .commute-name {
-  font-size: 10;
+  font-size: 10px;
   font-size: 1rem;
   font-weight: 400;
   margin-top: 0.5rem; }
@@ -444,104 +459,123 @@ html {
   .ridematch .commutes .card {
     border: none;
     margin-bottom: 1.5rem;
-    padding: 1.5rem; }
+    padding: 0; }
+    .ridematch .commutes .card .card {
+      border: 1px solid #d6d6d6;
+      padding: 1.5rem; }
     .ridematch .commutes .card .map-bg {
       height: 80.265rem; }
   .ridematch .commutes .commute-name {
-    font-size: 18;
+    font-size: 18px;
     font-size: 1.8rem;
     margin-top: 0; }
   .ridematch .commutes .number-results {
-    font-size: 24;
+    font-size: 24px;
     font-size: 2.4rem;
     line-height: 1em; } }
 
 /************************************
     Ridematch - Commute Results
 /***********************************/
-.ridematch .commute-results .card .card {
+.ridematch .my-commutes .card .card {
   margin-bottom: 1.5rem; }
-  .ridematch .commute-results .card .card .number-results {
-    font-size: 12;
+  .ridematch .my-commutes .card .card .number-results {
+    font-size: 12px;
     font-size: 1.2rem;
     line-height: 1.3; }
-  .ridematch .commute-results .card .card:nth-child(2) {
+  .ridematch .my-commutes .card .card:nth-child(2) {
     border-top: 5px solid #008244; }
-    .ridematch .commute-results .card .card:nth-child(2) .account-circle {
+    .ridematch .my-commutes .card .card:nth-child(2) .account-circle {
       color: #008244;
-      font-size: 16;
+      font-size: 16px;
       font-size: 1.6rem;
       width: 1.6rem;
       height: 1.6rem; }
-  .ridematch .commute-results .card .card:nth-child(3) {
+  .ridematch .my-commutes .card .card:nth-child(3) {
     border-top: 5px solid #f68b1f; }
-    .ridematch .commute-results .card .card:nth-child(3) .account-circle {
+    .ridematch .my-commutes .card .card:nth-child(3) .account-circle {
       color: #f68b1f;
-      font-size: 16;
+      font-size: 16px;
       font-size: 1.6rem;
       width: 1.6rem;
       height: 1.6rem; }
-  .ridematch .commute-results .card .card:nth-child(4) {
+  .ridematch .my-commutes .card .card:nth-child(4) {
     border-top: 5px solid #a5cf4c; }
-    .ridematch .commute-results .card .card:nth-child(4) .account-circle {
+    .ridematch .my-commutes .card .card:nth-child(4) .account-circle {
       color: #a5cf4c;
-      font-size: 16;
+      font-size: 16px;
       font-size: 1.6rem;
       width: 1.6rem;
       height: 1.6rem; }
+  .ridematch .my-commutes .card .card a .create {
+    font-size: 12px;
+    font-size: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem; }
 
-.ridematch .commute-results .card .preferences .preference-option {
-  font-size: 10;
+.ridematch .my-commutes .card .sub-title {
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin-top: 0; }
+
+.ridematch .my-commutes .card .preferences .preference-option {
+  font-size: 10px;
   font-size: 1rem;
   margin-left: 1.6rem; }
-  .ridematch .commute-results .card .preferences .preference-option .material-icons {
-    font-size: 12;
+  .ridematch .my-commutes .card .preferences .preference-option .material-icons {
+    font-size: 12px;
     font-size: 1.2rem;
     width: 1.2rem;
     height: 1.2rem;
     top: 0.2rem; }
 
-.ridematch .commute-results .card .preferences .selected {
+.ridematch .my-commutes .card .preferences .selected {
   margin-left: 0; }
-  .ridematch .commute-results .card .preferences .selected .material-icons {
+  .ridematch .my-commutes .card .preferences .selected .material-icons {
     margin-right: 0.3rem; }
-    .ridematch .commute-results .card .preferences .selected .material-icons:last-child {
+    .ridematch .my-commutes .card .preferences .selected .material-icons:last-child {
       margin-right: 0; }
 
+.ridematch .my-commutes .email {
+  font-size: 12px;
+  font-size: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem; }
+
 @media only screen and (min-width: 992px) {
-  .ridematch .commute-results .map-bg {
+  .ridematch .my-commutes .map-bg {
     height: 106rem; }
-  .ridematch .commute-results .card {
+  .ridematch .my-commutes .card {
     border: none;
     margin-bottom: 1.5rem;
     padding: 0; }
-    .ridematch .commute-results .card .card {
+    .ridematch .my-commutes .card .card {
       border: 1px solid #d6d6d6;
       padding: 1.5rem; }
-      .ridematch .commute-results .card .card:nth-child(2) .account-circle {
-        font-size: 24;
+      .ridematch .my-commutes .card .card:nth-child(2) .account-circle {
+        font-size: 24px;
         font-size: 2.4rem;
         width: 2.4rem;
         height: 2.4rem; }
-      .ridematch .commute-results .card .card:nth-child(3) .account-circle {
-        font-size: 24;
+      .ridematch .my-commutes .card .card:nth-child(3) .account-circle {
+        font-size: 24px;
         font-size: 2.4rem;
         width: 2.4rem;
         height: 2.4rem; }
-      .ridematch .commute-results .card .card:nth-child(4) .account-circle {
-        font-size: 24;
+      .ridematch .my-commutes .card .card:nth-child(4) .account-circle {
+        font-size: 24px;
         font-size: 2.4rem;
         width: 2.4rem;
         height: 2.4rem; }
-    .ridematch .commute-results .card .card a {
-      font-size: 12;
+    .ridematch .my-commutes .card .card a {
+      font-size: 12px;
       font-size: 1.2rem; }
-      .ridematch .commute-results .card .card a .material-icons {
-        font-size: 12;
+      .ridematch .my-commutes .card .card a .material-icons {
+        font-size: 12px;
         font-size: 1.2rem;
         width: 1.2rem;
         height: 1.2rem; }
-  .ridematch .commute-results .preferences .material-icons {
+  .ridematch .my-commutes .preferences .material-icons {
     top: 0.5rem; } }
 
 /************************************
@@ -550,12 +584,15 @@ html {
 .messages .panel-group .panel {
   border-radius: 0; }
 
+.messages .panel-group .panel-default {
+  background-color: #ffffff; }
+
 .messages .panel-group .panel-default > .panel-heading {
-  background-color: #f7f6f6;
+  background-color: #ffffff;
   position: relative;
   padding: 0.5rem; }
   .messages .panel-group .panel-default > .panel-heading p {
-    font-size: 8;
+    font-size: 8px;
     font-size: 0.8rem;
     margin: 0 0 0 1.3rem !important; }
   .messages .panel-group .panel-default > .panel-heading .material-icons,
@@ -563,12 +600,17 @@ html {
   .messages .panel-group .panel-default > .panel-heading h4 {
     display: inline-block; }
   .messages .panel-group .panel-default > .panel-heading .delete-icon {
+    color: #606060;
+    font-size: 12px;
+    font-size: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
     cursor: pointer; }
   .messages .panel-group .panel-default > .panel-heading .panel-title {
-    font-size: 12;
+    font-size: 12px;
     font-size: 1.2rem;
     margin: 0; }
     .messages .panel-group .panel-default > .panel-heading .panel-title a {
@@ -583,17 +625,19 @@ html {
     .messages .panel-group .panel-default > .panel-heading .panel-title .accordion-toggle.collapsed:after {
       content: "\E148"; }
   .messages .panel-group .panel-default > .panel-heading .panel-title span {
-    color: #000; }
+    color: #000;
+    font-size: 12px;
+    font-size: 1.2rem; }
   .messages .panel-group .panel-default > .panel-heading .timestamp {
-    font-size: 8;
+    font-size: 8px;
     font-size: 0.8rem;
     position: absolute;
     top: 0.5rem;
     right: 2.5rem;
     text-align: right; }
 
-.messages .panel-group .new {
-  background-color: #c0c0c0 !important; }
+.messages .panel-group .panel-heading.new {
+  background-color: #d6d6d6; }
 
 .messages .panel-group .panel-heading {
   border-top-left-radius: 0;
@@ -601,13 +645,29 @@ html {
 
 .messages .panel-group .panel-body {
   background-color: #f7f6f6;
-  font-size: 8;
+  font-size: 8px;
   font-size: 0.8rem;
-  padding: .5rem; }
+  padding: 0.5rem; }
   .messages .panel-group .panel-body .reply-icon {
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 12px;
+    font-size: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem; }
+  .messages .panel-group .panel-body .response p {
+    font-size: 8px;
+    font-size: 0.8rem;
+    margin-left: 0; }
+  .messages .panel-group .panel-body .message h5 {
+    font-size: 12px;
+    font-size: 1.2rem; }
+    .messages .panel-group .panel-body .message h5 .material-icons {
+      font-size: 12px;
+      font-size: 1.2rem;
+      width: 1.2rem;
+      height: 1.2rem; }
   .messages .panel-group .panel-body .message p {
-    font-size: 8;
+    font-size: 8px;
     font-size: 0.8rem;
     margin-left: 1.3rem; }
 
@@ -615,7 +675,7 @@ html {
   .messages .panel-group .panel-title a {
     padding-right: 25rem !important; }
   .messages .panel-group .panel-body .message h5 {
-    font-size: 18;
+    font-size: 18px;
     font-size: 1.8rem; } }
 
 @media only screen and (min-width: 1400px) {
