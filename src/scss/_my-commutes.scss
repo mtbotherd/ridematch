@@ -128,13 +128,13 @@
                     }
                 }
 
-                .card a {
-                    @include font-size(1.2);
+                a.contact {
+                    @include font-size(1.4);
 
                     .material-icons {
-                        @include font-size(1.2);
-                        width: 1.2rem;
-                        height: 1.2rem;
+                        @include font-size(1.4);
+                        width: 1.4rem;
+                        height: 1.4rem;
                     }
                 }
             }

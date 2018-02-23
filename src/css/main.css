@@ -54,6 +54,7 @@
 
 body,
 html {
+  font-size: 62.5%;
   height: 100%; }
 
 /*##############################
@@ -61,8 +62,10 @@ html {
 ##############################*/
 .ridematch {
   color: #606060;
-  font-family: "Lato", sans-serif !important;
-  font-size: 62.5%; }
+  font-family: "Lato", sans-serif !important; }
+  .ridematch h1 {
+    font-size: 16px;
+    font-size: 1.6rem; }
   .ridematch h2 {
     font-size: 16px;
     font-size: 1.6rem; }
@@ -78,8 +81,8 @@ html {
     .ridematch a:hover {
       text-decoration: none; }
   .ridematch .btn {
-    font-size: 10px;
-    font-size: 1rem; }
+    font-size: 13px;
+    font-size: 1.3rem; }
   .ridematch hr {
     color: #ebebeb;
     background-color: #ebebeb; }
@@ -114,10 +117,10 @@ html {
     top: 0.2rem; }
   .ridematch a i.material-icons {
     color: #606060;
-    font-size: 16px;
-    font-size: 1.6rem;
-    width: 1.6rem;
-    height: 1.6rem; }
+    font-size: 10px;
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem; }
   .ridematch a.active i.material-icons {
     color: #0053a0; }
   @media only screen and (min-width: 992px) {
@@ -200,7 +203,8 @@ html {
   min-height: 2rem;
   padding: 1rem 0; }
   .ridematch .navbar-default a {
-    color: #c0c0c0; }
+    color: #c0c0c0;
+    padding: 1rem; }
   .ridematch .navbar-default a.active {
     color: #0053a0; }
   .ridematch .navbar-default .material-icons {
@@ -246,13 +250,14 @@ html {
   margin-bottom: 2rem; }
 
 .ridematch .form-redesign label {
-  font-size: 10px;
-  font-size: 1rem;
-  margin: 0; }
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-style: normal;
+  margin-bottom: 0.2; }
 
 .ridematch .form-redesign .required-notice {
-  font-size: 10px;
-  font-size: 1rem; }
+  font-size: 13px;
+  font-size: 1.3rem; }
 
 .ridematch .form-redesign .mt-backbutton {
   text-align: center; }
@@ -330,13 +335,19 @@ html {
       font-size: 12px;
       font-size: 1.2rem;
       line-height: 1;
-      width: 2rem;
-      height: 2rem;
-      margin-right: 0.4rem;
+      width: 3rem;
+      height: 3rem;
+      margin-right: 0.5rem;
       text-align: center;
-      padding: 0.3rem; }
+      padding: 0.8rem; }
       .ridematch .form-redesign .select-days ul li.active {
         background-color: #cfdeed; }
+
+@media only screen and (min-width: 992px) {
+  .ridematch .form-redesign label {
+    font-style: italic; }
+  .ridematch .form-redesign .mt-backbutton {
+    text-align: left; } }
 
 /************************************
     Ridematch - Dashboard
@@ -410,6 +421,8 @@ html {
   @media only screen and (min-width: 992px) {
     .ridematch .dashboard {
       top: 0; }
+      .ridematch .dashboard .card {
+        border: 1px solid #d6d6d6; }
       .ridematch .dashboard h2 {
         font-size: 24px;
         font-size: 2.4rem; }
@@ -418,6 +431,9 @@ html {
           font-size: 2.4rem;
           width: 2.4rem;
           height: 2.4rem; }
+      .ridematch .dashboard .well p {
+        font-size: 12px;
+        font-size: 1.2rem; }
       .ridematch .dashboard .card .card {
         border: none;
         padding: 0; }
@@ -567,14 +583,14 @@ html {
         font-size: 2.4rem;
         width: 2.4rem;
         height: 2.4rem; }
-    .ridematch .my-commutes .card .card a {
-      font-size: 12px;
-      font-size: 1.2rem; }
-      .ridematch .my-commutes .card .card a .material-icons {
-        font-size: 12px;
-        font-size: 1.2rem;
-        width: 1.2rem;
-        height: 1.2rem; }
+    .ridematch .my-commutes .card a.contact {
+      font-size: 14px;
+      font-size: 1.4rem; }
+      .ridematch .my-commutes .card a.contact .material-icons {
+        font-size: 14px;
+        font-size: 1.4rem;
+        width: 1.4rem;
+        height: 1.4rem; }
   .ridematch .my-commutes .preferences .material-icons {
     top: 0.5rem; } }
 

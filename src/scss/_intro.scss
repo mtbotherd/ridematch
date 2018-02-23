@@ -8,7 +8,7 @@
     }
     @include screen ('desktop') {
         .card {
-            border: 1px solid $medium-grey;
+            border: 1px solid $border-color;
         }
     }
 }

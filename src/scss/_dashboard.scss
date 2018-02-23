@@ -103,6 +103,9 @@
             height: 1.2rem;
         }
         @include screen ('desktop') {
+            .card {
+                border: 1px solid $border-color;
+            }
             top: 0;
 
             h2 {
@@ -113,6 +116,10 @@
                     width: 2.4rem;
                     height: 2.4rem;
                 }
+            }
+
+            .well p {
+                @include font-size(1.2);
             }
 
             .card .card {
