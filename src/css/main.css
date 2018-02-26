@@ -399,6 +399,9 @@ html {
     color: #aaa;
     width: 51px;
     margin-right: 1rem; }
+  .ridematch .dashboard .active-commute .card {
+    border: none;
+    padding: 0; }
   .ridematch .dashboard .active-commute .material-icons {
     font-size: 12px;
     font-size: 1.2rem;
@@ -421,6 +424,18 @@ html {
   @media only screen and (min-width: 992px) {
     .ridematch .dashboard {
       top: 0; }
+      .ridematch .dashboard .active-commute .card {
+        border: 1px solid #d6d6d6 !important;
+        padding: 1rem !important; }
+      .ridematch .dashboard .active-commute .info {
+        font-size: 14px;
+        font-size: 1.4rem;
+        width: 1.4rem;
+        height: 1.4rem; }
+      .ridematch .dashboard .active-commute .commute-name {
+        font-size: 18px;
+        font-size: 1.8rem;
+        line-height: 1; }
       .ridematch .dashboard .card {
         border: 1px solid #d6d6d6; }
       .ridematch .dashboard h2 {
@@ -597,105 +612,142 @@ html {
 /************************************
     Ridematch - Messages
 /***********************************/
-.messages .panel-group .panel {
-  border-radius: 0; }
+.ridematch .messages .card .card {
+  border: none !important;
+  padding: 0; }
 
-.messages .panel-group .panel-default {
-  background-color: #ffffff; }
+.ridematch .messages .message-header-bar {
+  color: #0053a0;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 700; }
 
-.messages .panel-group .panel-default > .panel-heading {
-  background-color: #ffffff;
-  position: relative;
-  padding: 0.5rem; }
-  .messages .panel-group .panel-default > .panel-heading p {
-    font-size: 8px;
-    font-size: 0.8rem;
-    margin: 0 0 0 1.3rem !important; }
-  .messages .panel-group .panel-default > .panel-heading .material-icons,
-  .messages .panel-group .panel-default > .panel-heading .timestamp,
-  .messages .panel-group .panel-default > .panel-heading h4 {
-    display: inline-block; }
-  .messages .panel-group .panel-default > .panel-heading .delete-icon {
-    color: #606060;
-    font-size: 12px;
-    font-size: 1.2rem;
-    width: 1.2rem;
-    height: 1.2rem;
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    cursor: pointer; }
-  .messages .panel-group .panel-default > .panel-heading .panel-title {
-    font-size: 12px;
-    font-size: 1.2rem;
-    margin: 0; }
-    .messages .panel-group .panel-default > .panel-heading .panel-title a {
-      padding-right: 12rem;
-      text-decoration: none; }
-    .messages .panel-group .panel-default > .panel-heading .panel-title .accordion-toggle:after {
+.ridematch .messages .panel-group {
+  margin-bottom: 0; }
+  .ridematch .messages .panel-group .panel {
+    border-radius: 0; }
+  .ridematch .messages .panel-group .panel-default {
+    background-color: #ffffff; }
+  .ridematch .messages .panel-group .panel-default > .panel-heading {
+    background-color: #ffffff;
+    position: relative;
+    padding: 0.5rem; }
+    .ridematch .messages .panel-group .panel-default > .panel-heading p {
+      font-size: 8px;
+      font-size: 0.8rem;
+      margin-left: 1.8rem; }
+    .ridematch .messages .panel-group .panel-default > .panel-heading .delete-icon {
+      color: #606060;
+      font-size: 14px;
+      font-size: 1.4rem;
+      width: 1.4rem;
+      height: 1.4rem;
+      cursor: pointer;
+      margin-left: 1rem;
+      top: 0; }
+    .ridematch .messages .panel-group .panel-default > .panel-heading .panel-title {
+      font-size: 12px;
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 1rem 14rem 1rem 0; }
+  .ridematch .messages .panel-group .panel-default > .panel-heading.new {
+    background-color: #d6d6d6; }
+  .ridematch .messages .panel-group .panel-heading {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+    .ridematch .messages .panel-group .panel-heading .accordion-toggle:before {
+      color: #0053a0;
       font-family: "Material Icons";
+      font-size: 14px;
+      font-size: 1.4rem;
       content: "\E15D";
       float: left;
-      margin-right: 0.5rem;
-      margin-top: 0.2rem; }
-    .messages .panel-group .panel-default > .panel-heading .panel-title .accordion-toggle.collapsed:after {
+      margin-right: 0.5rem; }
+    .ridematch .messages .panel-group .panel-heading .accordion-toggle.collapsed:before {
       content: "\E148"; }
-  .messages .panel-group .panel-default > .panel-heading .panel-title span {
-    color: #000;
-    font-size: 12px;
-    font-size: 1.2rem; }
-  .messages .panel-group .panel-default > .panel-heading .timestamp {
+  .ridematch .messages .panel-group .panel-body {
+    background-color: #f7f6f6;
     font-size: 8px;
     font-size: 0.8rem;
-    position: absolute;
-    top: 0.5rem;
-    right: 2.5rem;
-    text-align: right; }
-
-.messages .panel-group .panel-heading.new {
-  background-color: #d6d6d6; }
-
-.messages .panel-group .panel-heading {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
-
-.messages .panel-group .panel-body {
-  background-color: #f7f6f6;
-  font-size: 8px;
-  font-size: 0.8rem;
-  padding: 0.5rem; }
-  .messages .panel-group .panel-body .reply-icon {
-    cursor: pointer;
-    font-size: 12px;
-    font-size: 1.2rem;
-    width: 1.2rem;
-    height: 1.2rem; }
-  .messages .panel-group .panel-body .response p {
-    font-size: 8px;
-    font-size: 0.8rem;
-    margin-left: 0; }
-  .messages .panel-group .panel-body .message h5 {
-    font-size: 12px;
-    font-size: 1.2rem; }
-    .messages .panel-group .panel-body .message h5 .material-icons {
+    padding: 0.5rem; }
+    .ridematch .messages .panel-group .panel-body .reply-icon {
+      cursor: pointer;
       font-size: 12px;
       font-size: 1.2rem;
       width: 1.2rem;
       height: 1.2rem; }
-  .messages .panel-group .panel-body .message p {
-    font-size: 8px;
-    font-size: 0.8rem;
-    margin-left: 1.3rem; }
+    .ridematch .messages .panel-group .panel-body .response p {
+      font-size: 8px;
+      font-size: 0.8rem;
+      margin-left: 0; }
+    .ridematch .messages .panel-group .panel-body .message h5 {
+      font-size: 12px;
+      font-size: 1.2rem; }
+      .ridematch .messages .panel-group .panel-body .message h5 .material-icons {
+        font-size: 12px;
+        font-size: 1.2rem;
+        width: 1.2rem;
+        height: 1.2rem; }
+    .ridematch .messages .panel-group .panel-body .message p {
+      font-size: 8px;
+      font-size: 0.8rem;
+      margin-left: 1.3rem; }
 
 @media only screen and (min-width: 992px) {
-  .messages .panel-group .panel-title a {
-    padding-right: 25rem !important; }
-  .messages .panel-group .panel-body .message h5 {
+  .ridematch .messages .card {
+    border: none !important; }
+  .ridematch .messages .card .card {
+    border: 1px solid #d6d6d6 !important;
+    padding: 0; }
+  .ridematch .messages .well {
+    border-radius: 0;
+    margin-bottom: 0; }
+  .ridematch .messages .panel-group .panel + .panel {
+    margin-top: 0; }
+  .ridematch .messages .panel-group .panel-default > .panel-heading {
+    background-color: #ffffff;
+    position: relative;
+    padding: 0.5rem; }
+    .ridematch .messages .panel-group .panel-default > .panel-heading p {
+      font-size: 12px;
+      font-size: 1.2rem;
+      margin: 1rem 0 !important; }
+    .ridematch .messages .panel-group .panel-default > .panel-heading .delete-icon {
+      color: #606060;
+      font-size: 18px;
+      font-size: 1.8rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      cursor: pointer; }
+    .ridematch .messages .panel-group .panel-default > .panel-heading .panel-title {
+      font-size: 12px;
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 1rem 3rem 1rem 0 !important; }
+    .ridematch .messages .panel-group .panel-default > .panel-heading .timestamp {
+      font-size: 8px;
+      font-size: 0.8rem; }
+  .ridematch .messages .panel-group .panel {
+    border-right: none;
+    border-left: none; }
+  .ridematch .messages .panel-group .panel-body .material-icons {
     font-size: 18px;
-    font-size: 1.8rem; } }
-
-@media only screen and (min-width: 1400px) {
-  .messages .panel-group .panel-title a {
-    padding-right: 53rem !important; } }
+    font-size: 1.8rem;
+    width: 1.8rem;
+    height: 1.8rem; }
+  .ridematch .messages .panel-group .panel-body .message h5,
+  .ridematch .messages .panel-group .panel-body .response h5 {
+    font-size: 18px;
+    font-size: 1.8rem; }
+    .ridematch .messages .panel-group .panel-body .message h5 .material-icons,
+    .ridematch .messages .panel-group .panel-body .response h5 .material-icons {
+      font-size: 18px;
+      font-size: 1.8rem;
+      width: 1.8rem;
+      height: 1.8rem; }
+  .ridematch .messages .panel-group .panel-body .message p,
+  .ridematch .messages .panel-group .panel-body .response p {
+    font-size: 12px;
+    font-size: 1.2rem; } }
 
 /*# sourceMappingURL=../maps/main.css.map */

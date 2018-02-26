@@ -1,141 +1,193 @@
 /************************************
     Ridematch - Messages
 /***********************************/
-.messages {
-    .panel-group {
-        .panel {
-            border-radius: 0;
+.ridematch {
+    .messages {
+        .card .card {
+            border: none !important;
+            padding: 0;
         }
 
-        .panel-default {
-            background-color: $white;
+        .message-header-bar {
+            color: $transit-blue;
+            @include font-size(1.2);
+            font-weight: 700;
         }
 
-        .panel-default > .panel-heading {
-            background-color: $white;
-            position: relative;
-            padding: 0.5rem;
+        .panel-group {
+            margin-bottom: 0;
 
-            p {
-                @include font-size(0.8);
-                margin: 0 0 0 1.3rem !important;
+            .panel {
+                border-radius: 0;
             }
 
-            .material-icons,
-            .timestamp,
-            h4 {
-                display: inline-block;
+            .panel-default {
+                background-color: $white;
             }
 
-            .delete-icon {
-                color: $dark-grey;
-                @include font-size(1.2);
-                width: 1.2rem;
-                height: 1.2rem;
-                position: absolute;
-                top: 0.5rem;
-                right: 0.5rem;
-                cursor: pointer;
-            }
+            .panel-default > .panel-heading {
+                background-color: $white;
+                position: relative;
+                padding: 0.5rem;
 
-            .panel-title {
-                @include font-size(1.2);
-                margin: 0;
-
-                a {
-                    padding-right: 12rem;
-                    text-decoration: none;
+                p {
+                    @include font-size(0.8);
+                    margin-left: 1.8rem;
                 }
 
-                .accordion-toggle:after {
+                .delete-icon {
+                    color: $dark-grey;
+                    @include font-size(1.4);
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    cursor: pointer;
+                    margin-left: 1rem;
+                    top: 0;
+                }
+
+                .panel-title {
+                    @include font-size(1.2);
+                    margin: 0;
+                    padding: 1rem 14rem 1rem 0;
+                }
+            }
+
+            .panel-default > .panel-heading.new {
+                background-color: $medium-grey;
+            }
+
+            .panel-heading {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+
+                .accordion-toggle:before {
+                    color: $transit-blue;
                     font-family: "Material Icons";
+                    @include font-size(1.4);
                     content: "\E15D";
                     float: left;
                     margin-right: 0.5rem;
-                    margin-top: 0.2rem;
                 }
 
-                .accordion-toggle.collapsed:after {
+                .accordion-toggle.collapsed:before {
                     content: "\E148";
                 }
             }
 
-            .panel-title span {
-                color: #000;
-                @include font-size(1.2);
-            }
-
-            .timestamp {
+            .panel-body {
+                background-color: #f7f6f6;
                 @include font-size(0.8);
-                position: absolute;
-                top: 0.5rem;
-                right: 2.5rem;
-                text-align: right;
-            }
-        }
+                padding: 0.5rem;
 
-        .panel-heading.new {
-            background-color: $medium-grey;
-        }
-
-        .panel-heading {
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-        }
-
-        .panel-body {
-            background-color: #f7f6f6;
-            @include font-size(0.8);
-            padding: 0.5rem;
-
-            .reply-icon {
-                cursor: pointer;
-                @include font-size(1.2);
-                width: 1.2rem;
-                height: 1.2rem;
-            }
-
-            .response {
-                p {
-                    @include font-size(0.8);
-                    margin-left: 0;
-                }
-            }
-
-            .message {
-                h5 {
+                .reply-icon {
+                    cursor: pointer;
                     @include font-size(1.2);
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
 
-                    .material-icons {
-                        @include font-size(1.2);
-                        width: 1.2rem;
-                        height: 1.2rem;
+                .response {
+                    p {
+                        @include font-size(0.8);
+                        margin-left: 0;
                     }
                 }
 
-                p {
-                    @include font-size(0.8);
-                    margin-left: 1.3rem;
+                .message {
+                    h5 {
+                        @include font-size(1.2);
+
+                        .material-icons {
+                            @include font-size(1.2);
+                            width: 1.2rem;
+                            height: 1.2rem;
+                        }
+                    }
+
+                    p {
+                        @include font-size(0.8);
+                        margin-left: 1.3rem;
+                    }
                 }
             }
         }
         @include screen('desktop') {
-            .panel-title {
-                a {
-                    padding-right: 25rem !important;
-                }
+            .card {
+                border: none !important;
             }
 
-            .panel-body {
-                .message h5 {
-                    @include font-size(1.8);
-                }
+            .card .card {
+                border: 1px solid $border-color !important;
+                padding: 0;
             }
-        }
-        @include screen('lg-desktop') {
-            .panel-title {
-                a {
-                    padding-right: 53rem !important;
+
+            .well {
+                border-radius: 0;
+                margin-bottom: 0;
+            }
+
+            .panel-group {
+                .panel + .panel {
+                    margin-top: 0;
+                }
+
+                .panel-default > .panel-heading {
+                    background-color: $white;
+                    position: relative;
+                    padding: 0.5rem;
+
+                    p {
+                        @include font-size(1.2);
+                        margin: 1rem 0 !important;
+                    }
+
+                    .delete-icon {
+                        color: $dark-grey;
+                        @include font-size(1.8);
+                        width: 1.8rem;
+                        height: 1.8rem;
+                        cursor: pointer;
+                    }
+
+                    .panel-title {
+                        @include font-size(1.2);
+                        margin: 0;
+                        padding: 1rem 3rem 1rem 0 !important;
+                    }
+
+                    .timestamp {
+                        @include font-size(0.8);
+                    }
+                }
+
+                .panel {
+                    border-right: none;
+                    border-left: none;
+                }
+
+                .panel-body {
+                    .material-icons {
+                        @include font-size(1.8);
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
+
+                    .message,
+                    .response {
+                        h5 {
+                            @include font-size(1.8);
+
+                            .material-icons {
+                                @include font-size(1.8);
+                                width: 1.8rem;
+                                height: 1.8rem;
+                            }
+                        }
+
+                        p {
+                            @include font-size(1.2);
+                        }
+                    }
                 }
             }
         }

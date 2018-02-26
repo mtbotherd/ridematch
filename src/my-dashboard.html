@@ -121,66 +121,68 @@
                                 <div id="commutes" class="card">
                                     <h2><i class="material-icons">drive_eta</i> My Commutes</h2>
                                     <div class="active-commute">
-                                        <div class="row">
-                                            <div class="col-xs-6">
-                                                <div class="commute-name">Work</div>
-                                            </div>
-                                            <div class="col-xs-6 text-right">
-                                                <i class="material-icons">info</i>
-                                                <label>Active</label>
-                                                <input type="checkbox" checked="checked" />
-                                            </div>
-                                        </div>
-
-                                        <div class="vspace"></div>
-
-                                        <div class="commute-points">
-                                            <div class="result-point">
-                                                <div class="row">
-                                                    <div class="col-xs-1">
-                                                        <span class="result-point ab">A</span>
-                                                    </div>
-                                                    <div class="col-xs-2">
-                                                        <span class="result-point startend">Start</span>
-                                                    </div>
-                                                    <div class="col-xs-8">
-                                                        <span class="result-point location">225 Farrington St, St. Paul</span>
-                                                    </div>
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="commute-name">Work</div>
                                                 </div>
-                                                <hr />
-                                                <div class="row">
-                                                    <div class="col-xs-1">
-                                                        <span class="result-point ab">B</span>
-                                                    </div>
-                                                    <div class="col-xs-2">
-                                                        <span class="result-point startend">End</span>
-                                                    </div>
-                                                    <div class="col-xs-8">
-                                                        <span class="result-point location">Broadway Ave, Minneapolis</span>
-                                                    </div>
+                                                <div class="col-xs-6 text-right">
+                                                    <i class="material-icons info">info</i>
+                                                    <label>Active</label>
+                                                    <input type="checkbox" checked="checked" />
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="select-days vspace">
-                                            <ul>
-                                                <li id="sunday">S</li>
-                                                <li id="monday" class="active">M</li>
-                                                <li id="tuesday" class="active">T</li>
-                                                <li id="wednesday" class="active">W</li>
-                                                <li id="thursday" class="active">T</li>
-                                                <li id="friday" class="active">F</li>
-                                                <li id="saturday">S</li>
-                                            </ul>
-                                        </div>
-                                        <p>Times: 9:00 AM &amp; 5:00 PM</p>
-                                        <div class="vspace">
-                                            <div class="tools">
-                                                <span><a href="commute-results.html" title="Find matches" role="link"><i class="material-icons">group</i> Find Matches</a></span>
-                                                <span><a href="add-commute.html" title="Edit match" role="link"><i class="material-icons">create</i> Edit</a></span>
-                                                <span><a href="#" title="Delete commute" role="link" data-toggle="modal" data-target="#deleteCommute"><i class="material-icons">clear</i> Delete</a></span>
+                                            <div class="vspace"></div>
+
+                                            <div class="commute-points">
+                                                <div class="result-point">
+                                                    <div class="row">
+                                                        <div class="col-xs-1">
+                                                            <span class="result-point ab">A</span>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <span class="result-point startend">Start</span>
+                                                        </div>
+                                                        <div class="col-xs-8">
+                                                            <span class="result-point location">225 Farrington St, St. Paul</span>
+                                                        </div>
+                                                    </div>
+                                                    <hr />
+                                                    <div class="row">
+                                                        <div class="col-xs-1">
+                                                            <span class="result-point ab">B</span>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <span class="result-point startend">End</span>
+                                                        </div>
+                                                        <div class="col-xs-8">
+                                                            <span class="result-point location">Broadway Ave, Minneapolis</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p><em>Last updated 2/7/2018</em></p>
+
+                                            <div class="select-days vspace">
+                                                <ul>
+                                                    <li id="sunday">S</li>
+                                                    <li id="monday" class="active">M</li>
+                                                    <li id="tuesday" class="active">T</li>
+                                                    <li id="wednesday" class="active">W</li>
+                                                    <li id="thursday" class="active">T</li>
+                                                    <li id="friday" class="active">F</li>
+                                                    <li id="saturday">S</li>
+                                                </ul>
+                                            </div>
+                                            <p>Times: 9:00 AM &amp; 5:00 PM</p>
+                                            <div class="vspace">
+                                                <div class="tools">
+                                                    <span><a href="commute-results.html" title="Find matches" role="link"><i class="material-icons">group</i> Find Matches</a></span>
+                                                    <span><a href="add-commute.html" title="Edit match" role="link"><i class="material-icons">create</i> Edit</a></span>
+                                                    <span><a href="#" title="Delete commute" role="link" data-toggle="modal" data-target="#deleteCommute"><i class="material-icons">clear</i> Delete</a></span>
+                                                </div>
+                                                <p><em>Last updated 2/7/2018</em></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -194,101 +196,159 @@
 
                             <div class="col-md-8 col-lg-9">
                                 <!-- <div class="messages"> -->
-                                <div id="messages" class="card messages">
-                                    <h2><i class="material-icons">mail</i> Messages</h2>
-                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading new" role="tab" id="ridematchMessage">
-                                                <h4 class="panel-title">
-                                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#message-1" aria-expanded="false" aria-controls="message-1"> <span>Jane</span></a>
-                                                    </h4>
-                                                <div class="timestamp">10:34 am</div>
-                                                <i class="material-icons delete-icon" data-toggle="modal" data-target="#deleteMessage">delete_forever</i>
-                                                <p>Metro Transit Ridematch</p>
-                                            </div>
-                                            <div id="message-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="message-1">
-                                                <div class="panel-body">
-                                                    <div class="material-icons reply-icon pull-right" data-toggle="modal" data-target="#replyMessage">reply</div>
-                                                    <div class="clearfix"></div>
-                                                    <div class="response">
-                                                        <p>Hi Hayley, I got your message and I think you might be a good carpool match. When are you free to chat?</p>
-                                                        <p>Jane</p>
-                                                    </div>
-                                                    <hr />
-                                                    <div class="message">
-                                                        <h5>
-                                                                <i class="material-icons">person</i>
-                                                                Hayley
-                                                            </h5>
-                                                        <p>Aug 30, 1:13 PM</p>
-                                                        <p>You are listed as a potential carpool match for me on Metro Transit and I was wondering if you are interested in carpooling. If you would like, I can send you more information about myself, just
-                                                            let me know. Thanks, I look forward to hearing from you.</p>
-                                                        <p>Hayley</p>
+                                <div id="messages" class="messages">
+                                    <div class="card">
+                                        <h2><i class="material-icons">mail</i> Messages</h2>
+                                        <div class="card">
+                                            <div class="well hidden-xs hidden-sm">
+                                                <div class="message-header-bar">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <span>To/From</span>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <span>Subject</span>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <span>Sent/Received</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="ridematchMessage">
-                                                <h4 class="panel-title">
-                                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#message-2" aria-expanded="false" aria-controls="message-2"> <span>Susan</span></a>
-                                                    </h4>
-                                                <div class="timestamp">9:34 am</div>
-                                                <i class="material-icons delete-icon" data-toggle="modal" data-target="#deleteMessage">delete_forever</i>
-                                                <p>Metro Transit Ridematch</p>
-                                            </div>
-                                            <div id="message-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="message-2">
-                                                <div class="panel-body">
-                                                    <div class="material-icons reply-icon pull-right">reply</div>
-                                                    <div class="clearfix"></div>
-                                                    <div class="message">
-                                                        <h5>
-                                                                <i class="material-icons">person</i>
-                                                                Susan
-                                                            </h5>
-                                                        <p>Message text here...</p>
+                                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading new" role="tab" id="ridematchMessage">
+                                                        <div class="row">
+                                                            <div class="col-xs-8 col-md-9">
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <h4 class="panel-title accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#message-1">Jane
+                                                                            </h4>
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <p style="margin-top: 0;">Metro Transit Ridematch</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-md-3">
+                                                                <p>10:34 am<i class="material-icons delete-icon pull-right" data-toggle="modal" data-target="#deleteMessage">delete_forever</i>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="message-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="message-1">
+                                                        <div class="panel-body">
+                                                            <div class="material-icons reply-icon pull-right" data-toggle="modal" data-target="#replyMessage">reply</div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="response">
+                                                                <p>Hi Hayley, I got your message and I think you might be a good carpool match. When are you free to chat?</p>
+                                                                <p>Jane</p>
+                                                            </div>
+                                                            <hr />
+                                                            <div class="message">
+                                                                <h5><i class="material-icons">person</i>Hayley</h5>
+                                                                <p>Aug 30, 1:13 PM</p>
+                                                                <p>You are listed as a potential carpool match for me on Metro Transit and I was wondering if you are interested in carpooling. If you would like, I can send you more information about myself,
+                                                                    just let me know. Thanks, I look forward to hearing from you.</p>
+                                                                <p>Hayley</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="ridematchMessage">
-                                                <h4 class="panel-title">
-                                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#message-3" aria-expanded="false" aria-controls="message-3"> <span>Jeff</span></a>
-                                                    </h4>
-                                                <div class="timestamp">Tue</div>
-                                                <i class="material-icons delete-icon" data-toggle="modal" data-target="#deleteMessage">delete_forever</i>
-                                                <p>Metro Transit Ridematch</p>
-                                            </div>
-                                            <div id="message-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="message">
-                                                <div class="panel-body">
-                                                    <div class="material-icons reply-icon pull-right">reply</div>
-                                                    <div class="clearfix"></div>
-                                                    <div class="message">
-                                                        <h5>
-                                                                <i class="material-icons">person</i>
-                                                                Jeff
-                                                            </h5>
-                                                        <p>Message text here...</p>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="ridematchMessage">
+                                                        <div class="row">
+                                                            <div class="col-xs-8 col-md-9">
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <h4 class="panel-title accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#message-2">Susan
+                                                                            </h4>
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <p style="margin-top: 0;">Metro Transit Ridematch</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-md-3">
+                                                                <p>8:24 am<i class="material-icons delete-icon pull-right" data-toggle="modal" data-target="#deleteMessage">delete_forever</i>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="message-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="message-1">
+                                                        <div class="panel-body">
+                                                            <div class="material-icons reply-icon pull-right" data-toggle="modal" data-target="#replyMessage">reply</div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="response">
+                                                                <p>Hi Hayley, I got your message and I think you might be a good carpool match. When are you free to chat?</p>
+                                                                <p>Susan</p>
+                                                            </div>
+                                                            <hr />
+                                                            <div class="message">
+                                                                <h5><i class="material-icons">person</i>Hayley</h5>
+                                                                <p>Aug 30, 1:13 PM</p>
+                                                                <p>You are listed as a potential carpool match for me on Metro Transit and I was wondering if you are interested in carpooling. If you would like, I can send you more information about myself,
+                                                                    just let me know. Thanks, I look forward to hearing from you.</p>
+                                                                <p>Hayley</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="ridematchMessage">
+                                                        <div class="row">
+                                                            <div class="col-xs-8 col-md-9">
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <h4 class="panel-title accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#message-3">Jeff
+                                                                            </h4>
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <p style="margin-top: 0;">Metro Transit Ridematch</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-md-3">
+                                                                <p>2/14/18<i class="material-icons delete-icon pull-right" data-toggle="modal" data-target="#deleteMessage">delete_forever</i>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="message-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="message-1">
+                                                        <div class="panel-body">
+                                                            <div class="material-icons reply-icon pull-right" data-toggle="modal" data-target="#replyMessage">reply</div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="response">
+                                                                <p>Hi Hayley, I got your message and I think you might be a good carpool match. When are you free to chat?</p>
+                                                                <p>Jeff</p>
+                                                            </div>
+                                                            <hr />
+                                                            <div class="message">
+                                                                <h5><i class="material-icons">person</i>Hayley</h5>
+                                                                <p>Aug 30, 1:13 PM</p>
+                                                                <p>You are listed as a potential carpool match for me on Metro Transit and I was wondering if you are interested in carpooling. If you would like, I can send you more information about myself,
+                                                                    just let me know. Thanks, I look forward to hearing from you.</p>
+                                                                <p>Hayley</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <hr class="visible-md visible-lg" />
-                                <div id="profile" class="card profile">
-                                    <h2><i class="material-icons">account_circle</i> Profile</h2>
-                                    <a href="my-profile.html" title="Edit profile" role="link">
+                                    <hr class="visible-md visible-lg" />
+                                    <div id="profile" class="card profile">
+                                        <h2><i class="material-icons">account_circle</i> Profile</h2>
+                                        <a href="my-profile.html" title="Edit profile" role="link">
                                         <i class="material-icons create">create</i> Edit</a>
+                                    </div>
+                                    <!-- </div> -->
                                 </div>
-                                <!-- </div> -->
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- END OF FRONT END CONTENT -->
+                <!-- END OF FRONT END CONTENT -->
     </form>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
