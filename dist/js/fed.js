@@ -18,4 +18,9 @@ $(document).ready(function() {
         return;
     });
 
+    // Show message as read on click
+    $('.panel-heading.new').click(function() {
+        $(this).closest('.panel-heading').removeClass('new');
+    });
+
 });
