@@ -136,6 +136,10 @@
                     position: relative;
                     padding: 0.5rem;
 
+                    h4 {
+                        cursor: pointer;
+                    }
+
                     p {
                         @include font-size(1.2);
                         margin: 1rem 0 !important;

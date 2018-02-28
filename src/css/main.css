@@ -332,6 +332,7 @@ html {
       display: inline-block;
       border: 1px solid #ccc;
       border-radius: 4px;
+      cursor: pointer;
       font-size: 12px;
       font-size: 1.2rem;
       line-height: 1;
@@ -347,7 +348,10 @@ html {
   .ridematch .form-redesign label {
     font-style: italic; }
   .ridematch .form-redesign .mt-backbutton {
-    text-align: left; } }
+    text-align: left; }
+  .ridematch .form-redesign .next,
+  .ridematch .form-redesign .prev {
+    text-align: center; } }
 
 /************************************
     Ridematch - Dashboard
@@ -472,10 +476,21 @@ html {
 .ridematch .commutes .preferences .material-icons {
   font-size: 14px;
   font-size: 1.4rem;
-  top: 0.3rem;
+  top: 0.2rem;
   width: 1.4rem;
   height: 1.4rem;
   line-height: 0; }
+
+.ridematch .commutes .alert {
+  padding: 1rem; }
+
+.ridematch .commutes .alert-warning {
+  background-color: #fcf8e3; }
+  .ridematch .commutes .alert-warning p {
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.5; }
 
 .ridematch .commutes .btn {
   margin-bottom: 1rem; }
@@ -494,6 +509,8 @@ html {
     .ridematch .commutes .card .card {
       border: 1px solid #d6d6d6;
       padding: 1.5rem; }
+  .ridematch .commutes .preferences .material-icons {
+    top: 0.1rem; }
   .ridematch .commutes .commute-name {
     font-size: 18px;
     font-size: 1.8rem;
@@ -501,9 +518,7 @@ html {
   .ridematch .commutes .number-results {
     font-size: 24px;
     font-size: 2.4rem;
-    line-height: 1em; }
-  .ridematch .commutes .prev, .ridematch .commutes .next {
-    text-align: center; } }
+    line-height: 1em; } }
 
 /************************************
     Ridematch - Commute Results
@@ -708,6 +723,8 @@ html {
     background-color: #ffffff;
     position: relative;
     padding: 0.5rem; }
+    .ridematch .messages .panel-group .panel-default > .panel-heading h4 {
+      cursor: pointer; }
     .ridematch .messages .panel-group .panel-default > .panel-heading p {
       font-size: 12px;
       font-size: 1.2rem;

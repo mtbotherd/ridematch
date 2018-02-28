@@ -117,6 +117,7 @@
                     display: inline-block;
                     border: 1px solid #ccc;
                     border-radius: 4px;
+                    cursor: pointer;
                     @include font-size(1.2);
                     line-height: 1;
                     width: 3rem;
@@ -138,6 +139,11 @@
 
             .mt-backbutton {
                 text-align: left;
+            }
+
+            .next,
+            .prev {
+                text-align: center;
             }
         }
     }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ridematch No Commute Results | Metro Transit</title>
+    <link rel='shortcut icon' href='https://www.metrotransit.org/Data/Sites/1/skins/MetroTransitII/favicon.ico' />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- <link rel="stylehseet" type="text/css" href="fonts/font-awesome.min.css" /> -->
+    <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=6539b04f-5f49-420e-adb1-b102744f779c' />
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- endbuild -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/forms.css" /> -->
+</head>
+
+<body>
+    <form>
+        <!-- START OF FRONT END CONTENT -->
+        <div class="ridematch">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <a class="active" href="#commutes" title="Return to your Dashboard" role="button"><i class="material-icons">drive_eta</i><span class="sr-only">My Commutes</span></a>
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <a href="#messages" title="Go to your messages" role="button"><i class="material-icons">email</i><span class="sr-only">My Messages</span></a>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <a href="#profile" role="button"><i class="material-icons">account_circle</i><span class="sr-only">My Profile</span></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="dashboard commutes my-commutes">
+                <div class="mt-form form-redesign">
+                    <h1 class="sr-only">My Commutes</h1>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-3">
+                                <div class="card">
+                                    <h2>Commute: Work</h2>
+                                    <!-- <div class="well">
+                                        <p>No result match your criteria.</p>
+                                    </div> -->
+                                    <div class="alert alert-warning" role="alert">
+                                        <p>Your search returned 0 results.<br/>
+                                            </br/>Use the <em>Revise search</em> link to modify your search.</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <a href="add-commute.html"><i class="material-icons create">create</i> Revise search</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p class="sub-title">My Preferences</p>
+                                    <div class="row preferences">
+                                        <div class="col-xs-6">
+                                            <div class="preference-option">
+                                                <i class="material-icons">directions_car</i> I can't drive
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="preference-option">
+                                                <i class="material-icons">group</i> same gender
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="preference-option selected">
+                                                <i class="material-icons">check</i>
+                                                <i class="material-icons">work</i> co-worker
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="preference-option selected">
+                                                <i class="material-icons">check</i>
+                                                <i class="material-icons">smoke_free</i> non-smoker
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-lg-9 visible-md visible-lg">
+                                <div class="map-bg" style="height: 847px;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF FRONT END CONTENT -->
+    </form>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- build:js js/fed.js -->
+    <script type="text/javascript" src="js/fed.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

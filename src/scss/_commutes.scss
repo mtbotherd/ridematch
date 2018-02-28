@@ -14,10 +14,24 @@
         .preferences {
             .material-icons {
                 @include font-size(1.4);
-                top: 0.3rem;
+                top: 0.2rem;
                 width: 1.4rem;
                 height: 1.4rem;
                 line-height: 0;
+            }
+        }
+
+        .alert {
+            padding: 1rem;
+        }
+
+        .alert-warning {
+            background-color: #fcf8e3;
+
+            p {
+                @include font-size(1.2);
+                margin: 0;
+                line-height: 1.5;
             }
         }
 
@@ -42,6 +56,12 @@
                 }
             }
 
+            .preferences {
+                .material-icons {
+                    top: 0.1rem;
+                }
+            }
+
             .commute-name {
                 @include font-size(1.8);
                 margin-top: 0;
@@ -50,10 +70,6 @@
             .number-results {
                 @include font-size(2.4);
                 line-height: 1em;
-            }
-
-            .prev, .next {
-                text-align: center;
             }
         }
     }
