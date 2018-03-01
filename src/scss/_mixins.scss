@@ -49,22 +49,22 @@
         @media only screen and #{$tablet} {
             @content;
         }
-    } @else 
+    } @else
     if $size == max-tablet {
         @media only screen and #{$max-tablet} {
             @content;
         }
-    } @else 
+    } @else
     if $size == lg-tablet {
         @media only screen and #{$lg-tablet} {
             @content;
         }
-    } @else 
+    } @else
     if $size == desktop {
         @media only screen and #{$desktop} {
             @content;
         }
-    } @else 
+    } @else
     if $size == lg-desktop {
         @media only screen and #{$lg-desktop} {
             @content;

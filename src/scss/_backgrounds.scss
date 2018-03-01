@@ -9,14 +9,13 @@
         background-position: center;
         background-repeat: no-repeat;
         height: 100%;
-        //padding: 1.5rem 0;
         top: 0;
     }
 }
 // Default background
 
 .reset-bg {
-    padding: 1.5rem;
+    padding: 15px;
     @include screen ('desktop') {
         padding: 0;
     }

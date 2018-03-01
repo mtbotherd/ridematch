@@ -3,20 +3,20 @@
 ##############################*/
 .ridematch {
     .control-point-icon {
-        font-size: 2.4rem !important;
+        font-size: 24px !important;
         color: $transit-red !important;
         display: block;
-        width: 2.4rem !important;
-        height: 2.4rem !important;
-        margin: 0 auto 1rem auto !important;
+        width: 24px !important;
+        height: 24px !important;
+        margin: 0 auto 10px auto !important;
     }
     @include screen ('desktop') {
-        padding: 1.5rem;
+        padding: 15px;
 
         .material-icons.create {
-            @include font-size(1.2);
-            width: 1.2rem;
-            height: 1.2rem;
+            font-size: 12px;
+            width: 12px;
+            height: 12px;
         }
     }
 }
