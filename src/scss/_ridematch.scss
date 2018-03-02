@@ -11,8 +11,7 @@
         margin: 0 auto 10px auto !important;
     }
     @include screen ('desktop') {
-        padding: 15px;
-
+        //padding: 15px;
         .material-icons.create {
             font-size: 12px;
             width: 12px;

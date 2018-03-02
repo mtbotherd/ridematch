@@ -44,13 +44,8 @@
       background-position: center;
       background-repeat: no-repeat;
       height: 100%;
+      padding: 30px 0;
       top: 0; } }
-
-.reset-bg {
-  padding: 15px; }
-  @media only screen and (min-width: 992px) {
-    .reset-bg {
-      padding: 0; } }
 
 /*##############################
   Ridematch base styles
@@ -141,48 +136,48 @@
   margin: 0 auto 10px auto !important; }
 
 @media only screen and (min-width: 992px) {
-  .ridematch {
-    padding: 15px; }
-    .ridematch .material-icons.create {
-      font-size: 12px;
-      width: 12px;
-      height: 12px; } }
+  .ridematch .material-icons.create {
+    font-size: 12px;
+    width: 12px;
+    height: 12px; } }
 
 /*##############################
   Ridematch modal styles
 ##############################*/
-.ridematch .modal-header h1 {
-  font-size: 12px; }
-
-.ridematch .modal-body p {
-  font-size: 10px;
-  line-height: 1.3; }
-  .ridematch .modal-body p:last-child {
-    margin: 10px 0; }
-
-.ridematch .modal-footer {
-  border-top: none; }
-
-@media only screen and (min-width: 992px) {
-  .ridematch .modal-header h1 {
-    font-size: 18px; }
-  .ridematch .modal-body p {
-    font-size: 12px; } }
-
 /*##############################
   Ridematch nav styles
 ##############################*/
-.ridematch .navbar-default {
+.ridematch-nav nav {
+  position: static !important;
+  background-color: #ffffff;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+  float: none;
+  width: 100%;
+  max-width: 991px; }
+  .ridematch-nav nav .container-fluid {
+    max-width: 800px;
+    margin-right: auto !important;
+    margin-left: auto !important; }
+
+.ridematch-nav .navbar {
+  min-height: 40px;
+  width: 100%;
+  max-width: 991px; }
+
+.ridematch-nav .navbar-default {
   background-color: #ffffff !important;
   margin-bottom: 0;
-  min-height: 20px;
+  height: 40px;
   padding: 10px 0; }
-  .ridematch .navbar-default a {
+  .ridematch-nav .navbar-default a {
     color: #c0c0c0;
     padding: 10px; }
-  .ridematch .navbar-default a.active {
+  .ridematch-nav .navbar-default a.active {
     color: #0053a0; }
-  .ridematch .navbar-default .material-icons {
+  .ridematch-nav .navbar-default .material-icons {
     font-size: 16px;
     width: 16px;
     height: 16px; }
@@ -195,8 +190,10 @@
   padding: 15px; }
 
 @media only screen and (min-width: 992px) {
-  .ridematch .intro .card {
-    border: 1px solid #d6d6d6; } }
+  .ridematch .intro {
+    margin: 30px 0; }
+    .ridematch .intro .card {
+      border: 1px solid #d6d6d6; } }
 
 /*##############################
   Ridematch form styles
@@ -291,7 +288,9 @@
   .ridematch .form-redesign .select-days label {
     display: block; }
   .ridematch .form-redesign .select-days .btn {
-    font-size: 12px; }
+    background-color: #f7f6f6;
+    font-size: 12px;
+    margin-bottom: 10px; }
   .ridematch .form-redesign .select-days .btn.active {
     background-color: #cfdeed;
     -webkit-box-shadow: none;
@@ -305,15 +304,21 @@
     cursor: pointer;
     font-size: 12px !important;
     line-height: 1;
-    width: 30px;
-    height: 30px;
+    width: 35px !important;
+    height: 35px !important;
     margin-right: 5px;
     text-align: center;
     padding: 8px; }
+  .ridematch .form-redesign .select-days p {
+    margin-top: 0; }
 
 @media only screen and (min-width: 992px) {
   .ridematch .form-redesign label {
-    font-style: italic; }
+    font-style: italic;
+    line-height: 1; }
+  .ridematch .form-redesign .select-days .btnSch {
+    width: 30px !important;
+    height: 30px !important; }
   .ridematch .form-redesign .mt-backbutton {
     text-align: left; }
   .ridematch .form-redesign .next,
@@ -324,19 +329,21 @@
     Ridematch - Dashboard
 /***********************************/
 .ridematch .dashboard {
-  position: relative;
-  top: 40px; }
+  margin-top: 15px; }
   .ridematch .dashboard h2 {
     display: inline-block;
-    margin-right: 20px; }
+    margin: 0 20px 5px 0; }
   .ridematch .dashboard hr {
     color: #ebebeb;
-    background-color: #ebebeb; }
+    background-color: #ebebeb;
+    margin: 10px 0; }
   .ridematch .dashboard .card {
-    border: none; }
+    border: none;
+    padding: 0; }
     .ridematch .dashboard .card .card {
       border: 1px solid #d6d6d6;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      padding: 15px; }
   .ridematch .dashboard .well {
     background-color: #ebebeb;
     border: 0;
@@ -344,7 +351,7 @@
     .ridematch .dashboard .well p {
       font-size: 10px;
       font-weight: 700;
-      margin-top: 0; }
+      margin: 0; }
   .ridematch .dashboard .vspace {
     margin-top: 10px;
     margin-bottom: 10px; }
@@ -376,8 +383,6 @@
   .ridematch .dashboard .active-commute label {
     font-style: normal;
     padding-left: 0; }
-  .ridematch .dashboard .active-commute input {
-    margin: 0 3px; }
   .ridematch .dashboard .tools span {
     margin-right: 30px; }
     .ridematch .dashboard .tools span:last-child {
@@ -388,7 +393,12 @@
     height: 12px; }
   @media only screen and (min-width: 992px) {
     .ridematch .dashboard {
-      top: 0; }
+      margin-top: 0;
+      margin-right: 15px;
+      margin-left: 15px; }
+      .ridematch .dashboard .card {
+        border: 1px solid #d6d6d6;
+        padding: 15px; }
       .ridematch .dashboard .active-commute .card {
         border: 1px solid #d6d6d6 !important;
         padding: 10px !important; }
@@ -399,8 +409,6 @@
       .ridematch .dashboard .active-commute .commute-name {
         font-size: 18px;
         line-height: 1; }
-      .ridematch .dashboard .card {
-        border: 1px solid #d6d6d6; }
       .ridematch .dashboard h2 {
         font-size: 24px; }
         .ridematch .dashboard h2 .material-icons {
@@ -424,6 +432,8 @@
 /***********************************/
 .ridematch .commutes h2 {
   display: inline-block; }
+  .ridematch .commutes h2 .schedule {
+    border: none; }
 
 .ridematch .commutes .number-results {
   font-size: 12px; }
@@ -445,30 +455,29 @@
     margin: 0;
     line-height: 1.5; }
 
-.ridematch .commutes .btn {
-  margin-bottom: 10px; }
-
 .ridematch .commutes .commute-name {
   font-size: 10px;
   font-weight: 400;
   margin-top: 5px; }
 
 @media only screen and (min-width: 992px) {
-  .ridematch .commutes .card {
-    border: none;
-    margin-bottom: 15px;
-    padding: 0; }
-    .ridematch .commutes .card .card {
-      border: 1px solid #d6d6d6;
-      padding: 15px; }
-  .ridematch .commutes .preferences .material-icons {
-    top: 1px; }
-  .ridematch .commutes .commute-name {
-    font-size: 18px;
-    margin-top: 0; }
-  .ridematch .commutes .number-results {
-    font-size: 24px;
-    line-height: 10px; } }
+  .ridematch .commutes {
+    margin: 0; }
+    .ridematch .commutes .card {
+      border: none;
+      margin-bottom: 15px;
+      padding: 0; }
+      .ridematch .commutes .card .card {
+        border: 1px solid #d6d6d6;
+        padding: 15px; }
+    .ridematch .commutes .preferences .material-icons {
+      top: 1px; }
+    .ridematch .commutes .commute-name {
+      font-size: 18px;
+      margin-top: 0; }
+    .ridematch .commutes .number-results {
+      font-size: 24px;
+      line-height: 10px; } }
 
 /************************************
     Ridematch - Commute Results

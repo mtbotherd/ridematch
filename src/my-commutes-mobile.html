@@ -59,6 +59,34 @@
 </head>
 
 <body id="ctl00_Body" style="position: relative; min-height: 100%; top: 0px;">
+    <!-- Ridematch Messages Modal -->
+    <div class="modal fade" id="newMessage" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h1 class="modal-title">Ridematch Message</h1>
+                </div>
+                <div class="modal-body form-redesign">
+                    <div class="mt-form form-redesign">
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" class="form-control" placeholder="Metro Tranist - Ridematch" />
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="5" placeholder="You are listed as a potential carpool match for me on Metro Transit and I was wondering if you are interested in carpooling? If you would like, I can send you more information about myself, just let me know. Thanks, I look forward to hearing from you."></textarea>
+                        </div>
+                        <p style="display: none;">Thank you, your rideshare match email has been sent. You will receive any responses directly to the email address you have associated with your account.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="mt-button btn btn-default btn-block" data-dismiss="modal">Cancel</button>
+                    <button type="button" id="sendMessage" class="mt-button btn btn-primary btn-block">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://www.metrotransit.org/Scripts/jquery-2.2.4.js"></script>
     <script src="https://www.metrotransit.org/Scripts/jquery-ui-1.12.1.js"></script>
     <script src="https://www.metrotransit.org/ClientScript/jquery.formatter.min.js"></script>
@@ -425,6 +453,26 @@
                 </section>
 
             </header>
+            <!-- Ridematch Navigation -->
+            <div class="ridematch-nav hidden-md hidden-lg">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <a class="active" href="#commutes" title="Return to your Dashboard" role="button"><i class="material-icons">drive_eta</i><span class="sr-only">My Commutes</span></a>
+                            </div>
+                            <div class="col-xs-4 text-center">
+                                <a href="#messages" title="Go to your messages" role="button"><i class="material-icons">email</i><span class="sr-only">My Messages</span></a>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#profile" role="button"><i class="material-icons">account_circle</i><span class="sr-only">My Profile</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- End Ridematch Nav -->
             <section class="wrapcenter">
                 <div id="ctl00_divCenter" class="art-layout-cell art-content-wide center-nomargins cmszone">
                     <div id="ctl00_mainContent_ctl00_pnlOuterWrap" class="">
@@ -435,20 +483,200 @@
 
                                         <!-- START OF FRONT END CONTENT -->
 
-                                        <div class="map-bg">
-                                            <div class="ridematch">
-                                                <div class="intro">
-                                                    <div class="row">
-                                                        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2">
-                                                            <div class="card">
-                                                                <h1 class="text-center">Ridematch</h1>
-                                                                <p class="leadin text-center">Save hundreds by carpooling. Arrive at work faster and less stressed using the MnPass lane!</p>
-                                                                <p class="leadin text-center">You’ll be entered in the regional ridematching database. If you don’t find a match at first, keep checking.</p>
-                                                                <p class="leadin text-center">First, sign in or create your Metro Transit account to continue.</p>
-                                                                <div class="row">
-                                                                    <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
-                                                                        <a class=" mt-button btn btn-primary btn-block " href="https://account.metrotransit.org/signin.aspx " title="Sign in to your Metro Transit account. ">Go</a>
+                                        <div class="ridematch">
+                                            <div class="dashboard commutes my-commutes">
+                                                <div class="mt-form form-redesign">
+                                                    <h1 class="sr-only">My Commutes</h1>
+                                                    <div class="card">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="card">
+                                                                    <h2>Commute: Work</h2>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-6">
+                                                                            <span class="number-results">3 of 7 results</span>
+                                                                        </div>
+                                                                        <div class="col-xs-6 text-right">
+                                                                            <a href="add-commute.html"><i class="material-icons create">create</i> Revise search</a>
+                                                                        </div>
                                                                     </div>
+                                                                    <hr />
+                                                                    <p class="sub-title">My Preferences</p>
+                                                                    <div class="row preferences">
+                                                                        <div class="col-xs-6">
+                                                                            <div class="preference-option">
+                                                                                <i class="material-icons">directions_car</i> I can't drive
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-6">
+                                                                            <div class="preference-option">
+                                                                                <i class="material-icons">group</i> same gender
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-6">
+                                                                            <div class="preference-option selected">
+                                                                                <i class="material-icons">check</i>
+                                                                                <i class="material-icons">work</i> co-worker
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-6">
+                                                                            <div class="preference-option selected">
+                                                                                <i class="material-icons">check</i>
+                                                                                <i class="material-icons">smoke_free</i> non-smoker
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <h2><i class="material-icons account-circle">person</i> Jane</h2>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-1">
+                                                                            <span class="result-point ab">A</span>
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <span class="result-point startend">Start</span>
+                                                                        </div>
+                                                                        <div class="col-xs-8">
+                                                                            <span class="result-point location">Lexington Ave, St. Paul</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr />
+                                                                    <div class="row">
+                                                                        <div class="col-xs-1">
+                                                                            <span class="result-point ab">B</span>
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <span class="result-point startend">End</span>
+                                                                        </div>
+                                                                        <div class="col-xs-8">
+                                                                            <span class="result-point location">Broadway Ave, Minneapolis</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>Adds 1.1 miles to your commute</p>
+                                                                    <div class="select-days">
+                                                                        <label for="days">on these days</label>
+                                                                        <input type='button' id="SchedSunStyle" name="SchedSunStyle" class='btn btnSch' value='S' style='@Model.SchedSunStyle' disabled />
+                                                                        <input type='button' id="SchedMonStyle" name="SchedMonStyle" class='btn btnSch active' value='M' style='@Model.SchedMonStyle' disabled />
+                                                                        <input type='button' id="SchedTueStyle" name="SchedTueStyle" class='btn btnSch active' value='T' style='@Model.SchedTueStyle' disabled />
+                                                                        <input type='button' id="SchedWedStyle" name="SchedWedStyle" class='btn btnSch active' value='W' style='@Model.SchedWedStyle' disabled />
+                                                                        <input type='button' id="SchedThuStyle" name="SchedThuStyle" class='btn btnSch active' value='T' style='@Model.SchedThuStyle' disabled />
+                                                                        <input type='button' id="SchedFriStyle" name="SchedFriStyle" class='btn btnSch active' value='F' style='@Model.SchedFriStyle' disabled />
+                                                                        <input type='button' id="SchedSatStyle" name="SchedSatStyle" class='btn btnSch' value='S' style='@Model.SchedSatStyle' disabled />
+                                                                        <input type="hidden" id="SchedSun" name="SchedSun" value="@Model.SchedSun" />
+                                                                        <input type="hidden" id="SchedMon" name="SchedMon" value="@Model.SchedMon" />
+                                                                        <input type="hidden" id="SchedTue" name="SchedTue" value="@Model.SchedTue" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedWed" value="@Model.SchedWed" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedThu" value="@Model.SchedThu" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedFri" value="@Model.SchedFri" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedSat" value="@Model.SchedSat" />
+                                                                        <p>9:00 AM &amp; 5:00 PM</p>
+                                                                    </div>
+                                                                    <p class="text-right"><a class="contact" href="#newMessage" data-toggle="modal" title="contact"><i class="material-icons email">email</i> Contact</a></p>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <h2><i class="material-icons account-circle">person</i> Jane</h2>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-1">
+                                                                            <span class="result-point ab">A</span>
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <span class="result-point startend">Start</span>
+                                                                        </div>
+                                                                        <div class="col-xs-8">
+                                                                            <span class="result-point location">Lexington Ave, St. Paul</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr />
+                                                                    <div class="row">
+                                                                        <div class="col-xs-1">
+                                                                            <span class="result-point ab">B</span>
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <span class="result-point startend">End</span>
+                                                                        </div>
+                                                                        <div class="col-xs-8">
+                                                                            <span class="result-point location">Broadway Ave, Minneapolis</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>Adds 1.1 miles to your commute</p>
+                                                                    <div class="select-days">
+                                                                        <label for="days">on these days</label>
+                                                                        <input type='button' id="SchedSunStyle" name="SchedSunStyle" class='btn btnSch' value='S' style='@Model.SchedSunStyle' disabled />
+                                                                        <input type='button' id="SchedMonStyle" name="SchedMonStyle" class='btn btnSch active' value='M' style='@Model.SchedMonStyle' disabled />
+                                                                        <input type='button' id="SchedTueStyle" name="SchedTueStyle" class='btn btnSch' value='T' style='@Model.SchedTueStyle' disabled />
+                                                                        <input type='button' id="SchedWedStyle" name="SchedWedStyle" class='btn btnSch active' value='W' style='@Model.SchedWedStyle' disabled />
+                                                                        <input type='button' id="SchedThuStyle" name="SchedThuStyle" class='btn btnSch' value='T' style='@Model.SchedThuStyle' disabled />
+                                                                        <input type='button' id="SchedFriStyle" name="SchedFriStyle" class='btn btnSch active' value='F' style='@Model.SchedFriStyle' disabled />
+                                                                        <input type='button' id="SchedSatStyle" name="SchedSatStyle" class='btn btnSch' value='S' style='@Model.SchedSatStyle' disabled />
+                                                                        <input type="hidden" id="SchedSun" name="SchedSun" value="@Model.SchedSun" />
+                                                                        <input type="hidden" id="SchedMon" name="SchedMon" value="@Model.SchedMon" />
+                                                                        <input type="hidden" id="SchedTue" name="SchedTue" value="@Model.SchedTue" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedWed" value="@Model.SchedWed" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedThu" value="@Model.SchedThu" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedFri" value="@Model.SchedFri" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedSat" value="@Model.SchedSat" />
+                                                                        <p>9:00 AM &amp; 5:00 PM</p>
+                                                                    </div>
+                                                                    <p class="text-right"><a class="contact" href="#newMessage" data-toggle="modal" title="contact"><i class="material-icons email">email</i> Contact</a></p>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <h2><i class="material-icons account-circle">person</i> Jane</h2>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-1">
+                                                                            <span class="result-point ab">A</span>
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <span class="result-point startend">Start</span>
+                                                                        </div>
+                                                                        <div class="col-xs-8">
+                                                                            <span class="result-point location">Lexington Ave, St. Paul</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr />
+                                                                    <div class="row">
+                                                                        <div class="col-xs-1">
+                                                                            <span class="result-point ab">B</span>
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <span class="result-point startend">End</span>
+                                                                        </div>
+                                                                        <div class="col-xs-8">
+                                                                            <span class="result-point location">Broadway Ave, Minneapolis</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>Adds 1.1 miles to your commute</p>
+                                                                    <div class="select-days">
+                                                                        <label for="days">on these days</label>
+                                                                        <input type='button' id="SchedSunStyle" name="SchedSunStyle" class='btn btnSch' value='S' style='@Model.SchedSunStyle' disabled />
+                                                                        <input type='button' id="SchedMonStyle" name="SchedMonStyle" class='btn btnSch active' value='M' style='@Model.SchedMonStyle' disabled />
+                                                                        <input type='button' id="SchedTueStyle" name="SchedTueStyle" class='btn btnSch active' value='T' style='@Model.SchedTueStyle' disabled />
+                                                                        <input type='button' id="SchedWedStyle" name="SchedWedStyle" class='btn btnSch active' value='W' style='@Model.SchedWedStyle' disabled />
+                                                                        <input type='button' id="SchedThuStyle" name="SchedThuStyle" class='btn btnSch active' value='T' style='@Model.SchedThuStyle' disabled />
+                                                                        <input type='button' id="SchedFriStyle" name="SchedFriStyle" class='btn btnSch' value='F' style='@Model.SchedFriStyle' disabled />
+                                                                        <input type='button' id="SchedSatStyle" name="SchedSatStyle" class='btn btnSch' value='S' style='@Model.SchedSatStyle' disabled />
+                                                                        <input type="hidden" id="SchedSun" name="SchedSun" value="@Model.SchedSun" />
+                                                                        <input type="hidden" id="SchedMon" name="SchedMon" value="@Model.SchedMon" />
+                                                                        <input type="hidden" id="SchedTue" name="SchedTue" value="@Model.SchedTue" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedWed" value="@Model.SchedWed" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedThu" value="@Model.SchedThu" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedFri" value="@Model.SchedFri" />
+                                                                        <input type="hidden" id="SchedSun" name="SchedSat" value="@Model.SchedSat" />
+                                                                        <p>9:00 AM &amp; 5:00 PM</p>
+                                                                    </div>
+                                                                    <p class="text-right"><a class="contact" href="#newMessage" data-toggle="modal" title="contact"><i class="material-icons email">email</i> Contact</a></p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-6">
+                                                                        <a href="add-commute.html" class="mt-backbutton btn btn-primary btn-block prev">Prev</a>
+                                                                    </div>
+                                                                    <div class="col-xs-6">
+                                                                        <a href="" class="mt-button btn btn-primary btn-block next">Next</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 visible-md visible-lg">
+                                                                <div class="map-bg" style="height: 847px;">
+
                                                                 </div>
                                                             </div>
                                                         </div>

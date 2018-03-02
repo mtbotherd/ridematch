@@ -110,12 +110,14 @@
             }
 
             .btn {
+                background-color: #f7f6f6;
                 font-size: 12px;
+                margin-bottom: 10px;
             }
 
             .btn.active {
-               background-color: #cfdeed;
-               box-shadow: none;
+                background-color: #cfdeed;
+                box-shadow: none;
             }
 
             .btnSch {
@@ -126,16 +128,28 @@
                 cursor: pointer;
                 font-size: 12px !important;
                 line-height: 1;
-                width: 30px;
-                height: 30px;
+                width: 35px !important;
+                height: 35px !important;
                 margin-right: 5px;
                 text-align: center;
                 padding: 8px;
+            }
+
+            p {
+                margin-top: 0;
             }
         }
         @include screen('desktop') {
             label {
                 font-style: italic;
+                line-height: 1;
+            }
+
+            .select-days {
+                .btnSch {
+                    width: 30px !important;
+                    height: 30px !important;
+                }
             }
 
             .mt-backbutton {

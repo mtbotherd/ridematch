@@ -5,6 +5,10 @@
     .commutes {
         h2 {
             display: inline-block;
+
+            .schedule {
+                border: none;
+            }
         }
 
         .number-results {
@@ -37,11 +41,9 @@
                 line-height: 1.5;
             }
         }
-
-        .btn {
-            margin-bottom: 10px;
-        }
-
+        // .btn {
+        //     margin-bottom: 10px;
+        // }
         .commute-name {
             // @include font-size(1);
             font-size: 10px;
@@ -49,6 +51,8 @@
             margin-top: 5px;
         }
         @include screen ('desktop') {
+            margin: 0;
+
             .card {
                 border: none;
                 margin-bottom: 15px;

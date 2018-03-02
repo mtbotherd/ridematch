@@ -435,23 +435,68 @@
 
                                         <!-- START OF FRONT END CONTENT -->
 
-                                        <div class="map-bg">
-                                            <div class="ridematch">
-                                                <div class="intro">
-                                                    <div class="row">
-                                                        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2">
-                                                            <div class="card">
-                                                                <h1 class="text-center">Ridematch</h1>
-                                                                <p class="leadin text-center">Save hundreds by carpooling. Arrive at work faster and less stressed using the MnPass lane!</p>
-                                                                <p class="leadin text-center">You’ll be entered in the regional ridematching database. If you don’t find a match at first, keep checking.</p>
-                                                                <p class="leadin text-center">First, sign in or create your Metro Transit account to continue.</p>
-                                                                <div class="row">
-                                                                    <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
-                                                                        <a class=" mt-button btn btn-primary btn-block " href="https://account.metrotransit.org/signin.aspx " title="Sign in to your Metro Transit account. ">Go</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+
+                                        <div class="ridematch profile">
+                                            <div class="mt-form form-redesign">
+                                                <h1>Profile</h1>
+                                                <div class="text-right">
+                                                    <span class="required-notice"> = Required</span>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="firstName" class="required">First Name</label>
+                                                            <input type="text" class="form-control" id="fistName" placeholder="First name" />
                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="lastName" class="required">Last Name</label>
+                                                            <input type="text" class="form-control" id="lastName" placeholder="Last name" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="homeAddress" class="required">Home Adress</label>
+                                                            <input type="text" class="form-control" id="homeAddress" placeholder="Address" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="employerName" class="required">Employer Name</label>
+                                                            <select class="form-control" id="employerName">
+                                                            <option value="Option 0" default>Choose from list</option>
+                                                            <option value="Option 1">Options 1</option>
+                                                            <option value="Option 2">Options 2</option>
+                                                            <option value="Option 3">Options 3</option>
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p><a href="add-employer.html" title="My employer is missing from the list">My employer is missing from the list</a></p>
+
+                                                <div class="form-group">
+                                                    <label for="gender">Gender</label><br />
+                                                    <span class="red"><small>A selection is required if you want to match by gender.</small></span>
+                                                    <div class="radio">
+                                                        <input type="radio" id="male" />
+                                                        <label for="male">Male</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input type="radio" id="female" />
+                                                        <label for="female">Female</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-md-3">
+                                                        <input class="mt-button btn btn-primary btn-block" type=" submit " name="Submit " value="Create Ridematch Profile" />
                                                     </div>
                                                 </div>
                                             </div>

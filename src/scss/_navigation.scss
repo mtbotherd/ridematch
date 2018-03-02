@@ -1,11 +1,35 @@
 /*##############################
   Ridematch nav styles
 ##############################*/
-.ridematch {
+.ridematch-nav {
+    nav {
+        position: static !important;
+        background-color: $white;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+        float: none;
+        width: 100%;
+        max-width: 991px;
+
+        .container-fluid {
+            max-width: 800px;
+            margin-right: auto !important;
+            margin-left: auto !important;
+        }
+    }
+
+    .navbar {
+        min-height: 40px;
+        width: 100%;
+        max-width: 991px;
+    }
+
     .navbar-default {
         background-color: $white !important;
         margin-bottom: 0;
-        min-height: 20px;
+        height: 40px;
         padding: 10px 0;
 
         a {
