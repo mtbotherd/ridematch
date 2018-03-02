@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 
     // Toggle class for days of week
-    $('.ridematch .days li').click(function() {
+    $('.ridematch input.btnSch').click(function() {
         $(this).toggleClass('active');
     });
 

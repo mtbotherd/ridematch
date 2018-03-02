@@ -109,27 +109,28 @@
                 display: block;
             }
 
-            ul {
-                list-style-type: none;
-                padding-left: 0;
+            .btn {
+                font-size: 12px;
+            }
 
-                li {
-                    display: inline-block;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    font-size: 12px;
-                    line-height: 1;
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 5px;
-                    text-align: center;
-                    padding: 8px;
+            .btn.active {
+               background-color: #cfdeed;
+               box-shadow: none;
+            }
 
-                    &.active {
-                        background-color: #cfdeed;
-                    }
-                }
+            .btnSch {
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-shadow: none;
+                cursor: pointer;
+                font-size: 12px !important;
+                line-height: 1;
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                text-align: center;
+                padding: 8px;
             }
         }
         @include screen('desktop') {

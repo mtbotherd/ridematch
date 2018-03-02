@@ -42,7 +42,7 @@
                     <div class="card">
                         <h1 class="sr-only">Add Commute</h1>
                         <div class="row">
-                            <div class="col-md-4 col-lg-3">
+                            <div class="col-md-4">
                                 <div class="card">
                                     <div class="section">
                                         <h2 class="required">Commute Name</h2>
@@ -97,7 +97,21 @@
                                             </div>
                                             <div class="select-days">
                                                 <label for="days">on these days</label>
-                                                <ul class="days">
+                                                <input type='button' id="SchedSunStyle" name="SchedSunStyle" class='btn btnSch' value='S' style='@Model.SchedSunStyle' />
+                                                <input type='button' id="SchedMonStyle" name="SchedMonStyle" class='btn btnSch active' value='M' style='@Model.SchedMonStyle' />
+                                                <input type='button' id="SchedTueStyle" name="SchedTueStyle" class='btn btnSch active' value='T' style='@Model.SchedTueStyle' />
+                                                <input type='button' id="SchedWedStyle" name="SchedWedStyle" class='btn btnSch active' value='W' style='@Model.SchedWedStyle' />
+                                                <input type='button' id="SchedThuStyle" name="SchedThuStyle" class='btn btnSch active' value='T' style='@Model.SchedThuStyle' />
+                                                <input type='button' id="SchedFriStyle" name="SchedFriStyle" class='btn btnSch active' value='F' style='@Model.SchedFriStyle' />
+                                                <input type='button' id="SchedSatStyle" name="SchedSatStyle" class='btn btnSch' value='S' style='@Model.SchedSatStyle' />
+                                                <input type="hidden" id="SchedSun" name="SchedSun" value="@Model.SchedSun" />
+                                                <input type="hidden" id="SchedMon" name="SchedMon" value="@Model.SchedMon" />
+                                                <input type="hidden" id="SchedTue" name="SchedTue" value="@Model.SchedTue" />
+                                                <input type="hidden" id="SchedSun" name="SchedWed" value="@Model.SchedWed" />
+                                                <input type="hidden" id="SchedSun" name="SchedThu" value="@Model.SchedThu" />
+                                                <input type="hidden" id="SchedSun" name="SchedFri" value="@Model.SchedFri" />
+                                                <input type="hidden" id="SchedSun" name="SchedSat" value="@Model.SchedSat" />
+                                                <!-- <ul class="days">
                                                     <li id="sunday">S</li>
                                                     <li id="monday" class="active">M</li>
                                                     <li id="tuesday" class="active">T</li>
@@ -105,7 +119,7 @@
                                                     <li id="thursday" class="active">T</li>
                                                     <li id="friday" class="active">F</li>
                                                     <li id="saturday">S</li>
-                                                </ul>
+                                                </ul> -->
                                             </div>
                                             <div class="form-group">
                                                 <label for="range">I'm willing to add (# miles) to my commute</label>
@@ -148,7 +162,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8 col-lg-9">
+                            <div class="col-md-8 visible-md visible-lg">
                                 <div class="map-bg" style="height: 797px;"></div>
                             </div>
                         </div>
