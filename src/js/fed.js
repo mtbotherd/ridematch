@@ -19,7 +19,7 @@ $(document).ready(function() {
     });
 
     // Show message as read on click
-    $('.panel-heading.new').click(function() {
+    $('.ridematch .panel-heading.new').click(function() {
         $(this).closest('.panel-heading').removeClass('new');
     });
 

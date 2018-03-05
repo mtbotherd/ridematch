@@ -8,7 +8,7 @@
     <link rel='shortcut icon' href='https://www.metrotransit.org/Data/Sites/1/skins/MetroTransitII/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
     <link rel="stylehseet" type="text/css" href="fonts/font-awesome.min.css" />
-    <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=a514111b-0ef8-44a1-aa56-ce725d36c8f4' />
+    <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=991ff236-ca1d-4a37-a86e-0f0fe824f05f' />
     <link rel="stylesheet" href="css/main.css">
     <script src="https://www.metrotransit.org/ClientScript/jquery191/jquery.min.js" type="text/javascript"></script>
     <script src="https://www.metrotransit.org/ClientScript/jqueryui1102/jquery-ui.min.js" type="text/javascript"></script>
@@ -230,59 +230,61 @@ continue to improve the accessibility of our website.</a>
 
                                                     <!-- START OF FRONT END CONTENT -->
 
-                                                    <div class="map-bg ridematch">
+                                                    <div class="map-bg">
+                                                        <div class="ridematch">
 
-                                                        <!-- Navigation -->
-                                                        <nav class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
-                                                            <div class="container-fluid">
+                                                            <!-- Navigation -->
+                                                            <nav class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+                                                                <div class="container-fluid">
 
-                                                                <div class="row">
-                                                                    <div class="col-xs-4">
-                                                                        <a class="active" href="#commutes" title="Return to your Dashboard" role="button"><i class="material-icons">drive_eta</i><span class="sr-only">My Commutes</span></a>
-                                                                    </div>
-                                                                    <div class="col-xs-4 text-center">
-                                                                        <a href="#messages" title="Go to your messages" role="button"><i class="material-icons">email</i><span class="sr-only">My Messages</span></a>
-                                                                    </div>
-                                                                    <div class="col-xs-4 text-right">
-                                                                        <a href="#profile" role="button"><i class="material-icons">account_circle</i><span class="sr-only">My Profile</span></a>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-4">
+                                                                            <a class="active" href="#commutes" title="Return to your Dashboard" role="button"><i class="material-icons">drive_eta</i><span class="sr-only">My Commutes</span></a>
+                                                                        </div>
+                                                                        <div class="col-xs-4 text-center">
+                                                                            <a href="#messages" title="Go to your messages" role="button"><i class="material-icons">email</i><span class="sr-only">My Messages</span></a>
+                                                                        </div>
+                                                                        <div class="col-xs-4 text-right">
+                                                                            <a href="#profile" role="button"><i class="material-icons">account_circle</i><span class="sr-only">My Profile</span></a>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </nav>
+                                                            </nav>
 
-                                                        <div class="dashboard">
-                                                            <div class="card">
-                                                                <h1 class="sr-only">Dashboard</h1>
-                                                                <div class="row">
-                                                                    <div class="col-md-5 border-right">
-                                                                        <div id="commutes" class="card">
-                                                                            <!-- <i class="header material-icons">drive_eta</i> -->
-                                                                            <h2><i class="material-icons">drive_eta</i> My Commutes</h2>
-                                                                            <div class="well">
-                                                                                <p>You currently have no commutes.</p>
-                                                                            </div>
+                                                            <div class="dashboard">
+                                                                <div class="card">
+                                                                    <h1 class="sr-only">Dashboard</h1>
+                                                                    <div class="row">
+                                                                        <div class="col-md-5 border-right">
+                                                                            <div id="commutes" class="card">
+                                                                                <!-- <i class="header material-icons">drive_eta</i> -->
+                                                                                <h2><i class="material-icons">drive_eta</i> My Commutes</h2>
+                                                                                <div class="well">
+                                                                                    <p>You currently have no commutes.</p>
+                                                                                </div>
 
-                                                                            <p class="leadin text-center">With Ridematch, you can create single or multiple commutes, depending on your carpooling needs. (ie. work, school, daycare).</p>
-                                                                            <p class="leadin text-center">Let's get started!</p>
+                                                                                <p class="leadin text-center">With Ridematch, you can create single or multiple commutes, depending on your carpooling needs. (ie. work, school, daycare).</p>
+                                                                                <p class="leadin text-center">Let's get started!</p>
 
-                                                                            <p class="text-center">
-                                                                                <a href="add-commute.html" title="Add my profile" role="link">
-                                                                                    <i class="material-icons control-point-icon">control_point</i>
-                                                                                    Add a commute</a>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-7">
-                                                                        <div id="messages" class="card">
-                                                                            <h2><i class="material-icons">mail</i> Messages</h2>
-                                                                            <div class="well">
-                                                                                <p>You currently have no messages.</p>
+                                                                                <p class="text-center">
+                                                                                    <a href="add-commute.html" title="Add my profile" role="link">
+                                                                                        <i class="material-icons control-point-icon">control_point</i>
+                                                                                        Add a commute</a>
+                                                                                </p>
                                                                             </div>
                                                                         </div>
-                                                                        <hr class="visible-md visible-lg" />
-                                                                        <div id="profile" class="card">
-                                                                            <h2><i class="material-icons">account_circle</i> Profile</h2>
-                                                                            <a href="my-profile.html" title="Edit profile" role="link"><i class="material-icons create">create</i> Edit</a>
+                                                                        <div class="col-md-7">
+                                                                            <div id="messages" class="card">
+                                                                                <h2><i class="material-icons">mail</i> Messages</h2>
+                                                                                <div class="well">
+                                                                                    <p>You currently have no messages.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <hr class="visible-md visible-lg" />
+                                                                            <div id="profile" class="card">
+                                                                                <h2><i class="material-icons">account_circle</i> Profile</h2>
+                                                                                <a href="my-profile.html" title="Edit profile" role="link"><i class="material-icons create">create</i> Edit</a>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>

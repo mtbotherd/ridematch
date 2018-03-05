@@ -136,10 +136,12 @@
   margin: 0 auto 10px auto !important; }
 
 @media only screen and (min-width: 992px) {
-  .ridematch .material-icons.create {
-    font-size: 12px;
-    width: 12px;
-    height: 12px; } }
+  .ridematch {
+    padding: 0; }
+    .ridematch .material-icons.create {
+      font-size: 12px;
+      width: 12px;
+      height: 12px; } }
 
 /*##############################
   Ridematch modal styles
@@ -190,10 +192,8 @@
   padding: 15px; }
 
 @media only screen and (min-width: 992px) {
-  .ridematch .intro {
-    margin: 30px 0; }
-    .ridematch .intro .card {
-      border: 1px solid #d6d6d6; } }
+  .ridematch .intro .card {
+    border: 1px solid #d6d6d6; } }
 
 /*##############################
   Ridematch form styles
@@ -306,7 +306,7 @@
     line-height: 1;
     width: 35px !important;
     height: 35px !important;
-    margin-right: 5px;
+    margin-right: 0;
     text-align: center;
     padding: 8px; }
   .ridematch .form-redesign .select-days p {
