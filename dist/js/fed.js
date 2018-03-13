@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    // Move Ridematch nav menubar
+    var rmNav = $(".ridematch-nav").detach();
+    $(rmNav).appendTo("header.navbar");
+
+    // Move modal to body target
+    var moveModal = $(".ridematch .modal").detach();
+    $("form").append(moveModal);
 
     // Set class for active link
     $('.ridematch .navbar-default a').click(function() {
