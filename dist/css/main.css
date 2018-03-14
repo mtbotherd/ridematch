@@ -492,25 +492,25 @@
     width: 12px;
     height: 12px; }
 
-.ridematch .my-commutes .card #profileCards .card:nth-child(1) {
+.ridematch .my-commutes .card #profileCards .pagerItem-1 {
   border-top: 5px solid #008244; }
-  .ridematch .my-commutes .card #profileCards .card:nth-child(1) .account-circle {
+  .ridematch .my-commutes .card #profileCards .pagerItem-1 .account-circle {
     color: #008244;
     font-size: 16px;
     width: 16px;
     height: 16px; }
 
-.ridematch .my-commutes .card #profileCards .card:nth-child(2) {
+.ridematch .my-commutes .card #profileCards .pagerItem-2 {
   border-top: 5px solid #f68b1f; }
-  .ridematch .my-commutes .card #profileCards .card:nth-child(2) .account-circle {
+  .ridematch .my-commutes .card #profileCards .pagerItem-2 .account-circle {
     color: #f68b1f;
     font-size: 16px;
     width: 16px;
     height: 16px; }
 
-.ridematch .my-commutes .card #profileCards .card:nth-child(3) {
+.ridematch .my-commutes .card #profileCards .pagerItem-3 {
   border-top: 5px solid #a5cf4c; }
-  .ridematch .my-commutes .card #profileCards .card:nth-child(3) .account-circle {
+  .ridematch .my-commutes .card #profileCards .pagerItem-3 .account-circle {
     color: #a5cf4c;
     font-size: 16px;
     width: 16px;
@@ -541,6 +541,9 @@
   width: 12px;
   height: 12px; }
 
+.ridematch .my-commutes .btn-disable {
+  display: none; }
+
 @media only screen and (min-width: 992px) {
   .ridematch .my-commutes .map-bg {
     height: 1060px; }
@@ -551,15 +554,9 @@
     .ridematch .my-commutes .card .card {
       border: 1px solid #d6d6d6;
       padding: 15px; }
-    .ridematch .my-commutes .card #profileCards .card:nth-child(1) .account-circle {
-      font-size: 24px;
-      width: 24px;
-      height: 24px; }
-    .ridematch .my-commutes .card #profileCards .card:nth-child(2) .account-circle {
-      font-size: 24px;
-      width: 24px;
-      height: 24px; }
-    .ridematch .my-commutes .card #profileCards .card:nth-child(3) .account-circle {
+    .ridematch .my-commutes .card #profileCards .pagerItem-1 .account-circle,
+    .ridematch .my-commutes .card #profileCards .pagerItem-2 .account-circle,
+    .ridematch .my-commutes .card #profileCards .pagerItem-3 .account-circle {
       font-size: 24px;
       width: 24px;
       height: 24px; }

@@ -20,7 +20,7 @@
             }
 
             #profileCards {
-                .card:nth-child(1) {
+                .pagerItem-1 {
                     border-top: 5px solid $green;
 
                     .account-circle {
@@ -31,7 +31,7 @@
                     }
                 }
 
-                .card:nth-child(2) {
+                .pagerItem-2 {
                     border-top: 5px solid $orange;
 
                     .account-circle {
@@ -42,7 +42,7 @@
                     }
                 }
 
-                .card:nth-child(3) {
+                .pagerItem-3 {
                     border-top: 5px solid $lime-green;
 
                     .account-circle {
@@ -91,6 +91,11 @@
             width: 12px;
             height: 12px;
         }
+
+        .btn-disable {
+            display: none;
+        }
+
         @include screen ('desktop') {
             .map-bg {
                 height: 1060px;
@@ -107,23 +112,9 @@
                 }
 
                 #profileCards {
-                    .card:nth-child(1) {
-                        .account-circle {
-                            font-size: 24px;
-                            width: 24px;
-                            height: 24px;
-                        }
-                    }
-
-                    .card:nth-child(2) {
-                        .account-circle {
-                            font-size: 24px;
-                            width: 24px;
-                            height: 24px;
-                        }
-                    }
-
-                    .card:nth-child(3) {
+                    .pagerItem-1,
+                    .pagerItem-2,
+                    .pagerItem-3 {
                         .account-circle {
                             font-size: 24px;
                             width: 24px;
