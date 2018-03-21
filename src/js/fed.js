@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     // Move modal to body target
     var moveModal = $(".ridematch .modal").detach();
-    $("form").append(moveModal);
+    $("body form").append(moveModal);
 
     // Set class for active link
     $('.ridematch .navbar-default a').click(function() {
