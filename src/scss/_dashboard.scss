@@ -3,7 +3,7 @@
 /***********************************/
 .ridematch {
     .dashboard {
-        margin-top: 15px;
+        padding: 30px;
 
         h2 {
             display: inline-block;
@@ -106,10 +106,6 @@
             height: 12px;
         }
         @include screen ('desktop') {
-            margin-top: 0;
-            margin-right: 15px;
-            margin-left: 15px;
-
             .card {
                 border: 1px solid $border-color;
                 padding: 15px;

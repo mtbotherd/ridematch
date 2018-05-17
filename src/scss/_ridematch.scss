@@ -12,6 +12,7 @@
     }
     @include screen ('desktop') {
         padding: 0;
+
         .material-icons.create {
             font-size: 12px;
             width: 12px;

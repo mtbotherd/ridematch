@@ -3,13 +3,13 @@
 ##############################*/
 .ridematch {
     .intro {
+        padding: 30px;
+
         .card {
             border: 0;
             padding: 15px;
         }
         @include screen ('desktop') {
-            //margin: 30px 0;
-
             .card {
                 border: 1px solid $border-color;
             }

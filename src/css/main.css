@@ -44,7 +44,7 @@
       background-position: center;
       background-repeat: no-repeat;
       height: 100%;
-      padding: 30px 0;
+      padding: 0;
       top: 0; } }
 
 /*##############################
@@ -187,13 +187,14 @@
 /*##############################
   Ridematch intro page styles
 ##############################*/
-.ridematch .intro .card {
-  border: 0;
-  padding: 15px; }
-
-@media only screen and (min-width: 992px) {
+.ridematch .intro {
+  padding: 30px; }
   .ridematch .intro .card {
-    border: 1px solid #d6d6d6; } }
+    border: 0;
+    padding: 15px; }
+  @media only screen and (min-width: 992px) {
+    .ridematch .intro .card {
+      border: 1px solid #d6d6d6; } }
 
 /*##############################
   Ridematch form styles
@@ -329,7 +330,7 @@
     Ridematch - Dashboard
 /***********************************/
 .ridematch .dashboard {
-  margin-top: 15px; }
+  padding: 30px; }
   .ridematch .dashboard h2 {
     display: inline-block;
     margin: 0 20px 5px 0; }
@@ -392,92 +393,89 @@
     width: 12px;
     height: 12px; }
   @media only screen and (min-width: 992px) {
-    .ridematch .dashboard {
-      margin-top: 0;
-      margin-right: 15px;
-      margin-left: 15px; }
-      .ridematch .dashboard .card {
-        border: 1px solid #d6d6d6;
-        padding: 15px; }
-      .ridematch .dashboard .active-commute .card {
-        border: 1px solid #d6d6d6 !important;
-        padding: 10px !important; }
-      .ridematch .dashboard .active-commute .info {
-        font-size: 14px;
-        width: 14px;
-        height: 14px; }
-      .ridematch .dashboard .active-commute .commute-name {
-        font-size: 18px;
-        line-height: 1; }
-      .ridematch .dashboard h2 {
-        font-size: 24px; }
-        .ridematch .dashboard h2 .material-icons {
-          font-size: 24px;
-          width: 24px;
-          height: 24px; }
-      .ridematch .dashboard .well p {
-        font-size: 12px; }
-      .ridematch .dashboard .card .card {
-        border: none;
-        padding: 0; }
-      .ridematch .dashboard .border-left {
-        border-left: 1px solid #ebebeb; }
-      .ridematch .dashboard .border-right {
-        border-right: 1px solid #ebebeb; }
-      .ridematch .dashboard .tools span {
-        margin-right: 9px; } }
+    .ridematch .dashboard .card {
+      border: 1px solid #d6d6d6;
+      padding: 15px; }
+    .ridematch .dashboard .active-commute .card {
+      border: 1px solid #d6d6d6 !important;
+      padding: 10px !important; }
+    .ridematch .dashboard .active-commute .info {
+      font-size: 14px;
+      width: 14px;
+      height: 14px; }
+    .ridematch .dashboard .active-commute .commute-name {
+      font-size: 18px;
+      line-height: 1; }
+    .ridematch .dashboard h2 {
+      font-size: 24px; }
+      .ridematch .dashboard h2 .material-icons {
+        font-size: 24px;
+        width: 24px;
+        height: 24px; }
+    .ridematch .dashboard .well p {
+      font-size: 12px; }
+    .ridematch .dashboard .card .card {
+      border: none;
+      padding: 0; }
+    .ridematch .dashboard .border-left {
+      border-left: 1px solid #ebebeb; }
+    .ridematch .dashboard .border-right {
+      border-right: 1px solid #ebebeb; }
+    .ridematch .dashboard .tools span {
+      margin-right: 9px; } }
 
 /************************************
     Ridematch - Commutes
 /***********************************/
-.ridematch .commutes h2 {
-  display: inline-block; }
-  .ridematch .commutes h2 .schedule {
-    border: none; }
-
-.ridematch .commutes .number-results {
-  font-size: 12px; }
-
-.ridematch .commutes .preferences .material-icons {
-  font-size: 14px;
-  top: 2px;
-  width: 14px;
-  height: 14px;
-  line-height: 0; }
-
-.ridematch .commutes .alert {
-  padding: 10px; }
-
-.ridematch .commutes .alert-warning {
-  background-color: #fcf8e3; }
-  .ridematch .commutes .alert-warning p {
-    font-size: 12px;
-    margin: 0;
-    line-height: 1.5; }
-
-.ridematch .commutes .commute-name {
-  font-size: 10px;
-  font-weight: 400;
-  margin-top: 5px; }
-
-@media only screen and (min-width: 992px) {
-  .ridematch .commutes {
-    margin: 0; }
-    .ridematch .commutes .card {
-      border: none;
-      margin-bottom: 15px;
-      padding: 0; }
-      .ridematch .commutes .card .card {
-        border: 1px solid #d6d6d6;
-        padding: 15px; }
-    .ridematch .commutes .preferences .material-icons {
-      top: 1px; }
-    .ridematch .commutes .commute-name {
-      font-size: 18px;
-      margin-top: 0; }
-    .ridematch .commutes .number-results {
-      font-size: 24px;
-      line-height: 10px; } }
+.ridematch .commutes {
+  padding: 20px 0 0; }
+  .ridematch .commutes #map_canvas {
+    height: 830px !important; }
+  .ridematch .commutes .map_canvas {
+    top: 0 !important;
+    margin: 0 !important; }
+  .ridematch .commutes h2 {
+    display: inline-block; }
+    .ridematch .commutes h2 .schedule {
+      border: none; }
+  .ridematch .commutes .number-results {
+    font-size: 12px; }
+  .ridematch .commutes .preferences .material-icons {
+    font-size: 14px;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    line-height: 0; }
+  .ridematch .commutes .alert {
+    padding: 10px; }
+  .ridematch .commutes .alert-warning {
+    background-color: #fcf8e3; }
+    .ridematch .commutes .alert-warning p {
+      font-size: 12px;
+      margin: 0;
+      line-height: 1.5; }
+  .ridematch .commutes .commute-name {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 5px; }
+  @media only screen and (min-width: 992px) {
+    .ridematch .commutes {
+      margin: 0; }
+      .ridematch .commutes .card {
+        border: none;
+        margin-bottom: 15px;
+        padding: 0; }
+        .ridematch .commutes .card .card {
+          border: 1px solid #d6d6d6;
+          padding: 15px; }
+      .ridematch .commutes .preferences .material-icons {
+        top: 1px; }
+      .ridematch .commutes .commute-name {
+        font-size: 18px;
+        margin-top: 0; }
+      .ridematch .commutes .number-results {
+        font-size: 24px;
+        line-height: 10px; } }
 
 /************************************
     Ridematch - Commute Results
