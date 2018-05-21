@@ -127,6 +127,9 @@
 /*##############################
   Ridematch specific styles
 ##############################*/
+.ridematch .profile {
+  margin: 15px 0; }
+
 .ridematch .control-point-icon {
   font-size: 24px !important;
   color: #ed1b2e !important;
@@ -305,8 +308,8 @@
     cursor: pointer;
     font-size: 12px !important;
     line-height: 1;
-    width: 35px !important;
-    height: 35px !important;
+    width: 34px !important;
+    height: 34px !important;
     margin-right: 0;
     text-align: center;
     padding: 8px; }
