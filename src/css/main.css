@@ -258,8 +258,6 @@
   font-weight: 700; }
   .ridematch .form-redesign .input-group input::-webkit-input-placeholder {
     color: #c0c0c0; }
-  .ridematch .form-redesign .input-group input:-ms-input-placeholder {
-    color: #c0c0c0; }
   .ridematch .form-redesign .input-group input::-ms-input-placeholder {
     color: #c0c0c0; }
   .ridematch .form-redesign .input-group input::placeholder {
@@ -273,8 +271,6 @@
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px; }
     .ridematch .form-redesign .time-picker input::-webkit-input-placeholder {
-      font-size: 12px; }
-    .ridematch .form-redesign .time-picker input:-ms-input-placeholder {
       font-size: 12px; }
     .ridematch .form-redesign .time-picker input::-ms-input-placeholder {
       font-size: 12px; }
