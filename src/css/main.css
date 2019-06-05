@@ -149,6 +149,9 @@
 /*##############################
   Ridematch modal styles
 ##############################*/
+.modal .form-redesign .validation-summary-errors > span:first-child {
+  font-weight: bold; }
+
 /*##############################
   Ridematch nav styles
 ##############################*/
@@ -328,8 +331,11 @@
 /************************************
     Ridematch - Dashboard
 /***********************************/
+.ridematch .inline-block {
+  display: inline-block; }
+
 .ridematch .dashboard {
-  padding: 30px; }
+  padding: 15px 0; }
   .ridematch .dashboard h2 {
     display: inline-block;
     margin: 0 20px 5px 0; }
@@ -368,7 +374,8 @@
     font-size: 12px;
     font-weight: 700;
     width: 27px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    line-height: 1; }
   .ridematch .dashboard .startend {
     color: #aaa;
     width: 51px;

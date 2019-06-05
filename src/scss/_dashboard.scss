@@ -2,8 +2,11 @@
     Ridematch - Dashboard
 /***********************************/
 .ridematch {
+	.inline-block {
+		display: inline-block;
+	}
     .dashboard {
-        padding: 30px;
+        padding: 15px 0;
 
         h2 {
             display: inline-block;
@@ -63,13 +66,14 @@
             font-size: 12px;
             font-weight: 700;
             width: 27px;
-            margin-right: 10px;
+			margin-right: 10px;
+			line-height: 1;
         }
 
         .startend {
             color: #aaa;
             width: 51px;
-            margin-right: 10px;
+			margin-right: 10px;
         }
 
         .active-commute {
